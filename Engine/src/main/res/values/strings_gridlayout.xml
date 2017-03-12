@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="gridlayout2a_full">        <![CDATA[
+<GridLayout\n
+\t\tandroid:layout_width=\"match_parent\"\n
+\t\tandroid:layout_height=\"match_parent\"\n
+\t\tandroid:rowCount\"3\"\n
+\t\tandroid:columnCount=\"3\">\n
+\n
+\t\t<TextView android:text=\"1\" />\n
+\t\t<TextView android:text=\"2\" />\n
+\t\t<TextView android:text=\"3\" />\n
+\t\t<TextView android:text=\"4\" />\n
+\t\t<TextView android:text=\"5\" />\n
+\t\t<TextView android:text=\"6\" />\n
+\t\t<TextView android:text=\"7\" />\n
+\t\t<TextView android:text=\"8\" />\n
+\t\t<TextView android:text=\"9\" />\n
+</GridLayout>		
+]]>
+	</string>
+    <string name="gridlayout2d_head">        <![CDATA[
+<GridLayout\n
+\t\tandroid:layout_width=\"match_parent\"\n
+\t\tandroid:layout_height=\"match_parent\"]]>
+    </string>
+    <string name="gridlayout2d_tail">        <![CDATA[
+\t\tandroid:rowCount\"3\"\n
+\t\tandroid:columnCount=\"3\">\n
+\n
+\t\t<TextView android:text=\"1\" />\n
+\t\t<TextView android:text=\"2\" />\n
+\t\t<TextView android:text=\"3\" />\n
+\t\t<TextView android:text=\"4\" />\n
+\t\t<TextView android:text=\"5\" />\n
+\t\t<TextView android:text=\"6\" />\n
+\t\t<TextView android:text=\"7\" />\n
+\t\t<TextView android:text=\"8\" />\n
+\t\t<TextView android:text=\"9\" />\n
+</GridLayout>
+]]>		
+    </string>
+    <string name="gridlayout2d_insert">        <![CDATA[
+\t\tandroid:orientation=\"vertical\"]]>
+    </string>
+    <string name="gridlayout2e_full">        <![CDATA[
+<GridLayout\n
+\t\tandroid:layout_width=\"match_parent\"\n
+\t\tandroid:layout_height=\"match_parent\"\n
+\t\tandroid:orientation=\"vertical\"\n
+\t\tandroid:rowCount\"3\"\n
+\t\tandroid:columnCount=\"3\">\n
+\n
+\t\t<TextView android:text=\"1\" />\n
+\t\t<TextView android:text=\"2\" />\n
+\t\t<TextView android:text=\"3\" />\n
+\t\t<TextView android:text=\"4\" />\n
+\t\t<TextView android:text=\"5\" />\n
+\t\t<TextView android:text=\"6\" />\n
+\t\t<TextView android:text=\"7\" />\n
+\t\t<TextView android:text=\"8\" />\n
+\t\t<TextView android:text=\"9\" />\n
+</GridLayout>		
+]]>
+	</string>
+    <string name="gridlayout2f_start">        <![CDATA[
+<GridLayout\n
+\t\tandroid:layout_width=\"match_parent\"\n
+\t\tandroid:layout_height=\"match_parent\"\n
+\t\tandroid:rowCount\"3\"\n
+\t\tandroid:columnCount=\"3\">\n
+\n
+\t\t<TextView android:text=\"1\" />\n
+\t\t<TextView android:text=\"2\"\n\t\t\t\tandroid:layout_rowSpan=\"2\"/>\n
+\t\t<TextView android:text=\"3\" />\n
+\t\t<TextView android:text=\"4\" />\n
+\t\t<TextView android:text=\"5\" />\n
+\t\t<TextView android:text=\"6\" />\n
+\t\t<TextView android:text=\"7\" />\n
+\t\t<TextView android:text=\"8\" />\n
+\t\t<TextView android:text=\"9\" />\n
+</GridLayout>		
+]]>
+	</string>
+    <string name="gridlayout2f_end">        <![CDATA[
+<GridLayout\n
+\t\tandroid:layout_width=\"match_parent\"\n
+\t\tandroid:layout_height=\"match_parent\"\n
+\t\tandroid:rowCount\"3\"\n
+\t\tandroid:columnCount=\"3\">\n
+\n
+\t\t<TextView android:text=\"1\" />\n
+\t\t<TextView android:text=\"2\"\n\t\t\t\tandroid:layout_rowSpan=\"2\"/>\n
+\t\t<TextView android:text=\"3\" />\n
+\t\t<TextView android:text=\"4\" />\n
+\t\t<TextView android:text=\"5\" />\n
+\t\t<TextView android:text=\"6\" />\n
+\t\t<TextView android:text=\"7\" />\n
+\t\t<TextView android:text=\"8\" />\n
+\t\t<!--TextView android:text=\"9\" /-->\n
+</GridLayout>		
+]]>
+	</string>
+    <string name="gridlayout2g_start">        <![CDATA[
+\t\t<TextView android:text=\"1\" />\n
+\t\t<TextView android:text=\"2\" />\n
+\t\t<TextView android:text=\"3\" />\n
+\t\t<TextView android:text=\"4\" />\n
+\t\t<TextView android:text=\"5\" />\n
+\t\t<TextView android:text=\"6\" />\n
+\t\t<TextView android:text=\"7\" />\n
+\t\t<TextView android:text=\"8\" />\n
+\t\t<TextView android:text=\"9\" />\n
+]]>
+	</string>
+    <string name="gridlayout2g2_full">        <![CDATA[
+\t\t<TextView android:text=\"1\" />\n
+\t\t<TextView android:text=\"2\"\n\t\t\t\tandroid:layout_row=\"1\"\n\t\t\t\tandroid:layout_column=\"0\" />\n
+\t\t<TextView android:text=\"3\" />\n
+\t\t<TextView android:text=\"4\" />\n
+\t\t<TextView android:text=\"5\" />\n
+\t\t<TextView android:text=\"6\" />\n
+\t\t<TextView android:text=\"7\" />\n
+\t\t<TextView android:text=\"8\" />\n
+\t\t<TextView android:text=\"9\" />\n
+]]>
+	</string>
+    <string name="gridlayout2g2_head">        <![CDATA[
+\t\t<TextView android:text=\"1\" />\n
+\t\t<TextView android:text=\"2\"]]>
+	</string>
+    <string name="gridlayout2g2_insert">        <![CDATA[
+\t\t\t\tandroid:layout_row=\"1\"\n\t\t\t\tandroid:layout_column=\"0\" />]]>
+	</string>
+    <string name="gridlayout2g2_tail">        <![CDATA[
+\t\t<TextView android:text=\"3\" />\n
+\t\t<TextView android:text=\"4\" />\n
+\t\t<TextView android:text=\"5\" />\n
+\t\t<TextView android:text=\"6\" />\n
+\t\t<TextView android:text=\"7\" />\n
+\t\t<TextView android:text=\"8\" />\n
+\t\t<TextView android:text=\"9\" />\n
+]]>
+	</string>
+    <string name="gridlayout2g3_full">        <![CDATA[
+\t\t<TextView android:text=\"1\" />\n
+\t\t<TextView android:text=\"2\"\n\t\t\t\tandroid:layout_row=\"1\"\n\t\t\t\tandroid:layout_column=\"0\" />\n
+\t\t<TextView android:text=\"3\"\n\t\t\t\tandroid:layout_row=\"0\"\n\t\t\t\tandroid:layout_column=\"2\" />\n
+\t\t<TextView android:text=\"4\" />\n
+\t\t<TextView android:text=\"5\" />\n
+\t\t<TextView android:text=\"6\" />\n
+\t\t<TextView android:text=\"7\" />\n
+\t\t<TextView android:text=\"8\" />\n
+\t\t<TextView android:text=\"9\" />\n
+]]>
+	</string>
+    <string name="gridlayout2g3_head">        <![CDATA[
+\t\t<TextView android:text=\"1\" />\n
+\t\t<TextView android:text=\"2\"\n\t\t\t\tandroid:layout_row=\"1\"\n\t\t\t\tandroid:layout_column=\"0\" />\n
+\t\t<TextView android:text=\"3\"]]>
+	</string>
+    <string name="gridlayout2g3_insert">        <![CDATA[
+\t\t\t\tandroid:layout_row=\"0\"\n\t\t\t\tandroid:layout_column=\"2\" />]]>
+	</string>
+    <string name="gridlayout2g3_tail">        <![CDATA[
+\t\t<TextView android:text=\"4\" />\n
+\t\t<TextView android:text=\"5\" />\n
+\t\t<TextView android:text=\"6\" />\n
+\t\t<TextView android:text=\"7\" />\n
+\t\t<TextView android:text=\"8\" />\n
+\t\t<TextView android:text=\"9\" />\n
+]]>
+	</string>
+    <string name="gridlayout2g4_full">        <![CDATA[
+\t\t<TextView android:text=\"1\" />\n
+\t\t<TextView android:text=\"2\"\n\t\t\t\tandroid:layout_row=\"1\"\n\t\t\t\tandroid:layout_column=\"0\" />\n
+\t\t<TextView android:text=\"3\"\n\t\t\t\tandroid:layout_row=\"0\"\n\t\t\t\tandroid:layout_column=\"2\" />\n
+\t\t<TextView android:text=\"4\"\n\t\t\t\tandroid:layout_row=\"0\"\n\t\t\t\tandroid:layout_column=\"1\" />\n
+\t\t<TextView android:text=\"5\" />\n
+\t\t<TextView android:text=\"6\" />\n
+\t\t<TextView android:text=\"7\" />\n
+\t\t<TextView android:text=\"8\" />\n
+\t\t<TextView android:text=\"9\" />\n
+]]>
+	</string>
+    <string name="gridlayout2g4_head">        <![CDATA[
+\t\t<TextView android:text=\"1\" />\n
+\t\t<TextView android:text=\"2\"\n\t\t\t\tandroid:layout_row=\"1\"\n\t\t\t\tandroid:layout_column=\"0\" />\n
+\t\t<TextView android:text=\"3\"\n\t\t\t\tandroid:layout_row=\"0\"\n\t\t\t\tandroid:layout_column=\"2\" />\n
+\t\t<TextView android:text=\"4\"]]>
+	</string>
+    <string name="gridlayout2g4_insert">        <![CDATA[
+\t\t\t\tandroid:layout_row=\"0\"\n\t\t\t\tandroid:layout_column=\"1\" />]]>
+	</string>
+    <string name="gridlayout2g4_tail">        <![CDATA[
+\t\t<TextView android:text=\"5\" />\n
+\t\t<TextView android:text=\"6\" />\n
+\t\t<TextView android:text=\"7\" />\n
+\t\t<TextView android:text=\"8\" />\n
+\t\t<TextView android:text=\"9\" />\n
+]]>
+	</string>
+  <string name="gridlayout2c1"><![CDATA[(<TextView android:text=\"1\".*?>)]]></string>
+  <string name="gridlayout2c2"><![CDATA[(<TextView android:text=\"2\".*?>)]]></string>
+  <string name="gridlayout2c3"><![CDATA[(<TextView android:text=\"3\".*?>)]]></string>
+  <string name="gridlayout2c4"><![CDATA[(<TextView android:text=\"4\".*?>)]]></string>
+  <string name="gridlayout2c5"><![CDATA[(<TextView android:text=\"5\".*?>)]]></string>
+  <string name="gridlayout2c6"><![CDATA[(<TextView android:text=\"6\".*?>)]]></string>
+  <string name="gridlayout2c7"><![CDATA[(<TextView android:text=\"7\".*?>)]]></string>
+  <string name="gridlayout2c8"><![CDATA[(<TextView android:text=\"8\".*?>)]]></string>
+  <string name="gridlayout2c9"><![CDATA[(<TextView android:text=\"9\".*?>)]]></string>
+
+  <string name="gridlayout2f9"><![CDATA[(<!--TextView android:text=\"9\".*?-->)]]></string>
+  <string name="gridlayout2g2"><![CDATA[(<TextView android:text=\"2\".*?)]]></string>
+  <string name="gridlayout2g3"><![CDATA[(<TextView android:text=\"3\".*?)]]></string>
+  <string name="gridlayout2g4"><![CDATA[(<TextView android:text=\"4\".*?)]]></string>
+</resources>

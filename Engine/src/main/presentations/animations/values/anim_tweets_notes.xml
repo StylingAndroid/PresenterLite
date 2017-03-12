@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="anim_tweet_title">I am currently speaking about Android Animations at @droidconUK in London</string>
+  <string name="anim_tweet_anim1">For more on View Animation see http://bit.ly/1a4dD6e #DroidConUK</string>
+  <string name="anim_tweet_anim2">Further information on interpolators can be found at http://bit.ly/119KZNX #DroidConUK</string>
+  <string name="anim_tweet_anim3">Get more info about grouping animations in to sets at http://bit.ly/172BCEh #DroidConUK</string>
+  <string name="anim_tweet_nineoldandroids">Jake Wharton\'s NineOldAndroids library can be found at http://bit.ly/12FZDiV #DroidConUK</string>
+  <string name="anim_tweet_colorfilter">For more explanation of ColorFilter please go to http://bit.ly/1bw1SDF #DroidConUK</string>
+  <string name="anim_tweet_presenter">The presentation source is at http://bit.ly/10c1fPT and the articles are at http://bit.ly/umxkPW #DroidConUK</string>
+</resources>

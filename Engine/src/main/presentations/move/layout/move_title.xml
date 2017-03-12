@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stylingandroid.presenter.engine.presentation.SlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:sap="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@id/slide"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:layout_gravity="center"
+  android:gravity="start|center_vertical"
+  android:orientation="vertical"
+  sap:notes="@string/move_notes_title"
+  sap:nextInAnimation="@anim/none"
+  sap:nextOutAnimation="@anim/none"
+  tools:context=".display.DisplayActivity">
+
+
+  <TextView
+    style="@style/Widget.TextView.Large"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="I Like The Way You Move" />
+
+  <TextView
+    style="@style/Widget.TextView.Medium"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Mark Allison" />
+
+  <TextView
+    style="@style/Widget.TextView.Medium"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="http://blog.stylingandroid.com" />
+
+  <TextView
+    android:id="@id/event_long_name"
+    style="@style/Widget.TextView.Medium"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+  <FrameLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+      style="@style/Widget.TextView.Medium"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:paddingTop="@dimen/spacing"
+      android:text="Twitter: MarkIAllison"
+      sap:highlightTextAppearance="@style/Widget.TextView.Medium.Highlight" />
+  </FrameLayout>
+
+  <TextView
+    style="@style/Widget.TextView.Medium"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="G+: http://blog.stylingandroid.com/plus" />
+
+  <LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="horizontal">
+
+  </LinearLayout>
+
+
+</com.stylingandroid.presenter.engine.presentation.SlideLayout>

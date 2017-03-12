@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+  android:width="300dp"
+  android:height="300dp"
+  android:viewportHeight="300"
+  android:viewportWidth="300">
+
+  <group android:name="square">
+
+    <path
+      android:name="fading"
+      android:fillColor="@color/SAgreen"
+      android:fillAlpha="1"
+      android:pathData="M100,100 l100,0 l0,100 l-100,0 z" />
+
+    <path
+      android:pathData="M100,100 l100,0 l0,100 l-100,0 z"
+      android:strokeColor="@color/SAgreen" />
+
+    <path
+      android:pathData="M100,50 a 50 50 0 1 0 1,0 z"
+      android:strokeColor="@color/blue"
+      android:strokeWidth="1" />
+
+    <clip-path android:pathData="M100,50 a 50 50 0 1 0 1,0 z" />
+
+    <path
+      android:fillColor="@color/SAgreen"
+      android:pathData="M100,100 l100,0 l0,100 l-100,0 z"
+      android:strokeColor="@color/SAgreen"
+      android:strokeWidth="1" />
+
+  </group>
+
+
+</vector>

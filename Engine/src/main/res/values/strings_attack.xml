@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="attack1" formatted="false">        <![CDATA[
+<LinearLayout\n
+\tandroid:layout_width=\"match_parent\"\n
+\tandroid:layout_height=\"match_parent\"\n
+\tandroid:orientation=\"horizontal\" >\n\n
+\t<ListView\n
+\t\tandroid:layout_width=\"wrap_content\"\n
+\t\tandroid:layout_height=\"match_parent\"\n
+\t\tandroid:layout_weight=\"1\" />\n\n
+\t<TextView\n
+\t\tandroid:layout_width=\"wrap_content\"\n
+\t\tandroid:layout_height=\"match_parent\"\n
+\t\tandroid:layout_weight=\"3\"\n
+\t\tandroid:text=\"Problems...\" />\n\n
+</LinearLayout>\n
+]]>
+    </string>
+    <string name="attack4a1">        <![CDATA[
+<LinearLayout\n
+\tandroid:layout_width=\"match_parent\"\n
+\tandroid:layout_height=\"match_parent\"\n
+\tandroid:orientation=\"horizontal\" >\n\n
+\t<ListView]]>
+    </string>
+    <string name="attack4a2">        <![CDATA[
+\t\tandroid:layout_height=\"match_parent\"\n
+\t\tandroid:layout_weight=\"1\" />\n\n
+\t<TextView]]>
+    </string>
+    <string name="attack4a3">        <![CDATA[
+\t\tandroid:layout_height=\"match_parent\"\n
+\t\tandroid:layout_weight=\"3\"\n
+\t\tandroid:text=\"Problems...\" />\n\n
+</LinearLayout>\n
+]]>
+    </string>
+    <string name="attack4a_insert">        <![CDATA[
+\t\tandroid:layout_width=\"match_parent\"
+]]>
+    </string>
+    <string name="attack4aw1">        <![CDATA[
+<LinearLayout\n
+\tandroid:layout_width=\"match_parent\"\n
+\tandroid:layout_height=\"match_parent\"\n
+\tandroid:orientation=\"horizontal\" >\n\n
+\t<ListView\n
+\t\tandroid:layout_width=\"match_parent\"\n
+\t\tandroid:layout_height=\"match_parent\"\n
+\t\tandroid:layout_weight=\"1\" />\n\n
+\t<TextView\n
+\t\tandroid:layout_width=\"match_parent\"\n
+\t\tandroid:layout_height=\"match_parent\"\n
+\t\tandroid:layout_weight=\"3\"\n
+\t\tandroid:text=\"Problems...\" />\n\n
+</LinearLayout>\n
+]]>
+    </string>
+    <string name="attack4aw2">        <![CDATA[
+<LinearLayout\n
+\tandroid:layout_width=\"match_parent\"\n
+\tandroid:layout_height=\"match_parent\"\n
+\tandroid:orientation=\"horizontal\" >\n\n
+\t<ListView\n
+\t\tandroid:layout_width=\"match_parent\"\n
+\t\tandroid:layout_height=\"match_parent\"\n
+\t\tandroid:layout_weight=\"3\" />\n\n
+\t<TextView\n
+\t\tandroid:layout_width=\"match_parent\"\n
+\t\tandroid:layout_height=\"match_parent\"\n
+\t\tandroid:layout_weight=\"1\"\n
+\t\tandroid:text=\"Problems...\" />\n\n
+</LinearLayout>\n
+]]>
+    </string>
+    <string name="attack5a">        <![CDATA[
+<LinearLayout\n
+\tandroid:layout_width=\"match_parent\"\n
+\tandroid:layout_height=\"match_parent\"\n
+\tandroid:orientation=\"horizontal\" >\n
+\n
+\t<TextView\n
+\t\tandroid:layout_width=\"wrap_content\"\n
+\t\tandroid:layout_height=\"wrap_content\"\n
+\t\tandroid:layout_weight=\"1\"\n
+\t\tandroid:text=\"Text\"/>\n
+\n
+\t<TextView\n
+\t\tandroid:layout_width=\"wrap_content\"\n
+\t\tandroid:layout_height=\"wrap_content\"\n
+\t\tandroid:layout_weight=\"1\"\n
+\t\tandroid:text=\"Much Longer Text\" />\n
+</LinearLayout>
+]]>
+    </string>
+    <string name="attack5b">        <![CDATA[
+<LinearLayout\n
+\tandroid:layout_width=\"match_parent\"\n
+\tandroid:layout_height=\"match_parent\"\n
+\tandroid:orientation=\"horizontal\" >\n
+\n
+\t<TextView\n
+\t\tandroid:layout_width=\"0dp\"\n
+\t\tandroid:layout_height=\"wrap_content\"\n
+\t\tandroid:layout_weight=\"1\"\n
+\t\tandroid:text=\"Text\"/>\n
+\n
+\t<TextView\n
+\t\tandroid:layout_width=\"0dp\"\n
+\t\tandroid:layout_height=\"wrap_content\"\n
+\t\tandroid:layout_weight=\"1\"\n
+\t\tandroid:text=\"Much Longer Text\" />\n
+</LinearLayout>
+]]>
+    </string>
+        <string name="attack3b">        <![CDATA[(<\/?LinearLayout.*?>)]]>
+    </string>
+    <string name="attack3c">        <![CDATA[(<ListView.*?>)]]>
+    </string>
+    <string name="attack3d">        <![CDATA[(<TextView.*?>)]]>
+    </string>
+    <string name="attack4a">        <![CDATA[(wrap_content)]]>
+    </string>
+    <string name="attack5ap">        <![CDATA[(android:layout_width=\"wrap_content\")]]>
+    </string>
+
+</resources>

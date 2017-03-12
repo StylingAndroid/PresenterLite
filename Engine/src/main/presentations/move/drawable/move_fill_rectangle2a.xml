@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:aapt="http://schemas.android.com/aapt"
+  xmlns:tools="http://schemas.android.com/tools"
+  tools:ignore="MissingPrefix">
+
+  <aapt:attr name="android:drawable">
+    <vector xmlns:android="http://schemas.android.com/apk/res/android"
+      android:width="@dimen/boatWidth"
+      android:height="@dimen/boatHeight"
+      android:viewportHeight="@dimen/viewportHeight"
+      android:viewportWidth="@dimen/viewportWidth">
+
+      <path
+        android:pathData="M1,2h24v24h-24z"
+        android:strokeColor="@color/grey"
+        android:strokeWidth="0.3" />
+
+      <group android:name="stroke_group">
+        <clip-path android:pathData="M1,2h24v24h-24z" />
+        <path
+          android:name="stroke_path"
+          android:pathData="M1,2h24v24h-24z"
+          android:strokeColor="@color/sea_blue"
+          android:strokeWidth="1.3" />
+      </group>
+    </vector>
+  </aapt:attr>
+
+  <target android:name="stroke_path">
+    <aapt:attr name="android:animation">
+      <objectAnimator
+        android:duration="5000"
+        android:interpolator="@android:interpolator/linear"
+        android:propertyName="trimPathEnd"
+        android:repeatCount="0"
+        android:valueFrom="0"
+        android:valueTo="1" />
+    </aapt:attr>
+  </target>
+
+</animated-vector>

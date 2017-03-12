@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string-array name="vectors">
+    <item>vectors_title</item>
+    <item>vectors_allison</item>
+    <item>vectors_intro</item>
+    <item>vectors_svg_path1</item>
+    <item>vectors_svg_path2</item>
+    <item>vectors_svg_path3</item>
+    <item>vectors_svg_animated1</item>
+    <item>vectors_svg_animated2</item>
+    <item>vectors_svg_animated3</item>
+    <item>vectors_svg_animated4</item>
+    <item>vectors_svg_animated5</item>
+    <item>vectors_svg_animated6</item>
+    <item>vectors_svg_animated7</item>
+    <item>vectors_svg_animated8</item>
+    <item>vectors_svg_animated9</item>
+    <item>vectors_svg_animated10</item>
+    <item>vectors_svg_animated11</item>
+    <item>vectors_end</item>
+    <item>vectors_questions</item>
+    <item>vectors_title</item>
+  </string-array>
+</resources>

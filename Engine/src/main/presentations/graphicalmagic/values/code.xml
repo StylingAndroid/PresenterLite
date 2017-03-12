@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gm_flatten_layout" formatted="false"><![CDATA[
+<RelativeLayout\n
+\tandroid:layout_width=\"match_parent\"\n
+\tandroid:layout_height=\"match_parent\">\n
+\n
+\t<ImageView\n
+\t\tandroid:layout_width=\"match_parent\"\n
+\t\tandroid:layout_height=\"wrap_content\"\n
+\t\tandroid:src=\"@drawable/broadstairs\"/>\n
+\n
+\t<TextView\n
+\t\tandroid:layout_width=\"wrap_content\"\n
+\t\tandroid:layout_height=\"wrap_content\"\n
+\t\tandroid:layout_centerInParent=\"true\"\n
+\t\tandroid:text=\"Graphical Magic\"\n
+\t\tandroid:background=\"#8F14A804\"\n
+\t\tandroid:textColor=\"#505050\"/>\n
+\n
+</RelativeLayout>\n
+]]></string>
+    <string name="gm_desaturate_layout" formatted="false"><![CDATA[
+<RelativeLayout\n
+\tandroid:layout_width=\"match_parent\"\n
+\tandroid:layout_height=\"match_parent\">\n
+\n
+\t<ImageView\n
+\t\tandroid:id=\"@+id/image\"\n
+\t\tandroid:layout_width=\"match_parent\"\n
+\t\tandroid:layout_height=\"wrap_content\"\n
+\t\tandroid:src=\"@drawable/broadstairs\"/>\n
+\n
+\t<TextView\n
+\t\tandroid:layout_width=\"wrap_content\"\n
+\t\tandroid:layout_height=\"wrap_content\"\n
+\t\tandroid:layout_alignTop=\"@id/image\"\n
+\t\tandroid:layout_marginTop=\"20dp\"\n
+\t\tandroid:text=\"Graphical Magic\"\n
+\t\tandroid:textColor=\"#000000\"/>\n
+</RelativeLayout>
+]]></string>
+ 	<string name="gm_flatten_code1" formatted="false"><![CDATA[
+private void flattenBackground(\n
+\t\t\t\tImageView imageView, \n
+\t\t\t\tView view) {\n\n
+\tBitmap currentBitmap = \n
+\t\t\t\timageView.getDrawable()\n
+\t\t\t\t.getBitmap();\n\n
+\tBitmap comboBitmap =\n
+\t\t\t\tBitmap.createBitmap(\n
+\t\t\t\t\t\tcurrentBitmap.getWidth(), \n
+\t\t\t\t\t\tcurrentBitmap.getHeight(), \n
+\t\t\t\t\t\tBitmap.Config.ARGB_8888);\n\n
+\tCanvas canvas = new Canvas(comboBitmap);\n\n
+\tcanvas.drawBitmap(current, \n
+\t\t\t\t\tnew Matrix(), null);
+]]></string>
+ 	<string name="gm_flatten_code2" formatted="false"><![CDATA[
+\tDrawable drawable = \n
+\t\t\t\tview.getBackground();\n\n
+\tview.setBackground(null);\n\n
+\tdrawable.setBounds(\n
+\t\t\t\tview.getLeft(), \n
+\t\t\t\tview.getTop(),\n
+\t\t\t\tview.getRight(), \n
+\t\t\t\tview.getBottom());\n\n
+\tdrawable.draw(canvas);\n\n
+\timageView.setImageBitmap(comboBitmap);\n
+}
+]]></string>
+  	<string name="gm_desaturate_code1" formatted="false"><![CDATA[
+private Bitmap desaturate(\n
+\t\t\t\tBitmap current, \n
+\t\t\t\tView view) {\n\n
+\t\tCanvas currentCanvas = \n
+\t\t\t\tnew Canvas(current);\n\n
+\t\tBitmap overlayBitmap =\n
+\t\t\t\tBitmap.createBitmap(\n
+\t\t\t\t\t\tview.getMeasuredWidth(),\n
+\t\t\t\t\t\tview.getMeasuredHeight(),\n
+\t\t\t\t\t\tBitmap.Config.ARGB_8888);\n\n
+\t\tCanvas overlayCanvas = \n
+\t\t\t\tnew Canvas(overlayBitmap);\n\n
+\t\toverlayCanvas.drawBitmap(current, \n
+\t\t\t\t-view.getLeft(), \n
+\t\t\t\t-view.getTop(), \n
+\t\t\t\tnull);\n\n
+]]></string>
+<string name="gm_desaturate_code2" formatted="false"><![CDATA[
+\t\tPaint paint = new Paint();\n\n
+\t\tColorMatrix matrix = \n
+\t\t\t\tnew ColorMatrix();\n\n
+\t\tmatrix.setSaturation(0.0f);\n\n
+\t\tpaint.setColorFilter(\n
+\t\t\t\tnew ColorMatrixColorFilter(matrix));\n\n
+\t\tcurrentCanvas.drawBitmap(\n
+\t\t\t\toverlayBitmap, \n
+\t\t\t\tview.getLeft(), \n
+\t\t\t\tview.getTop(), \n
+\t\t\t\tpaint);\n\n
+\t\toverlayBitmap.recycle();\n\n
+\t\treturn current;\n
+}
+]]></string>
+	<string name="gm_porterduff" formatted="false"><![CDATA[
+\tPaint paint = new Paint();\n\n
+paint.setXfermode(\n
+\t\t\t\tnew PorterDuffXferMode(PorterDuff.Mode.DST_ATOP);\n\n
+canvas.drawBitmap(bitmap, 0, 0, paint);
+]]></string>
+  	<string name="gm_shader_code1" formatted="false"><![CDATA[
+private void desaturateView(\n
+\t\t\t\tBitmap current, View view) {\n\n
+\t\tBitmap overlay = Bitmap.createBitmap(\n
+\t\t\t\tview.getMeasuredWidth(),\n
+\t\t\t\tview.getMeasuredHeight(),\n
+\t\t\t\tBitmap.Config.ARGB_8888);\n\n
+\t\tCanvas canvas = new Canvas(overlay);\n\n
+\t\tPaint paint = new Paint();\n\n
+\t\tColorMatrix matrix = \n
+\t\t\t\tnew ColorMatrix();\n\n
+\t\tmatrix.setSaturation(0.0f);\n\n
+\t\tpaint.setColorFilter(\n
+\t\t\t\tnew ColorMatrixColorFilter(matrix));\n\n
+]]></string>
+	<string name="gm_shader_code2" formatted="false"><![CDATA[
+\t\tcanvas.drawBitmap(current, \n
+\t\t\t\t-view.getLeft(), \n
+\t\t\t\t-view.getTop(), \n
+\t\t\t\tpaint);\n\n
+\t\tPaint viewPaint = view.getPaint();\n\n
+\t\tviewPaint.setShader(\n
+\t\t\t\tnew BitmapShader(overlay, \n
+\t\t\t\tShader.TileMode.CLAMP, \n
+\t\t\t\tShader.TileMode.CLAMP));\n
+}
+]]></string>
+    <string name="gm_rs_layout" formatted="false"><![CDATA[
+<RelativeLayout\n
+\tandroid:layout_width=\"match_parent\"\n
+\tandroid:layout_height=\"match_parent\">\n
+\n
+\t<ImageView\n
+\t\tandroid:layout_width=\"match_parent\"\n
+\t\tandroid:layout_height=\"wrap_content\"\n
+\t\tandroid:src=\"@drawable/broadstairs\"/>\n
+\n
+\t<TextView\n
+\t\tandroid:layout_width=\"wrap_content\"\n
+\t\tandroid:layout_height=\"wrap_content\"\n
+\t\tandroid:layout_centerInParent=\"true\"\n
+\t\tandroid:text=\"Graphical Magic\"\n
+\t\tandroid:textColor=\"#000000\"/>\n
+\n
+</RelativeLayout>\n
+]]></string>
+	<string name="gm_rs_code1" formatted="false"><![CDATA[
+private Bitmap blur(\n
+\t\tBitmap current, \n
+\t\tView view, float radius) {\n\n
+\t\tBitmap overlay = Bitmap.createBitmap(\n
+\t\t\t\tview.getMeasuredWidth() + 20,\n
+\t\t\t\tview.getMeasuredHeight(),\n
+\t\t\t\tBitmap.Config.ARGB_8888);\n\n
+\t\tRenderScript rs = RenderScript.\n
+\t\t\t\tcreate(getContext());\n\n
+\t\tAllocation currentAlloc = Allocation\n
+\t\t\t\t.createFromBitmap(rs, current);\n\n
+\t\tAllocation overlayAlloc = Allocation\n
+\t\t\t\t.createFromBitmap(rs, overlay);\n\n
+]]></string>
+	<string name="gm_rs_code2" formatted="false"><![CDATA[
+\t\toverlayAlloc.copy2DRangeFrom(0, 0, \n
+\t\t\t\toverlay.getWidth(), \n
+\t\t\t\toverlay.getHeight(), \n
+\t\t\t\tcurrentAlloc, view.getLeft() - 10, \n
+\t\t\t\tview.getTop());\n\n
+\t\tScriptIntrinsicBlur blur = \n
+\t\t\t\tScriptIntrinsicBlur.create(\n
+\t\t\t\t\t\trs, overlayAlloc.getElement());\n\n
+\t\tblur.setInput(overlayAlloc);\n\n
+\t\tblur.setRadius(radius);\n\n
+\t\tblur.forEach(overlayAlloc);\n\n
+]]></string>
+	<string name="gm_rs_code3" formatted="false"><![CDATA[
+\t\tcurrentAlloc.copy2DRangeFrom(\n
+\t\t\t\tview.getLeft(), \n
+\t\t\t\tview.getTop(), \n
+\t\t\t\tview.getMeasuredWidth(), \n
+\t\t\t\tview.getMeasuredHeight(), \n
+\t\t\t\toverlayAlloc, 10, 0);\n\n
+\t\tcurrentAlloc.copyTo(current);\n\n
+\t\trs.destroy();\n\n
+\t\toverlay.recycle();\n\n
+\t\treturn current;\n
+}
+]]></string>
+	<string name="gm_timing" formatted="false"><![CDATA[
+\n\n
+blur: begin\n
+blur:\t\t\t\t\t\t\t\t1 ms, Create Bitmap\n
+blur:\t\t\t\t\t\t\t\t5 ms, Create RenderScript\n
+blur:\t\t\t\t\t\t\t\t10 ms, Create Allocation in\n
+blur:\t\t\t\t\t\t\t\t3 ms, Create Allocation region\n
+blur:\t\t\t\t\t\t\t\t0 ms, copy2DRangeFrom\n
+blur:\t\t\t\t\t\t\t\t1 ms, Create blur\n
+blur:\t\t\t\t\t\t\t\t0 ms, set blur input\n
+blur:\t\t\t\t\t\t\t\t0 ms, set blur radius\n
+blur:\t\t\t\t\t\t\t\t31 ms, blur forEach\n
+blur:\t\t\t\t\t\t\t\t0 ms, copy2DRangeFrom\n
+blur:\t\t\t\t\t\t\t\t7 ms, copyTo\n
+blur:\t\t\t\t\t\t\t\t14 ms, Destroy RenderScript\n
+blur:\t\t\t\t\t\t\t\t0 ms, Recycle bitmap\n
+blur: end, 72 ms
+]]></string>
+    <string name="gm_minsdk_question" formatted="false"><![CDATA[
+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n
+<manifest \n
+\t\t\t\txmlns:android=\"...\"\n
+\t\t\t\tpackage=\"com.stylingandroid...\"\n
+\t\t\t\tandroid:versionCode=\"1\"\n
+\t\t\t\tandroid:versionName=\"1.0\">\n
+\n
+\t\t\t\t<uses-sdk android:minSdkVersion=\"?\" />\n\n
+</manifest>\n
+]]></string>
+    <string name="gm_minsdk_1" formatted="false"><![CDATA[
+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n
+<manifest \n
+\t\t\t\txmlns:android=\"...\"\n
+\t\t\t\tpackage=\"com.stylingandroid...\"\n
+\t\t\t\tandroid:versionCode=\"1\"\n
+\t\t\t\tandroid:versionName=\"1.0\">\n
+\n
+\t\t\t\t<uses-sdk android:minSdkVersion=\"1\" />\n\n
+</manifest>\n
+]]></string>
+  <string name="gm_shapes_code1" formatted="false"><![CDATA[
+private Bitmap heart(Bitmap current) {\n
+\t\t\t\tfloat width = current.getWidth();\n
+\t\t\t\tfloat height = current.getHeight();\n\n
+\t\t\t\tBitmap bitmap = \n
+\t\t\t\t\t\tBitmap.createBitmap(\n
+\t\t\t\t\t\t\t\t(int)width, (int)height, \n
+\t\t\t\t\t\t\t\tBitmap.Config.ARGB_8888);\n\n
+\t\t\t\tBitmapShader shader = \n
+\t\t\t\t\t\t\t\tnew BitmapShader(current, \n
+\t\t\t\t\t\t\t\t\t\t\t\tBitmapShader.TileMode.CLAMP,\n
+\t\t\t\t\t\t\t\t\t\t\t\tBitmapShader.TileMode.CLAMP);\n\n
+\t\t\t\tCanvas canvas = new Canvas(bitmap);\n
+\t\t\t\tPaint paint = new Paint();\n
+\t\t\t\tpaint.setAntiAlias(true);\n
+\t\t\t\tpaint.setShader(shader);
+]]></string>
+  <string name="gm_shapes_code2" formatted="false"><![CDATA[
+\n\t\t\t\t\tPath path = new Path();\n\n
+\t\t\t\tRectF ovalRect = new RectF(\n
+\t\t\t\t\t\t\t\twidth / 8, 0, \n
+\t\t\t\t\t\t\t\twidth - (width / 8), height);\n\n
+\t\t\t\tpath.addOval(ovalRect, \n
+\t\t\t\t\t\t\t\tPath.Direction.CW);\n
+]]></string>
+  <string name="gm_shapes_code3" formatted="false"><![CDATA[
+\n\t\t\t\t Matrix matrix = new Matrix();\n\n
+\t\t\t\tmatrix.postRotate(30, \n
+\t\t\t\t\t\t\t\twidth / 2, height / 2);\n\n
+\t\t\t\tpath.transform(matrix, path);
+]]></string>
+  <string name="gm_shapes_code4" formatted="false"><![CDATA[
+\n\t\t\t\t Region region = new Region();\n\n
+\t\t\t\tregion.setPath(path, \n
+\t\t\t\t\t\t\t\tnew Region((int) width / 2, 0, \n
+\t\t\t\t\t\t\t\t\t\t\t\t(int) width, (int) height));\n\n
+\t\t\t\tcanvas.drawPath(\n
+\t\t\t\t\t\t\t\tregion.getBoundaryPath(), paint);\n
+]]></string>
+  <string name="gm_shapes_code5" formatted="false"><![CDATA[
+\n\t\t\t\t matrix.reset();\n
+\t\t\t\tpath.reset();\n\n
+\t\t\t\tpath.addOval(ovalRect, \n
+\t\t\t\t\t\t\t\tPath.Direction.CW);\n\n
+\t\t\t\tmatrix.postRotate(-30, \n
+\t\t\t\t\t\t\t\twidth / 2, height / 2);\n\n
+\t\t\t\tpath.transform(matrix, path);\n\n
+\t\t\t\tregion.setPath(path, \n
+\t\t\t\t\t\t\t\tnew Region(0, 0, \n
+\t\t\t\t\t\t\t\t\t\t\t\t(int) width / 2, \n
+\t\t\t\t\t\t\t\t\t\t\t\t(int) height));\n\n
+\t\t\t\tcanvas.drawPath(\n
+\t\t\t\t\t\t\t\tregion.getBoundaryPath(), paint);\n\n
+\t\t\t\treturn bitmap;\n
+}
+]]></string>
+</resources>

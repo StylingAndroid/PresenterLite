@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.stylingandroid.presenter.engine.presentation.SlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:sap="http://schemas.android.com/apk/res-auto"
+  android:id="@id/slide"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:layout_gravity="center"
+  android:gravity="center"
+  android:orientation="vertical">
+
+  <TextView
+    style="@style/Widget.TextView.Large"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="View Animation" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    style="@style/Widget.TextView.Medium"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    sap:highlightTextAppearance="@style/Widget.TextView.Medium.Code"
+    android:text="Engine calls getTransformation()"
+    sap:pattern="(getTransformation.*)"
+    sap:showPhase="1" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    style="@style/Widget.TextView.Medium"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    sap:highlightTextAppearance="@style/Widget.TextView.Medium.Code"
+    android:text="That calls applyTransformation()"
+    sap:pattern="(applyTransformation.*)"
+    sap:showPhase="2" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    style="@style/Widget.TextView.Medium"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    sap:highlightTextAppearance="@style/Widget.TextView.Medium.Code"
+    android:text="That calls onDraw() with Matrix"
+    sap:pattern="(onDraw.*\s)"
+    sap:showPhase="3" />
+
+</com.stylingandroid.presenter.engine.presentation.SlideLayout>

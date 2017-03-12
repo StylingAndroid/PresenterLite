@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string-array name="presentations">
+    <item>move</item>
+    <item>vectors</item>
+    <item>graphicalmagic</item>
+    <item>animations</item>
+    <item>layouts</item>
+  </string-array>
+
+  <string-array name="events">
+    <item>ChicagoRoboto</item>
+    <item>Appdevcon</item>
+    <item>GDGBucuresti</item>
+    <item>Mobiconf</item>
+    <item>DroidConLondon2015</item>
+    <item>DroidConNYC2015</item>
+    <item>DroidConItalia2014</item>
+    <item>WipMwc2014</item>
+    <item>ADD2014</item>
+    <item>DroidconSe</item>
+    <item>DroidconUk</item>
+  </string-array>
+
+  <string-array name="theme_names">
+    <item>Styling Android</item>
+  </string-array>
+
+  <string-array name="theme_layouts">
+    <item>display</item>
+  </string-array>
+</resources>

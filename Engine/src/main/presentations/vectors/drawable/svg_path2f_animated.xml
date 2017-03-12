@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+  android:drawable="@drawable/svg_path2f">
+
+  <target
+    android:animation="@animator/svg_path2f"
+    android:name="highlight" />
+
+</animated-vector>

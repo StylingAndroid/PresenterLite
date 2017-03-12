@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:sap="http://schemas.android.com/apk/res-auto"
+  android:id="@+id/transition_graphics"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <TextView
+    android:id="@+id/title"
+    style="@style/Widget.TextView.Large"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="50dp"
+    android:gravity="center"
+    android:text="AnimatedVectorDrawable" />
+
+  <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/title"
+    android:layout_centerHorizontal="true">
+
+    <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:contentDescription="@null"
+      android:src="@drawable/svg_animated7_animated"
+      sap:synchronised="true" />
+  </FrameLayout>
+
+</RelativeLayout>

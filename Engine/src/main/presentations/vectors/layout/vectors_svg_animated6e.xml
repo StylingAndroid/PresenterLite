@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/transition_graphics"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <TextView
+    android:id="@+id/title"
+    style="@style/Widget.TextView.Large"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="50dp"
+    android:gravity="center"
+    android:text="AnimatedVectorDrawable" />
+
+  <LinearLayout
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/title"
+    android:baselineAligned="false"
+    android:orientation="horizontal">
+
+    <FrameLayout
+      android:id="@+id/code_container"
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_weight="1">
+
+      <RelativeLayout
+        android:id="@+id/code_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+          android:id="@+id/vectors_animation_triangle_from_1"
+          style="@style/Widget.TextView.Small.Code"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentTop="true"
+          android:layout_marginStart="48dip"
+          android:text="@string/vectors_animation_triangle_from_1" />
+
+        <TextView
+          android:id="@+id/vectors_animation_triangle_from_2"
+          style="@style/Widget.TextView.Small.Code"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/vectors_animation_triangle_from_1"
+          android:layout_alignStart="@id/vectors_animation_triangle_from_1"
+          android:text="@string/vectors_animation_triangle_from_2" />
+
+        <TextView
+          android:id="@+id/vectors_animation_triangle_from_3"
+          style="@style/Widget.TextView.Small.Code"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/vectors_animation_triangle_from_2"
+          android:layout_alignStart="@id/vectors_animation_triangle_from_2"
+          android:text="@string/vectors_animation_triangle_from_3" />
+
+        <TextView
+          android:id="@+id/vectors_animation_triangle_from_4"
+          style="@style/Widget.TextView.Small.Code"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/vectors_animation_triangle_from_3"
+          android:layout_alignStart="@id/vectors_animation_triangle_from_3"
+          android:text="@string/vectors_animation_triangle_from_4" />
+
+        <TextView
+          android:id="@+id/vectors_animation_triangle_from_5"
+          style="@style/Widget.TextView.Small.Code"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/vectors_animation_triangle_from_4"
+          android:layout_alignStart="@id/vectors_animation_triangle_from_4"
+          android:text="@string/vectors_animation_triangle_from_5" />
+
+        <TextView
+          android:id="@+id/vectors_animation_triangle_to_1"
+          style="@style/Widget.TextView.Small.Code"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBaseline="@id/vectors_animation_triangle_to"
+          android:layout_marginStart="48dip"
+          android:layout_toEndOf="@id/vectors_animation_triangle_from_1"
+          android:text="@string/vectors_animation_triangle_to_1" />
+
+        <TextView
+          android:id="@+id/vectors_animation_triangle_to_2"
+          style="@style/Widget.TextView.Small.Code"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/vectors_animation_triangle_to_1"
+          android:layout_alignStart="@id/vectors_animation_triangle_to_1"
+          android:text="@string/vectors_animation_triangle_to_2" />
+
+        <TextView
+          android:id="@+id/vectors_animation_triangle_to_3"
+          style="@style/Widget.TextView.Small.Code"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/vectors_animation_triangle_to_2"
+          android:layout_alignStart="@id/vectors_animation_triangle_to_2"
+          android:text="@string/vectors_animation_triangle_to_3" />
+
+        <TextView
+          android:id="@+id/vectors_animation_triangle_to_4"
+          style="@style/Widget.TextView.Small.Code"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/vectors_animation_triangle_to_3"
+          android:layout_alignStart="@id/vectors_animation_triangle_to_3"
+          android:text="@string/vectors_animation_triangle_to_4" />
+
+        <TextView
+          android:id="@+id/vectors_animation_triangle_to_5"
+          style="@style/Widget.TextView.Small.Code"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/vectors_animation_triangle_to_4"
+          android:layout_alignStart="@id/vectors_animation_triangle_to_4"
+          android:text="@string/vectors_animation_triangle_to_5" />
+
+      </RelativeLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_weight="1">
+
+      <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        android:src="@drawable/svg_animated6e"
+        android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+  </LinearLayout>
+
+</RelativeLayout>

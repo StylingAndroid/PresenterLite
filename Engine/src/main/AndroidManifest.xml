@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.stylingandroid.presenter"
+  android:versionCode="1"
+  android:versionName="1.0">
+
+  <uses-permission android:name="com.stylingandroid.presenter.display.SERVICE" />
+  <uses-permission android:name="com.stylingandroid.presenter.engine.controller.SERVICE" />
+
+</manifest>

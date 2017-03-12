@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:sap="http://schemas.android.com/apk/res-auto"
+  android:id="@+id/transition_graphics"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <TextView
+    android:id="@+id/title"
+    style="@style/Widget.TextView.Large"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="50dp"
+    android:gravity="center"
+    android:text="VectorDrawable" />
+
+  <LinearLayout
+    android:id="@+id/body"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/title"
+    android:layout_marginBottom="@dimen/vectors_margin_bottom"
+    android:orientation="horizontal">
+
+    <FrameLayout
+      android:id="@+id/code_container"
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:foregroundGravity="center_vertical">
+
+      <RelativeLayout
+        android:id="@+id/code_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+          android:id="@+id/clip_line1"
+          style="@style/Widget.TextView.Small.Code"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentTop="true"
+          android:gravity="center_vertical"
+          android:text="@string/vectors_clip" />
+
+        <TextView
+          android:id="@+id/group_line"
+          style="@style/Widget.TextView.Small.Code"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/clip_line1"
+          android:gravity="center_vertical"
+          android:text="@string/vectors_group_line" />
+
+        <TextView
+          android:id="@+id/path"
+          style="@style/Widget.TextView.Small.Code"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/group_line"
+          android:gravity="center_vertical"
+          android:text="@string/vectors_svg_path_path_truncated" />
+
+        <TextView
+          android:id="@+id/suffix"
+          style="@style/Widget.TextView.Small.Code"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_toEndOf="@id/path"
+          android:layout_alignBaseline="@id/path"
+          android:gravity="center_vertical"
+          android:text="@string/vectors_close_suffix" />
+
+      </RelativeLayout>
+
+    </FrameLayout>
+
+
+    <FrameLayout
+      android:id="@+id/svg_path_image_container"
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_gravity="center"
+      android:layout_weight="1">
+
+      <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+        android:id="@+id/svg_path_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:contentDescription="@null"
+        android:src="@drawable/svg_path3k_animated"
+        sap:synchronised="true" />
+
+    </FrameLayout>
+
+  </LinearLayout>
+
+</RelativeLayout>

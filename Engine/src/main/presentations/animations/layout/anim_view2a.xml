@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.stylingandroid.presenter.engine.presentation.SlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:sap="http://schemas.android.com/apk/res-auto"
+  android:id="@id/slide"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:layout_gravity="center"
+  android:gravity="center"
+  android:orientation="vertical"
+  android:clipChildren="false">
+
+  <TextView
+    style="@style/Widget.TextView.Large"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="View Animation" />
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:clipChildren="false">
+
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_weight="1"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <FrameLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+
+        <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+          style="@style/Widget.TextView.Small.Code"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/view_translate_a"
+          sap:highlightTextAppearance="@style/Widget.TextView.Small.Code.Highlight"
+          sap:pattern="(android:interpolator=.*)"
+          sap:showAnimation="@anim/fadein"
+          sap:hideAnimation="@anim/fadeout"
+          sap:hidePhase="1" />
+
+        <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+          style="@style/Widget.TextView.Small.Code"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/view_translate_b"
+          sap:highlightTextAppearance="@style/Widget.TextView.Small.Code.Highlight"
+          sap:pattern="(android:interpolator=.*)"
+          sap:showAnimation="@anim/fadein"
+          sap:hideAnimation="@anim/fadeout"
+          sap:showPhase="1" />
+      </FrameLayout>
+    </LinearLayout>
+
+    <FrameLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:layout_gravity="bottom"
+      android:clipChildren="false">
+
+      <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:src="@drawable/sa"
+        sap:showPhase="0"
+        sap:gonePhase="2" />
+
+      <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:src="@drawable/sa"
+        sap:anim="@anim/view1b"
+        android:visibility="gone"
+        sap:showPhase="2" />
+    </FrameLayout>
+
+  </LinearLayout>
+
+</com.stylingandroid.presenter.engine.presentation.SlideLayout>

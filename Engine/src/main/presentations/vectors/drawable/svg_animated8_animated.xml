@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+  android:drawable="@drawable/svg_animated8">
+
+  <target
+    android:name="shape"
+    android:animation="@animator/svg_animated7" />
+
+  <target
+    android:name="fill"
+    android:animation="@animator/svg_animated7" />
+
+  <target
+    android:name="clip"
+    android:animation="@animator/svg_animated8a" />
+
+  <target
+    android:name="fill_container"
+    android:animation="@animator/svg_animated4" />
+
+  <target
+    android:name="stroke_container"
+    android:animation="@animator/svg_animated4" />
+
+</animated-vector>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+  android:insetBottom="@dimen/bullet_inset"
+  android:insetLeft="@dimen/bullet_inset"
+  android:insetRight="@dimen/bullet_inset"
+  android:insetTop="@dimen/bullet_inset">
+  <shape android:shape="oval">
+
+    <solid android:color="@color/SAgreen" />
+
+    <size
+      android:width="@dimen/bullet_height"
+      android:height="@dimen/bullet_height" />
+
+  </shape>
+</inset>

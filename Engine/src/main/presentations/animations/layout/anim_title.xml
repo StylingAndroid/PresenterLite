@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stylingandroid.presenter.engine.presentation.SlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:sap="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@id/slide"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:layout_gravity="center"
+  android:gravity="center"
+  android:orientation="vertical"
+  sap:notes="@string/notes_title"
+  tools:context=".display.DisplayActivity">
+
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+      style="@style/Widget.TextView.Large"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Android " />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+      style="@style/Widget.TextView.Large"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Animation"
+      sap:gonePhase="1" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+      style="@style/Widget.TextView.Large"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="A"
+      sap:showAnimation="@anim/text1"
+      sap:showPhase="1" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+      style="@style/Widget.TextView.Large"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="n"
+      sap:showAnimation="@anim/text2"
+      sap:showPhase="1" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+      style="@style/Widget.TextView.Large"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="i"
+      sap:showAnimation="@anim/text3"
+      sap:showPhase="1" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+      style="@style/Widget.TextView.Large"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="m"
+      sap:showAnimation="@anim/text4"
+      sap:showPhase="1" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+      style="@style/Widget.TextView.Large"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="a"
+      sap:showAnimation="@anim/text5"
+      sap:showPhase="1" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+      style="@style/Widget.TextView.Large"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="t"
+      sap:showAnimation="@anim/text6"
+      sap:showPhase="1" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+      style="@style/Widget.TextView.Large"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="i"
+      sap:showAnimation="@anim/text7"
+      sap:showPhase="1" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+      style="@style/Widget.TextView.Large"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="o"
+      sap:showAnimation="@anim/text8"
+      sap:showPhase="1" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+      style="@style/Widget.TextView.Large"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="n"
+      sap:showAnimation="@anim/text9"
+      sap:showPhase="1" />
+  </LinearLayout>
+
+  <TextView
+    style="@style/Widget.TextView.Medium"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Mark Allison" />
+
+  <TextView
+    style="@style/Widget.TextView.Medium"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="http://blog.stylingandroid.com" />
+
+  <TextView
+    style="@style/Widget.TextView.Medium"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="DroidCon London 25th October 2013" />
+
+  <FrameLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+      style="@style/Widget.TextView.Medium"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:paddingTop="@dimen/spacing"
+      android:text="Twitter: MarkIAllison"
+      sap:gonePhase="2"
+      sap:hideAnimation="@anim/fadeout"
+      sap:highlightTextAppearance="@style/Widget.TextView.Medium.Highlight" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+      style="@style/Widget.TextView.Medium"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:paddingTop="@dimen/spacing"
+      android:text="Twitter: MarkIAllison"
+      sap:highlightTextAppearance="@style/Widget.TextView.Medium.Highlight"
+      sap:pattern="(MarkIAllison)"
+      sap:showAnimation="@anim/fadein"
+      sap:showPhase="2" />
+  </FrameLayout>
+
+  <TextView
+    style="@style/Widget.TextView.Medium"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="G+: http://blog.stylingandroid.com/plus" />
+
+  <LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="horizontal">
+
+  </LinearLayout>
+
+
+</com.stylingandroid.presenter.engine.presentation.SlideLayout>

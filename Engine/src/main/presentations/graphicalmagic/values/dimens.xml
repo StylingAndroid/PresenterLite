@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <dimen name="bullet_height">24dp</dimen>
+  <dimen name="bullet_inset">4dp</dimen>
+
+  <dimen name="image_height">300dp</dimen>
+  <dimen name="text_margin">90dp</dimen>
+
+  <dimen name="allison_image_height">304dp</dimen>
+  <dimen name="allison_image_width">453dp</dimen>
+
+
+  <dimen name="porter_duff_image_size">64dp</dimen>
+  <dimen name="porter_duff_padding">30dp</dimen>
+  <dimen name="porter_duff_outer_padding">20dp</dimen>
+  <dimen name="porter_duff_inner_padding">10dp</dimen>
+</resources>

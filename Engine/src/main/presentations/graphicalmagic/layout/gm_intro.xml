@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stylingandroid.presenter.engine.presentation.SlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:sap="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@id/slide"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:layout_gravity="center"
+  android:gravity="left|center_vertical"
+  android:orientation="vertical"
+  sap:tweet="@string/gm_tweet_title"
+  tools:context=".display.DisplayActivity">
+
+
+  <TextView
+    style="@style/Widget.TextView.Large"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="What is Graphical Magic?" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    style="@style/Widget.TextView.Medium"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    sap:bulletDrawable="@drawable/bullet"
+    sap:showPhase="1"
+    sap:showAnimation="@anim/fadein"
+    android:text="Dicking around with images" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    style="@style/Widget.TextView.Medium"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    sap:bulletDrawable="@drawable/bullet"
+    sap:showPhase="2"
+    sap:showAnimation="@anim/fadein"
+    android:text="Photoshop-like image manipluation programmatically" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    style="@style/Widget.TextView.Medium"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    sap:bulletDrawable="@drawable/bullet"
+    sap:showPhase="3"
+    sap:showAnimation="@anim/fadein"
+    android:text="Flattening and merging graphical elements." />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    style="@style/Widget.TextView.Medium"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    sap:bulletDrawable="@drawable/bullet"
+    sap:showPhase="4"
+    sap:showAnimation="@anim/fadein"
+    android:text="Applying filters and effects." />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    style="@style/Widget.TextView.Medium"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    sap:bulletDrawable="@drawable/bullet"
+    sap:showPhase="5"
+    sap:showAnimation="@anim/fadein"
+    android:text="Great fun!" />
+
+</com.stylingandroid.presenter.engine.presentation.SlideLayout>

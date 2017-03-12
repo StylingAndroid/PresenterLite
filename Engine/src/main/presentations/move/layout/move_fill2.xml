@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stylingandroid.presenter.engine.presentation.ConstraintSlideLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  app:nextInAnimation="@anim/fadein"
+  app:nextOutAnimation="@anim/fadeout">
+
+  <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/move_fill_rectangle2a"
+    app:synchronised="true"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:hidePhase="1"
+    app:hideAnimation="@anim/fadeout"/>
+
+  <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/move_fill_rectangle2b"
+    app:synchronised="true"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:showPhase="1"
+    app:hidePhase="2"
+    app:showAnimation="@anim/fadein"/>
+
+  <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/move_fill_rectangle2c"
+    app:synchronised="true"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:showPhase="2"/>
+
+</com.stylingandroid.presenter.engine.presentation.ConstraintSlideLayout>

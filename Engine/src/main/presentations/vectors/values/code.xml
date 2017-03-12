@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="vectors_svg_path">M100,100\nl100,0\nl0,100\nl-100,0\nz</string>
+  <string name="vectors_svg_path_1">M100,100</string>
+  <string name="vectors_svg_path_2">l100,0</string>
+  <string name="vectors_svg_path_3">l0,100</string>
+  <string name="vectors_svg_path_4">l-100,0</string>
+  <string name="vectors_svg_path_5">z</string>
+  <string name="vectors_svg_path_pathData">M100,100 l100,0 l0,100 l-100,0 z</string>
+  <string name="vectors_svg_path_pathData_short">…</string>
+  <string name="vectors_svg_path_path">\t\t\t\t&lt;path\n\t\t\t\t\t\t\t\tandroid:strokeColor=\"@android:color/white\"\n\t\t\t\t\t\t\t\tandroid:strokeWidth=\"5\"</string>
+  <string name="vectors_svg_path_path_short">\t\t\t\t&lt;path\n\t\t\t\t\t\t\t\tandroid:strokeColor=\"…\"\n\t\t\t\t\t\t\t\tandroid:strokeWidth=\"5\"</string>
+  <string name="vectors_svg_path_path_truncated">\t\t\t\t&lt;path …</string>
+  <string name="vectors_svg_path_path_fill">\t\t\t\t\t\t\t\tandroid:fillColor=\"…\"</string>
+  <string name="vectors_svg_path_pathData_prefix">\t\t\t\t\t\t\t\tandroid:pathData=\"</string>
+  <string name="vectors_svg_path_pathData_suffix">\" /&gt;</string>
+  <string name="vectors_close_suffix">\t/&gt;</string>
+  <string name="vectors_vector_prefix">&lt;?xml version=\"1.0\" encoding=\"utf-8\"?&gt;\n&lt;vector\n\t\t\t\txmlns:android=\"http://schemas.android.com/apk/res/android\"\n\t\t\t\tandroid:viewportWidth=\"300\"\n\t\t\t\tandroid:viewportHeight=\"300\"\n\t\t\t\tandroid:width=\"300dp\"\n\t\t\t\tandroid:height=\"300dp\"&gt;\n</string>
+  <string name="vectors_vector_suffix">\n&lt;/vector&gt;</string>
+  <string name="vectors_group_prefix1">&lt;group</string>
+  <string name="vectors_group_prefix2">\t\t\t\tandroid:name=\"square\"</string>
+  <string name="vectors_group_close_tag">&gt;</string>
+  <string name="vectors_group_rotate1">\t\t\t\tandroid:pivotX=\"150\"</string>
+  <string name="vectors_group_rotate2">\t\t\t\tandroid:pivotY=\"150\"</string>
+  <string name="vectors_group_rotate3">\t\t\t\tandroid:rotation=\"45\"</string>
+  <string name="vectors_group_suffix">\n&lt;/group&gt;</string>
+  <string name="vectors_group_line">\t</string>
+  <string name="vectors_clip">\t\t\t\t&lt;clip-path\n\t\t\t\t\t\t\t\tpathData=\"…\" /&gt;</string>
+  <string name="vectors_full_square">&lt;vector\n\t\t\t\txmlns:android=\"…\"\n\t\t\t\tandroid:viewportWidth=\"300\"\n\t\t\t\tandroid:viewportHeight=\"300\"\n\t\t\t\tandroid:width=\"300dp\"\n\t\t\t\tandroid:height=\"300dp\"&gt;\n\n\t\t\t\t&lt;path\n\t\t\t\t\t\t\t\tandroid:name=\"square\"\n\t\t\t\t\t\t\t\tandroid:fillColor=\"…\"\n\t\t\t\t\t\t\t\tandroid:pathData=\"…" /&gt;\n\n&lt;/vector&gt;</string>
+  <string name="vectors_animated_vector_square">&lt;animated-vector\n\t\t\t\txmlns:android=\"…\"\n\t\t\t\tandroid:drawable=\"@drawable/vector_square\"&gt;\n\n\t\t\t\t&lt;target\n\t\t\t\t\t\t\t\tandroid:animation=\"@animator/fill_alpha\"\n\t\t\t\t\t\t\t\tandroid:name=\"square\" /&gt;\n\n&lt;/animated-vector&gt;</string>
+  <string name="vectors_animation_square">&lt;objectAnimator\n\t\t\t\txmlns:android=\"…\"\n\t\t\t\tandroid:duration=\"1000\"\n\t\t\t\tandroid:propertyName=\"fillAlpha\"\n\t\t\t\tandroid:repeatCount=\"0\"\n\t\t\t\tandroid:repeatMode=\"restart\"\n\t\t\t\tandroid:valueFrom=\"1.0\"\n\t\t\t\tandroid:valueTo=\"0.0\"\n\t\t\t\tandroid:valueType=\"floatType\" /&gt;</string>
+  <string name="vectors_java_square">ImageView image = (ImageView) findViewById(…);\n\nDrawable drawable = imageView.getDrawable();\n\nif (drawable instanceof AnimatedVectorDrawable {\n\t\t\t\t((AnimatedVectorDrawable)drawable).start();\n}</string>
+  <string name="vectors_java_square_prefix">ImageView image = (ImageView) findViewById(…);\n\nDrawable drawable = imageView.getDrawable();\n\nif (drawable instanceof AnimatedVectorDrawable {\n\t\t\t\t((AnimatedVectorDrawable)drawable)</string>
+  <string name="vectors_java_square_prefix1">ImageView image = (ImageView) findViewById(…);\n\nDrawable drawable = imageView.getDrawable();\n\nif (drawable instanceof AnimatedVectorDrawable {</string>
+  <string name="vectors_java_square_prefix2">\t\t\t\t((AnimatedVectorDrawable)drawable)</string>
+  <string name="vectors_java_square_start">.start()</string>
+  <string name="vectors_java_square_suffix1">;</string>
+  <string name="vectors_java_square_suffix2">}</string>
+  <string name="vectors_full_rotation">&lt;vector\n\t\t\t\txmlns:android=\"…\"\n\t\t\t\tandroid:width=\"300dp\"\n\t\t\t\tandroid:height=\"300dp\"\n\t\t\t\tandroid:viewportHeight=\"300\"\n\t\t\t\tandroid:viewportWidth=\"300\"&gt;\n\n\t\t\t\t&lt;group\n\t\t\t\t\t\t\t\tandroid:name=\"sq_group\"\n\t\t\t\t\t\t\t\tandroid:pivotX=\"150\"\n\t\t\t\t\t\t\t\tandroid:pivotY=\"150\"&gt;\n\n\t\t\t\t&lt;path … /&gt;\n\n\t\t\t\t&lt;/group&gt;\n&lt;/vector&gt;</string>
+  <string name="vectors_animated_vector_rotation">&lt;animated-vector\n\t\t\t\txmlns:android=\"…\"\n\t\t\t\tandroid:drawable=\"@drawable/svg_animated4\"&gt;\n\n\t\t\t\t&lt;target\n\t\t\t\t\t\t\t\tandroid:animation=\"@animator/svg_animated4\"\n\t\t\t\t\t\t\t\tandroid:name=\"sq_group\" /&gt;\n\n&lt;/animated-vector&gt;</string>
+  <string name="vectors_animation_rotation">&lt;objectAnimator\n\t\t\t\txmlns:android=\"…\"\n\t\t\t\tandroid:duration=\"1000\"\n\t\t\t\tandroid:propertyName=\"rotation\"\n\t\t\t\tandroid:repeatCount="infinite\"\n\t\t\t\tandroid:repeatMode=\"restart\"\n\t\t\t\tandroid:valueFrom=\"0\"\n\t\t\t\tandroid:valueTo=\"360\"\n\t\t\t\tandroid:valueType=\"intType\" /&gt;</string>
+  <string name="vectors_full_spiral">&lt;vector xmlns:android=\"…\"\n\t\t\t\tandroid:viewportHeight=\"800\"\n\t\t\t\tandroid:viewportWidth=\"800\"\n\t\t\t\tandroid:width=\"300dp\"\n\t\t\t\tandroid:height=\"300dp\"&gt;\n\n\t\t\t\t&lt;path\n\t\t\t\t\t\t\t\tandroid:name=\"shape\"\n\t\t\t\t\t\t\t\tandroid:pathData=\"…\"\n\t\t\t\t\t\t\t\tandroid:strokeColor=\"…\"\n\t\t\t\t\t\t\t\tandroid:strokeWidth=\"3\" /&gt;\n\n\t\t\t\t&lt;/vector&gt;</string>
+  <string name="vectors_animated_vector_spiral">&lt;animated-vector xmlns:android=\"…\"\n\t\t\t\tandroid:drawable=\"@drawable/spiral\"&gt;\n\n\t\t\t\t&lt;target\n\t\t\t\t\t\t\t\tandroid:name=\"shape\"\n\t\t\t\t\t\t\t\tandroid:animation=\"@animator/trim\" /&gt;\n\n&lt;/animated-vector&gt;</string>
+  <string name="vectors_animation_spiral">&lt;objectAnimator\n\t\t\t\txmlns:android=\"…\"\n\t\t\t\tandroid:duration=\"2000\"\n\t\t\t\tandroid:repeatCount=\"infinite\"\n\t\t\t\tandroid:repeatMode=\"reverse\"\n\t\t\t\tandroid:valueFrom=\"0.0\"\n\t\t\t\tandroid:valueTo=\"1.0\"\n\t\t\t\tandroid:propertyName=\"trimPathEnd\"\n\t\t\t\tandroid:valueType=\"floatType\" /&gt;</string>
+  <string name="vectors_animation_triangle_prefix">&lt;objectAnimator\n\t\t\t\txmlns:android=\"…\"\n\t\t\t\tandroid:duration=\"2000\"\n\t\t\t\tandroid:propertyName=\"pathData\"\n\t\t\t\tandroid:repeatCount=\"infinite\"\n\t\t\t\tandroid:repeatMode=\"reverse\"</string>
+  <string name="vectors_animation_triangle_from">\t\t\t\tandroid:valueFrom=\"</string>
+  <string name="vectors_animation_triangle_from_1">M100,100</string>
+  <string name="vectors_animation_triangle_from_2">l100,0</string>
+  <string name="vectors_animation_triangle_from_3">l0,100</string>
+  <string name="vectors_animation_triangle_from_4">l-100,0</string>
+  <string name="vectors_animation_triangle_from_5">z</string>
+  <string name="vectors_animation_triangle_from_complete">M100,100\nl100,0\nl0,100\nl-100,0\nz</string>
+  <string name="vectors_animation_triangle_to">\t\t\t\tandroid:valueTo=\"</string>
+  <string name="vectors_animation_triangle_to_1">M100,100</string>
+  <string name="vectors_animation_triangle_to_2">l100,0</string>
+  <string name="vectors_animation_triangle_to_3">l-50,100</string>
+  <string name="vectors_animation_triangle_to_4">l0,0</string>
+  <string name="vectors_animation_triangle_to_5">z</string>
+  <string name="vectors_animation_triangle_to_complete">M100,100\nl100,0\nl-50,100\nl0,0\nz</string>
+  <string name="vectors_animation_triangle_end_line">\"</string>
+  <string name="vectors_animation_triangle_suffix">\t\t\t\tandroid:valueType=\"pathType\" /&gt;</string>
+</resources>

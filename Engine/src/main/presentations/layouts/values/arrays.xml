@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string-array name="layouts">
+    <item>layouts_title</item>
+    <item>layouts_outline</item>
+    <item>layouts_framelayout</item>
+    <item>layouts_linearlayout</item>
+    <item>layouts_relativelayout</item>
+    <item>layouts_tablelayout</item>
+    <item>layouts_gridlayout1</item>
+    <item>layouts_gridlayout2a</item>
+    <item>layouts_gridlayout2b</item>
+    <item>layouts_gridlayout2c</item>
+    <item>layouts_gridlayout2d</item>
+    <item>layouts_gridlayout2e</item>
+    <item>layouts_gridlayout2f</item>
+    <item>layouts_gridlayout2g</item>
+    <item>layouts_attack1a</item>
+    <item>layouts_attack2a</item>
+    <item>layouts_attack2b</item>
+    <item>layouts_attack2c</item>
+    <item>layouts_attack2d</item>
+    <item>layouts_attack3a</item>
+    <item>layouts_attack3b</item>
+    <item>layouts_attack3c</item>
+    <item>layouts_attack3d</item>
+    <item>layouts_attack4a</item>
+    <item>layouts_attack4b</item>
+    <item>layouts_attack4c</item>
+    <item>layouts_attack4d</item>
+    <item>layouts_attack5a</item>
+    <item>layouts_attack5b</item>
+    <item>layouts_questions</item>
+    <item>layouts_end</item>
+  </string-array>
+</resources>

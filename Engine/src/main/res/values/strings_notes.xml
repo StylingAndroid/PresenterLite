@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="notes_title">stylingandroid.com|novoda|Live tweets</string>
+  <string name="notes_important">Why am I rattling on for an hour?|Resource Management|Scalable apps</string>
+  <string name="notes_framelayout">simple but useful|FragmentTransaction</string>
+  <string name="notes_linearlayout">Most common</string>
+  <string name="notes_relativelayout">Useful for complex layouts</string>
+  <string name="notes_tablelayout">Column alignment|HTML Table overuse|When to use is clearer in Android|TableRow is still nesting|Row spanning possible with further nesting</string>
+  <string name="notes_gridlayout">Only ICS|Diane Hackborn|Gravity fill|Only single row / cell will expand|Flow from LinearLayout|Column alignment from TableLayout</string>
+  <string name="notes_hgridlayout">Row / column counts|Orientation - default horizontal|Start top left - can be changed|Can omit row count</string>
+  <string name="notes_vgridlayout">Can omit column count</string>
+  <string name="notes_gridlayout_spans">Row spans traditional expensive because of nesting</string>
+  <string name="notes_gridlayout_pos">Enables changing of top left start position</string>
+  <string name="notes_casestudy1">Google Reader for Honeycomb|Two panes</string>
+  <string name="notes_casestudy1b">TextView for clarity|Layout should work|Weights and [fill|match]_parent|ListView doesn\'t like wrap_content|Keep layout_[width|height] consistent when using weights|Switch both to match_parent|Switch weights</string>
+  <string name="notes_casestudy2">Why aren\'t the widths equal?|wrap_content measures children and divides remaining space|Setting 0 widths divides space equally</string>
+  <string name="notes_layouttips">How to produce scalable layouts|Only change layouts when different controls are required - maintainability|px will not scale|Use dp/sp instead|Put dp/sp values in dimens.xml</string>
+  <string name="notes_presenter">No slides|Android app using layouts for each slide|blog series explaining how the app works|First part published in minutes|Source available on Github now</string>
+</resources>

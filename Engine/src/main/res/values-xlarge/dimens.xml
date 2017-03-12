@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <dimen name="clockTextSize">120dp</dimen>
+  <dimen name="padding">20dp</dimen>
+  <dimen name="spacing">20dp</dimen>
+  <dimen name="fullpadding">200dp</dimen>
+  <dimen name="halfpadding">100dp</dimen>
+  <dimen name="examplepadding">50dp</dimen>
+  <dimen name="titlepadding">-15dp</dimen>
+
+  <integer name="fastAnim">750</integer>
+  <integer name="slowAnim">1500</integer>
+
+  <dimen name="logoWidth">28dp</dimen>
+  <dimen name="logoHeight">28dp</dimen>
+  <dimen name="textSizeXLarge">100dp</dimen>
+  <dimen name="textSizeLarge">72dp</dimen>
+  <dimen name="textSizeMedium">44dp</dimen>
+  <dimen name="textSizeSmall">30dp</dimen>
+  <dimen name="textSizeCode">24dp</dimen>
+  <dimen name="border_width">3dp</dimen>
+  <dimen name="margin_correction">-6dp</dimen>
+  <dimen name="grid_correction">15dp</dimen>
+  <dimen name="lines3">72dp</dimen>
+  <dimen name="lines2">42dp</dimen>
+  <dimen name="lines1">22dp</dimen>
+
+  <dimen name="textSizeTitle">48dp</dimen>
+  <dimen name="imageSizeTitle">80dp</dimen>
+</resources>

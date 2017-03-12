@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.stylingandroid.presenter.engine.presentation.SlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:sap="http://schemas.android.com/apk/res-auto"
+  android:id="@id/slide"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:layout_gravity="center"
+  android:gravity="center"
+  android:orientation="vertical"
+  android:clipChildren="false">
+
+  <TextView
+    style="@style/Widget.TextView.Large"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Frame Drawable" />
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:clipChildren="false">
+
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_weight="1"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+
+        <GridLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:columnCount="3"
+          android:layout_alignParentTop="true"
+          android:layout_alignParentLeft="true">
+
+          <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+            android:src="@drawable/sa"
+            sap:hidePhase="1"
+            sap:hideAnimation="@anim/fadeout" />
+
+          <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+            android:src="@drawable/sa60"
+            sap:hidePhase="1"
+            sap:hideAnimation="@anim/fadeout" />
+
+          <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+            android:src="@drawable/sa120"
+            sap:hidePhase="1"
+            sap:hideAnimation="@anim/fadeout" />
+
+          <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+            android:src="@drawable/sa180"
+            sap:hidePhase="1"
+            sap:hideAnimation="@anim/fadeout" />
+
+          <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+            android:src="@drawable/sa240"
+            sap:hidePhase="1"
+            sap:hideAnimation="@anim/fadeout" />
+
+          <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+            android:src="@drawable/sa300"
+            sap:hidePhase="1"
+            sap:hideAnimation="@anim/fadeout" />
+        </GridLayout>
+
+        <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+          style="@style/Widget.TextView.Small.Code"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentTop="true"
+          android:layout_alignParentLeft="true"
+          android:text="@string/drawables_1"
+          sap:showAnimation="@anim/fadein"
+          sap:hideAnimation="@anim/scrollupout"
+          sap:showPhase="1"
+          sap:hidePhase="2" />
+
+        <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+          style="@style/Widget.TextView.Small.Code"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentTop="true"
+          android:layout_alignParentLeft="true"
+          android:text="@string/drawables_2"
+          sap:showAnimation="@anim/scrollupin"
+          sap:hideAnimation="@anim/scrollupout"
+          sap:showPhase="2" />
+
+      </RelativeLayout>
+    </LinearLayout>
+
+    <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+      android:layout_width="150dp"
+      android:layout_height="150dp"
+      android:src="@drawable/tween_list"
+      sap:showPhase="3" />
+  </LinearLayout>
+
+</com.stylingandroid.presenter.engine.presentation.SlideLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objectAnimator xmlns:android="http://schemas.android.com/apk/res/android"
+  android:duration="2000"
+  android:propertyName="pathData"
+  android:repeatCount="infinite"
+  android:repeatMode="reverse"
+  android:valueTo="M115,115 c 0 0 10 -15 35 -15 c 25 0 35 15 35 15 c 0 0 15 10 15 35 c 0 25 -15 35 -15 35 c 0 0 -10 15 -35 15 c -25 0 -35 -15 -35 -15 c 0 0 -15 -10 -15 -35 c 0 -25 15 -35 15 -35 z"
+  android:valueFrom="M100,100 c 0 0 50 0 50 0 c 0 0 50 0 50 0 c 0 0 0 50 0 50 c 0 0 0 50 0 50 c 0 0 -50 0 -50 0 c 0 0 -50 0 -50 0 c 0 0 0 -50 0 -50 c 0 0 0 -50 0 -50 z"
+  android:valueType="pathType" />

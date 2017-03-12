@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stylingandroid.presenter.engine.presentation.SlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:sap="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@id/slide"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:layout_gravity="center"
+  android:gravity="center"
+  android:orientation="vertical"
+  sap:nextInAnimation="@anim/none"
+  sap:nextOutAnimation="@anim/none"
+  sap:notes=""
+  tools:context=".display.DisplayActivity"
+  android:clipChildren="false"
+  android:clipToPadding="false">
+
+
+  <TextView
+    style="@style/Widget.TextView.Large"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Porter Duff Alpha Modes"
+    android:gravity="center" />
+
+  <GridLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/porter_duff_outer_padding"
+    android:layout_gravity="center"
+    android:rowCount="2"
+    android:orientation="vertical"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <com.stylingandroid.presenter.engine.presentation.PhaseableLinearLayout
+      android:orientation="vertical"
+      android:gravity="center"
+      android:padding="@dimen/porter_duff_inner_padding">
+
+      <com.stylingandroid.presenter.engine.presentation.PorterDuffImageView
+        android:layout_width="@dimen/porter_duff_image_size"
+        android:layout_height="@dimen/porter_duff_image_size"
+        android:background="@drawable/checkerboard"
+        sap:src="@drawable/porterduff_src"
+        sap:dst="@drawable/porterduff_dst"
+        sap:mode="src"
+        sap:showText="false"
+        android:textSize="1sp" />
+
+      <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+        style="@style/Widget.TextView.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="SRC" />
+    </com.stylingandroid.presenter.engine.presentation.PhaseableLinearLayout>
+
+    <com.stylingandroid.presenter.engine.presentation.PhaseableLinearLayout
+      android:orientation="vertical"
+      android:gravity="center"
+      android:padding="@dimen/porter_duff_inner_padding">
+
+      <com.stylingandroid.presenter.engine.presentation.PorterDuffImageView
+        android:layout_width="@dimen/porter_duff_image_size"
+        android:layout_height="@dimen/porter_duff_image_size"
+        android:background="@drawable/checkerboard"
+        sap:src="@drawable/porterduff_src"
+        sap:dst="@drawable/porterduff_dst"
+        sap:mode="dst"
+        sap:showText="false"
+        android:textSize="1sp" />
+
+      <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+        style="@style/Widget.TextView.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="DST" />
+    </com.stylingandroid.presenter.engine.presentation.PhaseableLinearLayout>
+
+    <com.stylingandroid.presenter.engine.presentation.PhaseableLinearLayout
+      android:orientation="vertical"
+      android:gravity="center"
+      android:padding="@dimen/porter_duff_inner_padding"
+      sap:showPhase="1"
+      sap:showAnimation="@anim/alpha_slidein">
+
+      <com.stylingandroid.presenter.engine.presentation.PorterDuffImageView
+        android:layout_width="@dimen/porter_duff_image_size"
+        android:layout_height="@dimen/porter_duff_image_size"
+        android:background="@drawable/checkerboard"
+        sap:src="@drawable/porterduff_src"
+        sap:dst="@drawable/porterduff_dst"
+        sap:mode="src_in"
+        sap:showText="false"
+        android:textSize="1sp" />
+
+      <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+        style="@style/Widget.TextView.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="SRC_IN" />
+    </com.stylingandroid.presenter.engine.presentation.PhaseableLinearLayout>
+
+    <com.stylingandroid.presenter.engine.presentation.PhaseableLinearLayout
+      android:orientation="vertical"
+      android:gravity="center"
+      android:padding="@dimen/porter_duff_inner_padding"
+      sap:showPhase="1"
+      sap:showAnimation="@anim/alpha_slidein">
+
+      <com.stylingandroid.presenter.engine.presentation.PorterDuffImageView
+        android:layout_width="@dimen/porter_duff_image_size"
+        android:layout_height="@dimen/porter_duff_image_size"
+        android:background="@drawable/checkerboard"
+        sap:src="@drawable/porterduff_src"
+        sap:dst="@drawable/porterduff_dst"
+        sap:mode="dst_in"
+        sap:showText="false"
+        android:textSize="1sp" />
+
+      <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+        style="@style/Widget.TextView.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="DST_IN" />
+    </com.stylingandroid.presenter.engine.presentation.PhaseableLinearLayout>
+
+    <com.stylingandroid.presenter.engine.presentation.PhaseableLinearLayout
+      android:orientation="vertical"
+      android:gravity="center"
+      android:padding="@dimen/porter_duff_inner_padding"
+      sap:showPhase="2"
+      sap:showAnimation="@anim/alpha_slidein">
+
+      <com.stylingandroid.presenter.engine.presentation.PorterDuffImageView
+        android:layout_width="@dimen/porter_duff_image_size"
+        android:layout_height="@dimen/porter_duff_image_size"
+        android:background="@drawable/checkerboard"
+        sap:src="@drawable/porterduff_src"
+        sap:dst="@drawable/porterduff_dst"
+        sap:mode="src_out"
+        sap:showText="false"
+        android:textSize="1sp" />
+
+      <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+        style="@style/Widget.TextView.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="SRC_OUT" />
+    </com.stylingandroid.presenter.engine.presentation.PhaseableLinearLayout>
+
+    <com.stylingandroid.presenter.engine.presentation.PhaseableLinearLayout
+      android:orientation="vertical"
+      android:gravity="center"
+      android:padding="@dimen/porter_duff_inner_padding"
+      sap:showPhase="2"
+      sap:showAnimation="@anim/alpha_slidein">
+
+      <com.stylingandroid.presenter.engine.presentation.PorterDuffImageView
+        android:layout_width="@dimen/porter_duff_image_size"
+        android:layout_height="@dimen/porter_duff_image_size"
+        android:background="@drawable/checkerboard"
+        sap:src="@drawable/porterduff_src"
+        sap:dst="@drawable/porterduff_dst"
+        sap:mode="dst_out"
+        sap:showText="false"
+        android:textSize="1sp" />
+
+      <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+        style="@style/Widget.TextView.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="DST_OUT" />
+    </com.stylingandroid.presenter.engine.presentation.PhaseableLinearLayout>
+
+    <com.stylingandroid.presenter.engine.presentation.PhaseableLinearLayout
+      android:orientation="vertical"
+      android:gravity="center"
+      android:padding="@dimen/porter_duff_inner_padding"
+      sap:showPhase="3"
+      sap:showAnimation="@anim/alpha_slidein">
+
+      <com.stylingandroid.presenter.engine.presentation.PorterDuffImageView
+        android:layout_width="@dimen/porter_duff_image_size"
+        android:layout_height="@dimen/porter_duff_image_size"
+        android:background="@drawable/checkerboard"
+        sap:src="@drawable/porterduff_src"
+        sap:dst="@drawable/porterduff_dst"
+        sap:mode="src_over"
+        sap:showText="false"
+        android:textSize="1sp" />
+
+      <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+        style="@style/Widget.TextView.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="SRC_OVER" />
+    </com.stylingandroid.presenter.engine.presentation.PhaseableLinearLayout>
+
+    <com.stylingandroid.presenter.engine.presentation.PhaseableLinearLayout
+      android:orientation="vertical"
+      android:gravity="center"
+      android:padding="@dimen/porter_duff_inner_padding"
+      sap:showPhase="3"
+      sap:showAnimation="@anim/alpha_slidein">
+
+      <com.stylingandroid.presenter.engine.presentation.PorterDuffImageView
+        android:layout_width="@dimen/porter_duff_image_size"
+        android:layout_height="@dimen/porter_duff_image_size"
+        android:background="@drawable/checkerboard"
+        sap:src="@drawable/porterduff_src"
+        sap:dst="@drawable/porterduff_dst"
+        sap:mode="dst_over"
+        sap:showText="false"
+        android:textSize="1sp" />
+
+      <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+        style="@style/Widget.TextView.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="DST_OVER" />
+    </com.stylingandroid.presenter.engine.presentation.PhaseableLinearLayout>
+
+    <com.stylingandroid.presenter.engine.presentation.PhaseableLinearLayout
+      android:orientation="vertical"
+      android:gravity="center"
+      android:padding="@dimen/porter_duff_inner_padding"
+      sap:showPhase="4"
+      sap:showAnimation="@anim/alpha_slidein">
+
+      <com.stylingandroid.presenter.engine.presentation.PorterDuffImageView
+        android:layout_width="@dimen/porter_duff_image_size"
+        android:layout_height="@dimen/porter_duff_image_size"
+        android:background="@drawable/checkerboard"
+        sap:src="@drawable/porterduff_src"
+        sap:dst="@drawable/porterduff_dst"
+        sap:mode="src_atop"
+        sap:showText="false"
+        android:textSize="1sp" />
+
+      <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+        style="@style/Widget.TextView.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="SRC_ATOP" />
+    </com.stylingandroid.presenter.engine.presentation.PhaseableLinearLayout>
+
+    <com.stylingandroid.presenter.engine.presentation.PhaseableLinearLayout
+      android:orientation="vertical"
+      android:gravity="center"
+      android:padding="@dimen/porter_duff_inner_padding"
+      sap:showPhase="4"
+      sap:showAnimation="@anim/alpha_slidein">
+
+      <com.stylingandroid.presenter.engine.presentation.PorterDuffImageView
+        android:layout_width="@dimen/porter_duff_image_size"
+        android:layout_height="@dimen/porter_duff_image_size"
+        android:background="@drawable/checkerboard"
+        sap:src="@drawable/porterduff_src"
+        sap:dst="@drawable/porterduff_dst"
+        sap:mode="dst_atop"
+        sap:showText="false"
+        android:textSize="1sp" />
+
+      <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+        style="@style/Widget.TextView.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="DST_ATOP" />
+    </com.stylingandroid.presenter.engine.presentation.PhaseableLinearLayout>
+
+    <com.stylingandroid.presenter.engine.presentation.PhaseableLinearLayout
+      android:orientation="vertical"
+      android:gravity="center"
+      android:padding="@dimen/porter_duff_inner_padding"
+      sap:showPhase="5"
+      sap:showAnimation="@anim/alpha_slidein">
+
+      <com.stylingandroid.presenter.engine.presentation.PorterDuffImageView
+        android:layout_width="@dimen/porter_duff_image_size"
+        android:layout_height="@dimen/porter_duff_image_size"
+        android:background="@drawable/checkerboard"
+        sap:src="@drawable/porterduff_src"
+        sap:dst="@drawable/porterduff_dst"
+        sap:mode="clear"
+        sap:showText="false"
+        android:textSize="1sp" />
+
+      <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+        style="@style/Widget.TextView.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="CLEAR" />
+    </com.stylingandroid.presenter.engine.presentation.PhaseableLinearLayout>
+
+    <com.stylingandroid.presenter.engine.presentation.PhaseableLinearLayout
+      android:orientation="vertical"
+      android:gravity="center"
+      android:padding="@dimen/porter_duff_inner_padding"
+      sap:showPhase="5"
+      sap:showAnimation="@anim/alpha_slidein">
+
+      <com.stylingandroid.presenter.engine.presentation.PorterDuffImageView
+        android:layout_width="@dimen/porter_duff_image_size"
+        android:layout_height="@dimen/porter_duff_image_size"
+        android:background="@drawable/checkerboard"
+        sap:src="@drawable/porterduff_src"
+        sap:dst="@drawable/porterduff_dst"
+        sap:mode="xor"
+        sap:showText="false"
+        android:textSize="1sp" />
+
+      <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+        style="@style/Widget.TextView.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="XOR" />
+    </com.stylingandroid.presenter.engine.presentation.PhaseableLinearLayout>
+
+  </GridLayout>
+
+</com.stylingandroid.presenter.engine.presentation.SlideLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <dimen name="fullpadding">100dp</dimen>
+  <dimen name="halfpadding">50dp</dimen>
+  <dimen name="titlepadding">-5dp</dimen>
+
+  <dimen name="horizontal_margin">24dp</dimen>
+
+  <dimen name="textSizeTitle">46dp</dimen>
+  <dimen name="imageSizeTitle">80dp</dimen>
+
+
+  <dimen name="textSizeXLarge">50dp</dimen>
+  <dimen name="textSizeLarge">48dp</dimen>
+  <dimen name="textSizeMedium">32dp</dimen>
+  <dimen name="textSizeSmall">16dp</dimen>
+  <dimen name="textSizeCode">17dp</dimen>
+  <dimen name="displayMarginRight">20dp</dimen>
+  <dimen name="displayPadding">20dp</dimen>
+</resources>

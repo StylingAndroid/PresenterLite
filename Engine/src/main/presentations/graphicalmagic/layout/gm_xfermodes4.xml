@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stylingandroid.presenter.engine.presentation.SlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:sap="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@id/slide"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:layout_gravity="center"
+  android:gravity="center"
+  android:orientation="vertical"
+  sap:notes=""
+  tools:context=".display.DisplayActivity">
+
+
+  <TextView
+    style="@style/Widget.TextView.Large"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Applying Porter Duff Rules"
+    android:gravity="center" />
+
+  <FrameLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/porter_duff_padding">
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      style="@style/Widget.TextView.Small.Code"
+      android:gravity="center_vertical"
+      sap:hidePhase="1"
+      sap:showAnimation="@anim/fadein"
+      sap:hideAnimation="@anim/fadeout"
+      android:text="@string/gm_porterduff" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      style="@style/Widget.TextView.Small.Code"
+      android:gravity="center_vertical"
+      android:visibility="invisible"
+      sap:highlightTextAppearance="@style/Widget.TextView.Small.Code.Highlight"
+      sap:pattern="(Paint.*?;)"
+      sap:showPhase="1"
+      sap:hidePhase="2"
+      sap:showAnimation="@anim/fadein"
+      sap:hideAnimation="@anim/fadeout"
+      android:text="@string/gm_porterduff" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      style="@style/Widget.TextView.Small.Code"
+      android:gravity="center_vertical"
+      android:visibility="invisible"
+      sap:highlightTextAppearance="@style/Widget.TextView.Small.Code.Highlight"
+      sap:pattern="(paint\\.setX.*?;)"
+      sap:showPhase="2"
+      sap:hidePhase="3"
+      sap:showAnimation="@anim/fadein"
+      sap:hideAnimation="@anim/fadeout"
+      android:text="@string/gm_porterduff" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      style="@style/Widget.TextView.Small.Code"
+      android:gravity="center_vertical"
+      android:visibility="invisible"
+      sap:highlightTextAppearance="@style/Widget.TextView.Small.Code.Highlight"
+      sap:pattern="(canvas\\.draw.*?;)"
+      sap:showPhase="3"
+      sap:showAnimation="@anim/fadein"
+      sap:hideAnimation="@anim/fadeout"
+      android:text="@string/gm_porterduff" />
+  </FrameLayout>
+
+</com.stylingandroid.presenter.engine.presentation.SlideLayout>

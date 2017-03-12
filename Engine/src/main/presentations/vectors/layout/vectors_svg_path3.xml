@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stylingandroid.presenter.engine.presentation.SlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:sap="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@id/slide"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:layout_gravity="center"
+  android:gravity="center"
+  android:orientation="vertical"
+  sap:nextInAnimation="@anim/none"
+  sap:nextOutAnimation="@anim/none"
+  sap:tweet="@string/vectors_tweet_svg_path3"
+  sap:notes="@string/vectors_notes_svg_path3"
+  tools:context=".display.DisplayActivity">
+
+  <com.stylingandroid.presenter.engine.presentation.TransitionLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    sap:scenes="vectors_svg_path3a,vectors_svg_path3b,vectors_svg_path3c,vectors_svg_path3d,vectors_svg_path3e,vectors_svg_path3f,vectors_svg_path3g,vectors_svg_path3h,vectors_svg_path3i,vectors_svg_path3j,vectors_svg_path3k,vectors_svg_path3l"
+    sap:transitionManager="@transition/flatten"
+    sap:transitionPhases="1,2,3,4,5,6,7,8,9,10,11" />
+
+</com.stylingandroid.presenter.engine.presentation.SlideLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string-array name="animations">
+    <item>anim_title</item>
+    <item>anim_why</item>
+    <item>anim_what</item>
+    <item>anim_types</item>
+    <item>anim_drawables1</item>
+    <item>anim_drawables2</item>
+    <item>anim_view1</item>
+    <item>anim_view2</item>
+    <item>anim_view3</item>
+    <item>anim_interpolators1</item>
+    <item>anim_interpolators2</item>
+    <item>anim_interpolators3</item>
+    <item>anim_using_view1</item>
+    <item>anim_using_view2</item>
+    <item>anim_using_view3</item>
+    <item>anim_using_view4</item>
+    <item>anim_property1</item>
+    <item>anim_property2</item>
+    <item>anim_end</item>
+    <item>anim_questions</item>
+    <item>anim_final</item>
+  </string-array>
+</resources>

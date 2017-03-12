@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/transition_container"
+  android:orientation="horizontal"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    android:id="@+id/transition_code"
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    style="@style/Widget.TextView.Small.Code"
+    android:visibility="invisible"
+    android:gravity="center_vertical"
+    android:layout_height="match_parent" />
+
+  <View
+    android:id="@+id/transition_pad1"
+    android:layout_width="0dp"
+    android:layout_weight="0"
+    android:layout_height="match_parent" />
+
+  <RelativeLayout
+    android:id="@+id/transition_graphics"
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="match_parent">
+
+    <ImageView
+      android:id="@+id/transition_image"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/image_height"
+      android:layout_centerInParent="true"
+      android:src="@drawable/broadstairs" />
+
+    <TextView
+      android:id="@+id/transition_text"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      android:padding="20dp"
+      android:textSize="48sp"
+      android:textStyle="bold"
+      android:text="Graphical Magic"
+      android:background="@color/overlayBackground"
+      android:textColor="@color/overlayText" />
+
+  </RelativeLayout>
+
+  <View
+    android:id="@+id/transition_pad2"
+    android:layout_width="0dp"
+    android:layout_weight="0"
+    android:layout_height="match_parent" />
+</LinearLayout>

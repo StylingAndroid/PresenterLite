@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stylingandroid.presenter.engine.presentation.SlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:sap="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@id/slide"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:layout_gravity="center"
+  android:gravity="left|center_vertical"
+  android:orientation="vertical"
+  tools:context=".display.DisplayActivity">
+
+  <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_weight="1"
+    android:layout_height="match_parent">
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+      style="@style/Widget.TextView.Medium.Code"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:gravity="center_vertical"
+      sap:highlightTextAppearance="@style/Widget.TextView.Medium.Code.Highlight"
+      sap:pattern="(&lt;uses-sdk.*?&gt;)"
+      sap:hidePhase="1"
+      sap:hideAnimation="@anim/fadeout"
+      android:text="@string/gm_minsdk_question" />
+
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+      style="@style/Widget.TextView.Medium.Code"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:gravity="center_vertical"
+      sap:highlightTextAppearance="@style/Widget.TextView.Medium.Code.Highlight"
+      sap:pattern="(&lt;uses-sdk.*?&gt;)"
+      sap:showPhase="1"
+      sap:showAnimation="@anim/fadein"
+      android:text="@string/gm_minsdk_1" />
+
+  </FrameLayout>
+</com.stylingandroid.presenter.engine.presentation.SlideLayout>

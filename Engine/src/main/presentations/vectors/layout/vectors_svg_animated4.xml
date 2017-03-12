@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stylingandroid.presenter.engine.presentation.SlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:sap="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@id/slide"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:layout_gravity="center"
+  android:gravity="center"
+  android:orientation="vertical"
+  sap:autoStart="true"
+  sap:nextInAnimation="@anim/none"
+  sap:nextOutAnimation="@anim/none"
+  tools:context=".display.DisplayActivity">
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+      android:id="@+id/title"
+      style="@style/Widget.TextView.Large"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="50dp"
+      android:gravity="center"
+      android:text="AnimatedVectorDrawable" />
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@id/title"
+      android:baselineAligned="false"
+      android:orientation="horizontal">
+
+      <Space
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+      <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_gravity="center"
+          android:contentDescription="@null"
+          android:src="@drawable/svg_animated4_animated"
+          sap:showAnimation="@anim/fadein"
+          sap:showPhase="6"
+          sap:synchronised="true" />
+      </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@id/title"
+      android:baselineAligned="false"
+      android:orientation="horizontal">
+
+      <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+          style="@style/Widget.TextView.Small.Code"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:text="@string/vectors_full_rotation"
+          sap:hideAnimation="@anim/fadeout"
+          sap:hidePhase="2" />
+
+        <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+          style="@style/Widget.TextView.Small.Code"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:text="@string/vectors_full_rotation"
+          sap:hideAnimation="@anim/fadeout"
+          sap:hidePhase="3"
+          sap:highlightTextAppearance="@style/Widget.TextView.Small.Code.Highlight"
+          sap:pattern="(android:name=\\&quot;.*?\\&quot;)"
+          sap:showAnimation="@anim/fadein"
+          sap:showPhase="2" />
+
+        <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+          style="@style/Widget.TextView.Small.Code"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:text="@string/vectors_full_rotation"
+          sap:hideAnimation="@anim/scrollupout"
+          sap:hidePhase="4"
+          sap:highlightTextAppearance="@style/Widget.TextView.Small.Code.Highlight"
+          sap:pattern="(android:pivotX=\\&quot;.*?pivotY=\\&quot;.*?\\&quot;)"
+          sap:showAnimation="@anim/fadein"
+          sap:showPhase="3" />
+
+        <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+          style="@style/Widget.TextView.Small.Code"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:text="@string/vectors_animated_vector_rotation"
+          sap:hideAnimation="@anim/scrollupout"
+          sap:hidePhase="5"
+          sap:showAnimation="@anim/scrollupin"
+          sap:showPhase="4" />
+
+        <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+          style="@style/Widget.TextView.Small.Code"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:text="@string/vectors_animation_rotation"
+          sap:hideAnimation="@anim/fadeout"
+          sap:hidePhase="6"
+          sap:showAnimation="@anim/scrollupin"
+          sap:showPhase="5" />
+
+        <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+          style="@style/Widget.TextView.Small.Code"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:text="@string/vectors_animation_rotation"
+          sap:highlightTextAppearance="@style/Widget.TextView.Small.Code.Highlight"
+          sap:pattern="(android:propertyName=\\&quot;.*?\\&quot;)"
+          sap:showAnimation="@anim/fadein"
+          sap:showPhase="6" />
+
+      </FrameLayout>
+
+    </LinearLayout>
+
+  </RelativeLayout>
+
+
+</com.stylingandroid.presenter.engine.presentation.SlideLayout>

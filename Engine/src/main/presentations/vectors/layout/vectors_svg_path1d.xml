@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/transition_container"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="horizontal">
+
+  <Space
+    android:id="@+id/transition_pad1"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="0.2" />
+
+  <RelativeLayout
+    android:id="@+id/transition_graphics"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1">
+
+    <TextView
+      android:id="@+id/title"
+      style="@style/Widget.TextView.Large"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="50dp"
+      android:gravity="center"
+      android:text="SVG Paths" />
+
+    <LinearLayout
+      android:id="@+id/body"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@id/title"
+      android:layout_marginBottom="@dimen/vectors_margin_bottom"
+      android:orientation="horizontal">
+
+      <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+      <ImageView
+        android:id="@+id/svg_path_image"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:contentDescription="@null"
+        android:src="@drawable/svg_path1c" />
+
+    </LinearLayout>
+
+  </RelativeLayout>
+
+  <Space
+    android:id="@+id/transition_pad2"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="0.2" />
+</LinearLayout>

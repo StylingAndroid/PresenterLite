@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="tweet_main">I am currently speaking about Android Layouts at DroidCon in Spain. I will be tweeting links to related information during my presentation.</string>
+  <string name="tweet_framelayout">Read more on FrameLayout at http://bit.ly/rHpmmA</string>
+  <string name="tweet_linearlayout">My blog article on LinearLayout is at http://bit.ly/sGLff1</string>
+  <string name="tweet_relativelayout">For more information about RelativeLayout go to http://bit.ly/t1fRGC</string>
+  <string name="tweet_tablelayout">Further details on TableTayout can be found at http://bit.ly/sWs136</string>
+  <string name="tweet_gridlayout">For more GridLayout goodness see http://bit.ly/tTxMxC, http://bit.ly/uP8gGY, &amp; http://bit.ly/tEvVIK</string>
+  <string name="tweet_casestudy2">For more info on wrap_content &amp; weights go to http://bit.ly/sTa2Io</string>
+  <string name="tweet_presenter">The blog article is at http://bit.ly/umxkPW, and the source code is at http://bit.ly/sdIyBH</string>
+
+
+</resources>

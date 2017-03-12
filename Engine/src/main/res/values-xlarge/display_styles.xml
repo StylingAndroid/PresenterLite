@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <style name="DisplayTheme" parent="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen">
+    <item name="android:textColor">#000</item>
+    <item name="android:textSize">@dimen/textSizeSmall</item>
+    <item name="android:shadowColor">#FFF</item>
+  </style>
+
+</resources>

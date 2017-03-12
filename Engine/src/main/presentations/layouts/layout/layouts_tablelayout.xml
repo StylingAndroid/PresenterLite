@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stylingandroid.presenter.engine.presentation.SlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:sap="http://schemas.android.com/apk/res-auto"
+  android:id="@id/slide"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:layout_gravity="center"
+  android:gravity="center"
+  android:orientation="vertical"
+  sap:notes="@string/notes_tablelayout"
+  sap:tweet="@string/tweet_tablelayout">
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    style="@style/Widget.TextView.Large"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Layouts: TableLayout" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    style="@style/Widget.TextView.Medium"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    sap:highlightTextAppearance="@style/Widget.TextView.Medium.Code"
+    android:paddingTop="@dimen/spacing"
+    sap:pattern="(layout_weight)"
+    sap:showAnimation="@anim/fadein"
+    sap:showPhase="1"
+    android:singleLine="false"
+    android:text="Child positioning using layout_weight" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    style="@style/Widget.TextView.Medium"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    sap:highlightTextAppearance="@style/Widget.TextView.Medium.Code"
+    android:paddingTop="@dimen/spacing"
+    sap:pattern="(&lt;table&gt;)"
+    sap:showAnimation="@anim/fadein"
+    sap:showPhase="2"
+    android:text="Android equivalent to HTML &lt;table&gt;" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    style="@style/Widget.TextView.Medium"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    sap:highlightTextAppearance="@style/Widget.TextView.Medium.Code"
+    android:paddingTop="@dimen/spacing"
+    sap:pattern="(TableRow)"
+    sap:showAnimation="@anim/fadein"
+    sap:showPhase="3"
+    android:text="Rows wrapped in TableRow" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    style="@style/Widget.TextView.Medium"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    sap:highlightTextAppearance="@style/Widget.TextView.Medium.Code"
+    android:paddingTop="@dimen/spacing"
+    sap:pattern="(layout_span|stretch|shrink|collapse|Columns)"
+    sap:showAnimation="@anim/fadein"
+    sap:showPhase="4"
+    android:singleLine="false"
+    android:text="Column (not row) spanning using layout_span &amp; [stretch|shrink|collapse]Columns" />
+
+</com.stylingandroid.presenter.engine.presentation.SlideLayout>

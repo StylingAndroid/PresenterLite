@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="gm_tweet_title">I am currently speaking about Graphical Magic at %2$s %3$s</string>
+  <string name="gm_tweet_lifecycle">For details of how to use this within the layout / draw lifecycle see http://bit.ly/1bgWVEB %3$s</string>
+  <string name="gm_tweet_cmcf">For a further example of using ColorMatrixColorFilter have a look at http://bit.ly/1bw1SDF %3$s</string>
+  <string name="gm_tweet_timinglogger">For details of TimingLogger and tricks and tips for using it see http://bit.ly/NuqWpw %3$s</string>
+  <string name="gm_tweet_rs">For more on RenderScript blurring please go to http://bit.ly/1f7cnyI %3$s</string>
+  <string name="gm_tweet_shapes">There\'s more information on creating custom outlines at http://bit.ly/VJvAnB %3$s</string>
+  <string name="gm_flatten1">GPU Overdraw of 3|Technique done at layout pass|Keep backup of original image|Lifecycle on blog</string>
+  <string name="gm_renderscript1">RS introduced API11|Compat lib API8</string>
+</resources>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <declare-styleable name="DisplayTheme">
+    <attr name="highlightCodeTextAppearance" format="reference" />
+  </declare-styleable>
+  <attr name="layout_phase" format="integer" />
+  <attr format="reference" name="layout_animation" />
+  <declare-styleable name="SlideLayout_Layout">
+    <attr name="layout_phase" />
+    <attr name="layout_animation" />
+  </declare-styleable>
+  <attr format="string|reference" name="tweet" />
+  <attr format="string|reference" name="notes" />
+  <attr format="reference" name="nextInAnimation" />
+  <attr format="reference" name="nextOutAnimation" />
+  <attr format="boolean" name="autoStart" />
+  <declare-styleable name="SlideLayout">
+    <attr name="tweet" />
+    <attr name="notes" />
+    <attr name="nextInAnimation" />
+    <attr name="nextOutAnimation" />
+    <attr name="autoStart" />
+  </declare-styleable>
+  <declare-styleable name="ConstraintSlideLayout_Layout">
+    <attr name="layout_phase" />
+    <attr name="layout_animation" />
+  </declare-styleable>
+  <declare-styleable name="ConstraintSlideLayout">
+    <attr name="tweet" />
+    <attr name="notes" />
+    <attr name="nextInAnimation" />
+    <attr name="nextOutAnimation" />
+    <attr name="autoStart" />
+  </declare-styleable>
+  <declare-styleable name="DisplayLayout">
+    <attr format="string" name="slides" />
+    <attr format="reference" name="inAnimation" />
+    <attr format="reference" name="outAnimation" />
+  </declare-styleable>
+  <declare-styleable name="Phaser">
+    <attr format="string" name="showPhase" />
+    <attr format="string" name="hidePhase" />
+    <attr format="string" name="gonePhase" />
+    <attr format="reference" name="showAnimation" />
+    <attr format="reference" name="hideAnimation" />
+  </declare-styleable>
+  <declare-styleable name="HighlightedTextView">
+    <attr name="android:text" />
+    <attr format="string|reference" name="pattern" />
+    <attr format="reference" name="highlightTextAppearance" />
+    <attr format="reference" name="bulletDrawable" />
+  </declare-styleable>
+  <declare-styleable name="AnimatedImageView">
+    <attr format="reference" name="anim" />
+    <attr format="reference" name="animator" />
+    <attr format="boolean" name="synchronised" />
+  </declare-styleable>
+
+  <declare-styleable name="GraphicalLayout_Layout">
+    <attr name="flatten" format="boolean" />
+    <attr name="effect">
+      <flag name="flatten_background" value="0x01" />
+      <flag name="flatten" value="0x02" />
+      <flag name="desaturate" value="0x04" />
+      <flag name="desaturateText" value="0x08" />
+      <flag name="blur" value="0x10" />
+    </attr>
+    <attr name="blur_radius" format="float|reference" />
+  </declare-styleable>
+
+  <declare-styleable name="TransitionLayout">
+    <attr name="scenes" format="string" />
+    <attr name="transitionPhases" format="string" />
+    <attr name="transitionManager" format="reference" />
+  </declare-styleable>
+
+  <declare-styleable name="PorterDuffImageView">
+    <attr format="reference" name="src" />
+    <attr format="reference" name="dst" />
+    <attr format="boolean" name="showText" />
+    <attr name="mode">
+      <enum name="clear" value="0" />
+      <enum name="src" value="1" />
+      <enum name="dst" value="2" />
+      <enum name="src_over" value="3" />
+      <enum name="dst_over" value="4" />
+      <enum name="src_in" value="5" />
+      <enum name="dst_in" value="6" />
+      <enum name="src_out" value="7" />
+      <enum name="dst_out" value="8" />
+      <enum name="src_atop" value="9" />
+      <enum name="dst_atop" value="10" />
+      <enum name="xor" value="11" />
+      <enum name="darken" value="12" />
+      <enum name="lighten" value="13" />
+      <enum name="multiply" value="14" />
+      <enum name="screen" value="15" />
+      <enum name="add" value="16" />
+      <enum name="overlay" value="17" />
+    </attr>
+  </declare-styleable>
+
+  <declare-styleable name="ShapedImageView">
+    <attr name="shape">
+      <enum name="oval" value="1" />
+      <enum name="rotated_oval" value="2" />
+      <enum name="clipped_rotated_oval" value="3" />
+      <enum name="heart" value="4" />
+    </attr>
+  </declare-styleable>
+</resources>

@@ -1,0 +1,29 @@
+apply plugin: 'com.android.application'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:25.2.0'
+    compile project("${prefix}:Engine")
+}
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 25
+    }
+
+    lintOptions {
+        abortOnError true;
+        quiet true
+        lintConfig file("${project(':').projectDir}/config/lint/config.xml")
+    }
+
+}
+
+apply from: "${project(':').projectDir}/config/static_analysis.gradle"

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:aapt="http://schemas.android.com/aapt"
+  android:drawable="@drawable/full_wifi"
+  xmlns:tools="http://schemas.android.com/tools"
+  tools:ignore="MissingPrefix">
+
+  <target android:name="group">
+    <aapt:attr name="android:animation">
+      <objectAnimator
+        android:duration="2000"
+        android:propertyName="translateY"
+        android:repeatCount="infinite"
+        android:repeatMode="reverse"
+        android:valueFrom="24"
+        android:valueTo="0"
+        android:valueType="floatType" />
+    </aapt:attr>
+  </target>
+
+</animated-vector>

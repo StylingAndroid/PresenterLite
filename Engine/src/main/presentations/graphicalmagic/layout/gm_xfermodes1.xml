@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stylingandroid.presenter.engine.presentation.SlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:sap="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@id/slide"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:layout_gravity="center"
+  android:gravity="center"
+  android:orientation="vertical"
+  sap:nextInAnimation="@anim/none"
+  sap:nextOutAnimation="@anim/none"
+  sap:notes=""
+  tools:context=".display.DisplayActivity">
+
+
+  <TextView
+    style="@style/Widget.TextView.Large"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Alpha Compositing"
+    android:gravity="center" />
+
+  <FrameLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/porter_duff_padding">
+
+    <com.stylingandroid.presenter.engine.presentation.PorterDuffImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      sap:src="@drawable/porterduff_src"
+      sap:dst="@drawable/porterduff_dst"
+      sap:mode="src"
+      sap:showText="false"
+      sap:gonePhase="2" />
+
+    <com.stylingandroid.presenter.engine.presentation.PorterDuffImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      sap:src="@drawable/porterduff_src"
+      sap:dst="@drawable/porterduff_dst_trans"
+      sap:mode="src"
+      sap:showText="false"
+      sap:showPhase="2" />
+
+    <com.stylingandroid.presenter.engine.presentation.PorterDuffImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      sap:src="@drawable/porterduff_src"
+      sap:dst="@drawable/porterduff_dst"
+      sap:mode="dst_over"
+      sap:showText="false"
+      sap:showPhase="1"
+      sap:gonePhase="2"
+      sap:showAnimation="@anim/fadein"
+      sap:hideAnimation="@anim/fadeout" />
+
+    <com.stylingandroid.presenter.engine.presentation.PorterDuffImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      sap:src="@drawable/porterduff_src"
+      sap:dst="@drawable/porterduff_dst_trans"
+      sap:mode="dst_over"
+      sap:showText="false"
+      sap:showPhase="3"
+      sap:showAnimation="@anim/fadein" />
+
+  </FrameLayout>
+
+</com.stylingandroid.presenter.engine.presentation.SlideLayout>

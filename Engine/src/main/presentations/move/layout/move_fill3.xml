@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stylingandroid.presenter.engine.presentation.ConstraintSlideLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  app:nextInAnimation="@anim/fadein"
+  app:nextOutAnimation="@anim/fadeout">
+
+  <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/move_fill_rectangle1"
+    app:layout_constraintLeft_toLeftOf="@+id/boat"
+    app:layout_constraintRight_toRightOf="@id/boat"
+    app:layout_constraintTop_toTopOf="@id/boat"
+    app:layout_constraintBottom_toBottomOf="@id/boat"
+    app:hidePhase="2" />
+
+  <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/move_fill_rectangle2c"
+    app:layout_constraintLeft_toLeftOf="@+id/boat"
+    app:layout_constraintRight_toRightOf="@id/boat"
+    app:layout_constraintTop_toTopOf="@id/boat"
+    app:layout_constraintBottom_toBottomOf="@id/boat"
+    app:showPhase="1"
+    app:hidePhase="2"
+    app:synchronised="false"
+    app:showAnimation="@anim/fadein"
+    app:hideAnimation="@anim/fadeout" />
+
+  <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+    android:id="@+id/boat"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/boat"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:synchronised="false"
+    app:hidePhase="2"
+    app:hideAnimation="@anim/fadeout"/>
+
+  <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/move_fill_boat3a"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:showPhase="2"
+    app:hidePhase="3"
+    app:synchronised="false"
+    app:showAnimation="@anim/fadein"
+    app:hideAnimation="@anim/fadeout" />
+
+  <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/move_fill_boat3b"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:showPhase="3"
+    app:synchronised="false"
+    app:showAnimation="@anim/fadein" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    style="@style/Widget.TextView.Small"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:text="Material Icon: ic_directions_boat"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent" />
+
+</com.stylingandroid.presenter.engine.presentation.ConstraintSlideLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stylingandroid.presenter.engine.presentation.SlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:sap="http://schemas.android.com/apk/res-auto"
+  android:id="@id/slide"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:gravity="center"
+  android:layout_gravity="center"
+  android:orientation="vertical"
+  sap:notes="@string/notes_gridlayout"
+  sap:tweet="@string/tweet_gridlayout">
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    style="@style/Widget.TextView.Large"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="GridLayout Overview" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    style="@style/Widget.TextView.Medium"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    sap:highlightTextAppearance="@style/Widget.TextView.Medium.Code"
+    sap:pattern="(layout_gravity)"
+    sap:showAnimation="@anim/fadein"
+    sap:showPhase="1"
+    android:paddingTop="@dimen/spacing"
+    android:singleLine="false"
+    android:text="Child positioning using layout_gravity" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    style="@style/Widget.TextView.Medium"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    sap:highlightTextAppearance="@style/Widget.TextView.Medium.Code"
+    sap:pattern="(LinearLayout|TableLayout)"
+    sap:showAnimation="@anim/fadein"
+    sap:showPhase="2"
+    android:paddingTop="@dimen/spacing"
+    android:text="Hybrid of LinearLayout &amp; TableLayout" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    style="@style/Widget.TextView.Medium"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    sap:showAnimation="@anim/fadein"
+    sap:showPhase="3"
+    android:paddingTop="@dimen/spacing"
+    android:text="Flow children either horizontally or vertically" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    style="@style/Widget.TextView.Medium"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    sap:highlightTextAppearance="@style/Widget.TextView.Medium.Code"
+    sap:pattern="(LinearLayout)"
+    sap:showAnimation="@anim/fadein"
+    sap:showPhase="4"
+    android:paddingTop="@dimen/spacing"
+    android:singleLine="false"
+    android:text="Allows alignment of columns not possible with sequential horizontal LinearLayouts" />
+
+</com.stylingandroid.presenter.engine.presentation.SlideLayout>

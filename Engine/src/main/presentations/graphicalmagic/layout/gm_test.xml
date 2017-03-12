@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stylingandroid.presenter.engine.presentation.SlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:sap="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@id/slide"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:layout_gravity="center"
+  android:gravity="center"
+  android:orientation="vertical"
+  android:paddingTop="80dp"
+  sap:notes="@string/notes_title"
+  tools:context=".display.DisplayActivity">
+
+
+  <com.stylingandroid.presenter.engine.presentation.GraphicalLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+      android:id="@+id/graphical_background"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:src="@drawable/broadstairs"
+      android:scaleType="centerCrop" />
+
+    <TextView
+      style="@style/Widget.TextView.Large"
+      android:textStyle="bold"
+      android:textColor="@android:color/white"
+      android:shadowColor="@android:color/black"
+      android:shadowDx="0.0"
+      android:shadowDy="0.0"
+      android:shadowRadius="10.0"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentLeft="true"
+      android:padding="10dp"
+      android:layout_margin="10dp"
+      android:background="#80FFFFFF"
+      sap:flatten="true"
+      sap:effect="flatten"
+      android:text="Graphical Magic" />
+
+    <TextView
+      style="@style/Widget.TextView.Large"
+      android:textStyle="bold"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentRight="true"
+      android:padding="10dp"
+      android:layout_margin="10dp"
+      sap:flatten="true"
+      sap:effect="desaturateText"
+      android:text="Graphical Magic" />
+
+    <TextView
+      style="@style/Widget.TextView.Large"
+      android:textStyle="bold"
+      android:textColor="@android:color/white"
+      android:shadowColor="@android:color/black"
+      android:shadowDx="0.0"
+      android:shadowDy="0.0"
+      android:shadowRadius="10.0"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentLeft="true"
+      android:padding="10dp"
+      android:layout_margin="10dp"
+      sap:flatten="true"
+      sap:effect="blur"
+      sap:blur_radius="20.0"
+      android:text="Graphical Magic" />
+
+    <TextView
+      style="@style/Widget.TextView.Large"
+      android:textStyle="bold"
+      android:textColor="@android:color/white"
+      android:shadowColor="@android:color/black"
+      android:shadowDx="0.0"
+      android:shadowDy="0.0"
+      android:shadowRadius="10.0"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentRight="true"
+      android:padding="10dp"
+      android:layout_margin="10dp"
+      sap:flatten="true"
+      sap:effect="desaturate|blur"
+      sap:blur_radius="20.0"
+      android:text="Graphical Magic" />
+  </com.stylingandroid.presenter.engine.presentation.GraphicalLayout>
+
+</com.stylingandroid.presenter.engine.presentation.SlideLayout>

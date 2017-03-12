@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stylingandroid.presenter.engine.presentation.SlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:sap="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@id/slide"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:layout_gravity="center"
+  android:gravity="center"
+  android:orientation="vertical"
+  sap:nextInAnimation="@anim/fadein"
+  sap:nextOutAnimation="@anim/fadeout"
+  sap:tweet="@string/vectors_tweet_svg_animated10"
+  tools:context=".display.DisplayActivity">
+
+  <RelativeLayout
+    android:id="@+id/transition_graphics"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+      android:id="@+id/title"
+      style="@style/Widget.TextView.Large"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="50dp"
+      android:gravity="center"
+      android:text="AnimatedVectorDrawable" />
+
+    <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@id/title"
+      android:layout_centerHorizontal="true">
+
+      <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:contentDescription="@null"
+        android:src="@drawable/isometric"
+        sap:hidePhase="1" />
+
+      <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:contentDescription="@null"
+        android:src="@drawable/animated_isometric"
+        sap:showPhase="1" />
+    </FrameLayout>
+
+  </RelativeLayout>
+</com.stylingandroid.presenter.engine.presentation.SlideLayout>

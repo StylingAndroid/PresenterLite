@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.stylingandroid.presenter.engine.presentation.SlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:sap="http://schemas.android.com/apk/res-auto"
+  android:id="@id/slide"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:layout_gravity="center"
+  android:gravity="center"
+  android:orientation="vertical"
+  sap:nextInAnimation="@anim/none"
+  sap:nextOutAnimation="@anim/none">
+
+  <TextView
+    style="@style/Widget.TextView.Large"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Using View Animations" />
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+      android:id="@+id/title1"
+      style="@style/Widget.TextView.Medium"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Activity Transitions"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentTop="true"
+      sap:showPhase="0"
+      sap:hidePhase="1" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+      style="@style/Widget.TextView.Small.Code"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/using_view_activity"
+      android:layout_alignParentLeft="true"
+      android:layout_below="@id/title1"
+      sap:showPhase="0"
+      sap:hidePhase="1" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+      android:id="@+id/title2"
+      style="@style/Widget.TextView.Medium"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Fragment Transitions"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentTop="true"
+      sap:showPhase="1"
+      sap:hidePhase="2" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+      style="@style/Widget.TextView.Small.Code"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/using_view_fragment"
+      android:layout_alignParentLeft="true"
+      android:layout_below="@id/title2"
+      sap:showPhase="1"
+      sap:hidePhase="2" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+      android:id="@+id/title3"
+      style="@style/Widget.TextView.Medium"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="View Animations"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentTop="true"
+      sap:showPhase="2" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+      style="@style/Widget.TextView.Small.Code"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/using_view_view"
+      android:layout_alignParentLeft="true"
+      android:layout_below="@id/title3"
+      sap:showPhase="2" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+      android:id="@+id/title4"
+      style="@style/Widget.TextView.Medium"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Layout Animations"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentTop="true"
+      android:visibility="invisible" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+      android:id="@+id/subtitle4"
+      style="@style/Widget.TextView.Small"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="layout_item_anim.xml"
+      android:layout_alignParentLeft="true"
+      android:layout_below="@id/title4"
+      android:visibility="invisible" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+      android:id="@+id/code4"
+      style="@style/Widget.TextView.Small.Code"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/using_view_item_anim"
+      android:layout_alignParentLeft="true"
+      android:layout_below="@id/subtitle4"
+      android:visibility="invisible" />
+  </RelativeLayout>
+</com.stylingandroid.presenter.engine.presentation.SlideLayout>

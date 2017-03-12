@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <integer name="badDuration">2500</integer>
+  <integer name="longDuration">3000</integer>
+
+  <dimen name="textSizeMediumSmall">40dp</dimen>
+  <item name="disabledAlpha" format="float" type="dimen">0.3</item>
+
+  <item name="viewportHeight" format="float" type="dimen">30</item>
+  <item name="viewportWidth" format="float" type="dimen">26</item>
+
+  <dimen name="boatHeight">600dp</dimen>
+  <dimen name="boatWidth">520dp</dimen>
+
+
+  <item name="intViewportHeight" format="float" type="dimen">200</item>
+  <item name="intViewportWidth" format="float" type="dimen">600</item>
+
+  <dimen name="intHeight">300dp</dimen>
+  <dimen name="intWidth">900dp</dimen>
+
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string-array name="graphicalmagic">
+    <item>gm_title</item>
+    <item>gm_allison</item>
+    <item>gm_intro</item>
+    <item>gm_why</item>
+    <item>gm_flatten1</item>
+    <item>gm_flatten2</item>
+    <item>gm_desaturate1</item>
+    <item>gm_desaturate2</item>
+    <item>gm_desaturate3</item>
+    <item>gm_desaturate4</item>
+    <!--item>gm_xfermodes1</item>
+    <item>gm_xfermodes2</item>
+    <item>gm_xfermodes3</item>
+    <item>gm_xfermodes4</item-->
+    <item>gm_shader1</item>
+    <item>gm_shader2</item>
+    <item>gm_shader3</item>
+    <item>gm_shader4</item>
+    <item>gm_shapes1</item>
+    <item>gm_shapes2</item>
+    <item>gm_minsdk</item>
+    <item>gm_renderscript1</item>
+    <item>gm_renderscript2</item>
+    <item>gm_renderscript3</item>
+    <item>gm_renderscript4</item>
+    <item>gm_renderscript5</item>
+    <item>gm_renderscript6</item>
+    <item>gm_end</item>
+    <item>gm_questions</item>
+    <item>gm_title</item>
+  </string-array>
+</resources>

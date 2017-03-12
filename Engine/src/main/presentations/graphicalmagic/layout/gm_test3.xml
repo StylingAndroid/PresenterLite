@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stylingandroid.presenter.engine.presentation.SlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:sap="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@id/slide"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:layout_gravity="center"
+  android:gravity="center"
+  android:orientation="vertical"
+  android:paddingTop="80dp"
+  sap:tweet="@string/gm_tweet_title"
+  tools:context=".display.DisplayActivity">
+
+
+  <GridLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:columnCount="5">
+
+    <com.stylingandroid.presenter.engine.presentation.PorterDuffImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@drawable/checkerboard"
+      android:layout_margin="4dp"
+      sap:src="@drawable/porterduff_src"
+      sap:dst="@drawable/porterduff_dst"
+      sap:mode="add" />
+
+    <com.stylingandroid.presenter.engine.presentation.PorterDuffImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@drawable/checkerboard"
+      android:layout_margin="4dp"
+      sap:src="@drawable/porterduff_src"
+      sap:dst="@drawable/porterduff_dst"
+      sap:mode="darken" />
+
+    <com.stylingandroid.presenter.engine.presentation.PorterDuffImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@drawable/checkerboard"
+      android:layout_margin="4dp"
+      sap:src="@drawable/porterduff_src"
+      sap:dst="@drawable/porterduff_dst"
+      sap:mode="lighten" />
+
+    <com.stylingandroid.presenter.engine.presentation.PorterDuffImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@drawable/checkerboard"
+      android:layout_margin="4dp"
+      sap:src="@drawable/porterduff_src"
+      sap:dst="@drawable/porterduff_dst"
+      sap:mode="multiply" />
+
+    <com.stylingandroid.presenter.engine.presentation.PorterDuffImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@drawable/checkerboard"
+      android:layout_margin="4dp"
+      sap:src="@drawable/porterduff_src"
+      sap:dst="@drawable/porterduff_dst"
+      sap:mode="screen" />
+
+    <com.stylingandroid.presenter.engine.presentation.PorterDuffImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@drawable/checkerboard"
+      android:layout_margin="4dp"
+      sap:src="@drawable/porterduff_src"
+      sap:dst="@drawable/porterduff_dst"
+      sap:mode="add" />
+
+    <com.stylingandroid.presenter.engine.presentation.PorterDuffImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@drawable/checkerboard"
+      android:layout_margin="4dp"
+      sap:src="@drawable/porterduff_src_trans"
+      sap:dst="@drawable/porterduff_dst_trans"
+      sap:mode="darken" />
+
+    <com.stylingandroid.presenter.engine.presentation.PorterDuffImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@drawable/checkerboard"
+      android:layout_margin="4dp"
+      sap:src="@drawable/porterduff_src_trans"
+      sap:dst="@drawable/porterduff_dst_trans"
+      sap:mode="lighten" />
+
+    <com.stylingandroid.presenter.engine.presentation.PorterDuffImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@drawable/checkerboard"
+      android:layout_margin="4dp"
+      sap:src="@drawable/porterduff_src_trans"
+      sap:dst="@drawable/porterduff_dst_trans"
+      sap:mode="multiply" />
+
+    <com.stylingandroid.presenter.engine.presentation.PorterDuffImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@drawable/checkerboard"
+      android:layout_margin="4dp"
+      sap:src="@drawable/porterduff_src_trans"
+      sap:dst="@drawable/porterduff_dst_trans"
+      sap:mode="screen" />
+  </GridLayout>
+
+</com.stylingandroid.presenter.engine.presentation.SlideLayout>

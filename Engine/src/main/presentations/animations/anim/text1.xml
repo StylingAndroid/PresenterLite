@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <rotate
+    android:duration="500"
+    android:fromDegrees="-10.0"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    android:repeatCount="infinite"
+    android:repeatMode="reverse"
+    android:toDegrees="10.0"></rotate>
+
+  <translate
+    android:fromXDelta="-5%"
+    android:repeatCount="infinite"
+    android:repeatMode="reverse"
+    android:toXDelta="5%"
+    android:duration="300" />
+
+  <translate
+    android:fromYDelta="-5%"
+    android:repeatCount="infinite"
+    android:repeatMode="reverse"
+    android:toYDelta="5%"
+    android:duration="400" />
+
+  <scale
+    android:duration="462"
+    android:fromXScale="0.95"
+    android:fromYScale="1.0"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    android:repeatCount="infinite"
+    android:repeatMode="reverse"
+    android:toXScale="1.05"
+    android:toYScale="1.0" />
+
+  <scale
+    android:duration="368"
+    android:fromXScale="1.0"
+    android:fromYScale="0.95"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    android:repeatCount="infinite"
+    android:repeatMode="reverse"
+    android:toXScale="1.0"
+    android:toYScale="1.05" />
+</set>

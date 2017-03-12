@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionManager xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <transition
+    android:toScene="@layout/move_fill7b"
+    android:transition="@transition/auto" />
+
+</transitionManager>

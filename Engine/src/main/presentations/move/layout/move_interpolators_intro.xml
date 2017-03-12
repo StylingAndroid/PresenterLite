@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stylingandroid.presenter.engine.presentation.ConstraintSlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  app:nextInAnimation="@anim/fadein"
+  app:nextOutAnimation="@anim/fadeout"
+  app:notes="Jeb Stuart"
+  app:tweet="@string/move_tweet_interpolator">
+
+  <TextView
+    android:id="@+id/title"
+    style="@style/Widget.TextView.Large"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Interpolators"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toTopOf="@+id/bullet1"
+    app:layout_constraintVertical_chainStyle="packed"/>
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    android:id="@+id/bullet1"
+    style="@style/Widget.TextView.Medium"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Dynamically changes the speed"
+    app:bulletDrawable="@drawable/bullet_animated"
+    app:layout_constraintTop_toBottomOf="@id/title"
+    app:layout_constraintBottom_toTopOf="@+id/bullet2"
+    app:layout_constraintStart_toStartOf="@+id/bullet2"
+    app:showPhase="1"
+    app:showAnimation="@anim/fadein" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    android:id="@+id/bullet2"
+    style="@style/Widget.TextView.Medium"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Designers often call them Easing functions"
+    app:bulletDrawable="@drawable/bullet_animated"
+    app:layout_constraintTop_toBottomOf="@id/bullet1"
+    app:layout_constraintBottom_toTopOf="@+id/bullet3"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:showPhase="2"
+    app:showAnimation="@anim/fadein" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    android:id="@+id/bullet3"
+    style="@style/Widget.TextView.Medium"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Often based on real-world physics"
+    app:bulletDrawable="@drawable/bullet_animated"
+    app:layout_constraintTop_toBottomOf="@id/bullet2"
+    app:layout_constraintBottom_toTopOf="@+id/bullet4"
+    app:layout_constraintStart_toStartOf="@id/bullet1"
+    app:showPhase="3"
+    app:showAnimation="@anim/fadein" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    android:id="@+id/bullet4"
+    style="@style/Widget.TextView.Medium"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Can provide more natural feel"
+    app:bulletDrawable="@drawable/bullet_animated"
+    app:layout_constraintTop_toBottomOf="@id/bullet3"
+    app:layout_constraintStart_toStartOf="@id/bullet1"
+    app:layout_constraintBottom_toTopOf="@+id/bullet5"
+    app:showPhase="4"
+    app:showAnimation="@anim/fadein" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    android:id="@+id/bullet5"
+    style="@style/Widget.TextView.Medium"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Can make or break an animation"
+    app:bulletDrawable="@drawable/bullet_animated"
+    app:layout_constraintTop_toBottomOf="@id/bullet4"
+    app:layout_constraintStart_toStartOf="@id/bullet1"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:showPhase="5"
+    app:showAnimation="@anim/fadein" />
+</com.stylingandroid.presenter.engine.presentation.ConstraintSlideLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/transition_container"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="horizontal">
+
+  <Space
+    android:id="@+id/transition_pad1"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="0" />
+
+  <RelativeLayout
+    android:id="@+id/transition_graphics"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1">
+
+    <TextView
+      android:id="@+id/title"
+      style="@style/Widget.TextView.Large"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="50dp"
+      android:gravity="center"
+      android:text="VectorDrawable" />
+
+    <LinearLayout
+      android:id="@+id/body"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@id/title"
+      android:layout_marginBottom="@dimen/vectors_margin_bottom"
+      android:orientation="horizontal">
+
+      <FrameLayout
+        android:id="@+id/code_container"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:foregroundGravity="center_vertical">
+
+        <RelativeLayout
+          android:id="@+id/code_layout"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical">
+
+          <TextView
+            android:id="@+id/vector_prefix"
+            style="@style/Widget.TextView.Small.Code.Highlight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vectors_vector_prefix"
+            android:visibility="invisible"/>
+
+          <TextView
+            android:id="@+id/path"
+            style="@style/Widget.TextView.Small.Code.Highlight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vector_prefix"
+            android:gravity="center_vertical"
+            android:text="@string/vectors_svg_path_path" />
+
+          <TextView
+            android:id="@+id/prefix"
+            style="@style/Widget.TextView.Small.Code.Highlight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/path"
+            android:gravity="center_vertical"
+            android:text="@string/vectors_svg_path_pathData_prefix" />
+
+          <TextView
+            android:id="@+id/line1"
+            style="@style/Widget.TextView.Small.Code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/prefix"
+            android:layout_toEndOf="@id/prefix"
+            android:gravity="center_vertical"
+            android:text="@string/vectors_svg_path_1" />
+
+          <TextView
+            android:id="@+id/line2"
+            style="@style/Widget.TextView.Small.Code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/prefix"
+            android:layout_marginStart="@dimen/vectors_code_space"
+            android:layout_toEndOf="@id/line1"
+            android:gravity="center_vertical"
+            android:text="@string/vectors_svg_path_2" />
+
+          <TextView
+            android:id="@+id/line3"
+            style="@style/Widget.TextView.Small.Code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/prefix"
+            android:layout_marginStart="@dimen/vectors_code_space"
+            android:layout_toEndOf="@id/line2"
+            android:gravity="center_vertical"
+            android:text="@string/vectors_svg_path_3" />
+
+          <TextView
+            android:id="@+id/line4"
+            style="@style/Widget.TextView.Small.Code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/prefix"
+            android:layout_marginStart="@dimen/vectors_code_space"
+            android:layout_toEndOf="@id/line3"
+            android:gravity="center_vertical"
+            android:text="@string/vectors_svg_path_4" />
+
+          <TextView
+            android:id="@+id/line5"
+            style="@style/Widget.TextView.Small.Code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/prefix"
+            android:layout_marginStart="@dimen/vectors_code_space"
+            android:layout_toEndOf="@id/line4"
+            android:gravity="center_vertical"
+            android:text="@string/vectors_svg_path_5" />
+
+          <TextView
+            android:id="@+id/suffix"
+            style="@style/Widget.TextView.Small.Code.Highlight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/prefix"
+            android:layout_toEndOf="@id/line5"
+            android:gravity="center_vertical"
+            android:text="@string/vectors_svg_path_pathData_suffix" />
+
+          <TextView
+            android:id="@+id/vector_suffix"
+            style="@style/Widget.TextView.Small.Code.Highlight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/suffix"
+            android:text="@string/vectors_vector_suffix"
+            android:visibility="invisible"/>
+        </RelativeLayout>
+      </FrameLayout>
+
+      <FrameLayout
+        android:id="@+id/svg_path_image_container"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="0" />
+
+    </LinearLayout>
+
+  </RelativeLayout>
+
+  <Space
+    android:id="@+id/transition_pad2"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="0" />
+</LinearLayout>

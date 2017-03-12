@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.stylingandroid.presenter.engine.presentation.SlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:sap="http://schemas.android.com/apk/res-auto"
+  android:id="@id/slide"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:layout_gravity="center"
+  android:gravity="center"
+  sap:notes="SurfaceView, GLSurfaceView, RSSurfaceView"
+  android:orientation="vertical">
+
+  <TextView
+    style="@style/Widget.TextView.Large"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Types of Animation" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    style="@style/Widget.TextView.Medium"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Drawable Animation"
+    sap:showAnimation="@anim/fadein"
+    sap:hideAnimation="@anim/fadeout"
+    sap:showPhase="1" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    style="@style/Widget.TextView.Medium"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="View Animation"
+    sap:showAnimation="@anim/fadein"
+    sap:hideAnimation="@anim/fadeout"
+    sap:showPhase="2" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    style="@style/Widget.TextView.Medium"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Property Animation"
+    sap:showAnimation="@anim/fadein"
+    sap:hideAnimation="@anim/fadeout"
+    sap:showPhase="3" />
+
+  <FrameLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+      style="@style/Widget.TextView.Medium"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="OpenGL Animation"
+      sap:showPhase="4"
+      sap:showAnimation="@anim/fadein"
+      sap:hideAnimation="@anim/fadeout"
+      sap:hidePhase="6" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+      style="@style/Widget.TextView.Medium.Grey"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="OpenGL Animation"
+      sap:showAnimation="@anim/fadein"
+      sap:hideAnimation="@anim/fadeout"
+      sap:showPhase="6" />
+
+  </FrameLayout>
+
+  <FrameLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+      style="@style/Widget.TextView.Medium"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Renderscript Animation"
+      sap:showAnimation="@anim/fadein"
+      sap:hideAnimation="@anim/fadeout"
+      sap:showPhase="5"
+      sap:hidePhase="6" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+      style="@style/Widget.TextView.Medium.Grey"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Renderscript Animation"
+      sap:showAnimation="@anim/fadein"
+      sap:hideAnimation="@anim/fadeout"
+      sap:showPhase="6" />
+  </FrameLayout>
+
+</com.stylingandroid.presenter.engine.presentation.SlideLayout>

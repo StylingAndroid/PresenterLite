@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.stylingandroid.presenter.engine.presentation.SlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:sap="http://schemas.android.com/apk/res-auto"
+  android:id="@id/slide"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:layout_gravity="center"
+  android:gravity="center"
+  android:orientation="vertical">
+
+  <TextView
+    style="@style/Widget.TextView.Large"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Interpolators" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    style="@style/Widget.TextView.Medium"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    sap:highlightTextAppearance="@style/Widget.TextView.Medium.Code"
+    android:text="Defines value as a function of time"
+    sap:pattern="(getTransformation.*)"
+    sap:showPhase="1" />
+
+  <RelativeLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+      android:id="@+id/title1"
+      style="@style/Widget.TextView.Small.Code"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentTop="true"
+      android:visibility="invisible"
+      android:text="@string/interpolator_linear"
+      sap:showPhase="2"
+      sap:hidePhase="3" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+      style="@style/Widget.TextView.Small"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Linear Interpolator"
+      android:layout_alignParentLeft="true"
+      android:layout_below="@id/title1"
+      android:visibility="invisible"
+      sap:showPhase="2"
+      sap:hidePhase="3" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+      android:id="@+id/title2"
+      style="@style/Widget.TextView.Small.Code"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentLeft="true"
+      android:visibility="invisible"
+      android:text="@string/interpolator_accel_decel"
+      sap:showPhase="3" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+      style="@style/Widget.TextView.Small"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Accelerate Decelerate Interpolator"
+      android:layout_below="@id/title2"
+      android:layout_alignParentLeft="true"
+      android:visibility="invisible"
+      sap:showPhase="3" />
+
+  </RelativeLayout>
+
+
+</com.stylingandroid.presenter.engine.presentation.SlideLayout>

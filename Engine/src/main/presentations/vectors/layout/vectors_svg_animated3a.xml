@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/transition_graphics"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <TextView
+    android:id="@+id/title"
+    style="@style/Widget.TextView.Large"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="50dp"
+    android:gravity="center"
+    android:text="AnimatedVectorDrawable" />
+
+  <LinearLayout
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/title"
+    android:baselineAligned="false"
+    android:orientation="horizontal">
+
+    <FrameLayout
+      android:id="@+id/code_container"
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_weight="1">
+
+      <RelativeLayout
+        android:id="@+id/code_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+          android:id="@+id/vectors_java_square_prefix1"
+          style="@style/Widget.TextView.Small.Code"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentTop="true"
+          android:text="@string/vectors_java_square_prefix1" />
+
+        <TextView
+          android:id="@+id/vectors_java_square_prefix2"
+          style="@style/Widget.TextView.Small.Code"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/vectors_java_square_prefix1"
+          android:text="@string/vectors_java_square_prefix2" />
+
+        <TextView
+          android:id="@+id/vectors_java_square_start"
+          style="@style/Widget.TextView.Small.Code"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBaseline="@id/vectors_java_square_prefix2"
+          android:layout_toEndOf="@id/vectors_java_square_prefix2"
+          android:text="@string/vectors_java_square_start" />
+
+        <TextView
+          android:id="@+id/vectors_java_square_suffix1"
+          style="@style/Widget.TextView.Small.Code"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBaseline="@id/vectors_java_square_start"
+          android:layout_toEndOf="@id/vectors_java_square_start"
+          android:text="@string/vectors_java_square_suffix1" />
+
+        <TextView
+          android:id="@+id/vectors_java_square_suffix2"
+          style="@style/Widget.TextView.Small.Code"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/vectors_java_square_suffix1"
+          android:text="@string/vectors_java_square_suffix2" />
+
+      </RelativeLayout>
+
+    </FrameLayout>
+
+    <Space
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_weight="0" />
+
+  </LinearLayout>
+
+</RelativeLayout>

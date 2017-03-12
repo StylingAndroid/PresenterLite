@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="view_translate_a" formatted="false"><![CDATA[
+<translate\n
+\t\txmlns:android=\"...\"\n
+\t\tandroid:fromYDelta=\"0%\"\n
+\t\tandroid:toYDelta=\"-100%\"\n
+\t\tandroid:repeatMode=\"reverse\"\n
+\t\tandroid:repeatCount=\"infinite\"\n
+\t\tandroid:duration=\"300\"/>
+    ]]></string>
+    <string name="view_translate_b" formatted="false"><![CDATA[
+<translate\n
+\t\txmlns:android=\"...\"\n
+\t\tandroid:fromYDelta=\"0%\"\n
+\t\tandroid:toYDelta=\"-100%\"\n
+\t\tandroid:repeatMode=\"reverse\"\n
+\t\tandroid:repeatCount=\"infinite\"\n
+\t\tandroid:duration=\"300\"/>
+    ]]></string>
+    <string name="interpolator_linear" formatted="true"><![CDATA[
+public float getInterpolation(float input) {\n
+\t\treturn input;\n
+}]]>
+    </string>
+    <string name="interpolator_accel_decel" formatted="true"><![CDATA[
+public float getInterpolation(float input) {\n
+\t\treturn (float)(Math.cos((input + 1) * Math.PI)\n
+\t\t\t\t/ 2.0f) + 0.5f;\n
+}]]>
+    </string>
+    <string name="using_view_activity" formatted="true"><![CDATA[
+\t\toverridePendingTransition( R.anim.enter,\n\t\t\t\t\t\t\t\t\t\t\t\tR.anim.exit );]]></string>
+    <string name="using_view_fragment" formatted="true"><![CDATA[
+\t\tFragmentManager fm = getFragmentManager();\n
+FragmentTransaction tx = fm.begin();\n
+tx.setCustomAnimations( R.anim.in, R.anim.out,\n\t\t\t\t\t\t\t\t\t\t\t\tR.anim.popEnter, R.anim.popExit );\n
+tx.replace( R.id.frame, fragment );\n
+tx.commit();
+]]></string>
+    <string name="using_view_view" formatted="true"><![CDATA[
+\t\tAnimation anim = AnimationUtils.load( context, \n\t\t\t\t\t\t\t\t\t\t\t\t\tR.anim.anim );\n
+anim.setAnimationListener( listener );\n
+view.startAnimation( anim );
+]]></string>
+    <string name="using_view_layout_anim" formatted="false"><![CDATA[
+\t\t<layoutAnimation\n
+\t\t\t\t\t\t\t\txmlns:android=\"...\"\n
+\t\t\t\t\t\t\t\tandroid:animation=\"@anim/layout_item_anim\"\n
+\t\t\t\t\t\t\t\tandroid:delay=\"25%\"\n
+\t\t\t\t\t\t\t\tandroid:duration=\"400\">\n
+</layoutAnimation>]]></string>
+    <string name="using_view_item_anim" formatted="false"><![CDATA[
+\t\t<set xmlns:android=\"...\">\n
+\t\t\t\t\t\t\t\t<alpha\n
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tandroid:fromAlpha=\"0.0\"\n
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tandroid:toAlpha=\"1.0\"\n
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tandroid:duration=\"400\"/>\n
+\t\t\t\t\t\t\t\t<translate\n
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tandroid:fromYDelta=\"100%\"\n
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tandroid:toYDelta=\"0%\"\n
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tandroid:duration=\"400\"/>\n
+</set>\n
+]]></string>
+    <string name="using_view_layout" formatted="false"><![CDATA[
+\t\t<RelativeLayout\n
+\t\t\t\t\t\t\t\tandroid:layout_width=\"...\"\n
+\t\t\t\t\t\t\t\tandroid:layout_height=\"...\"\n
+\t\t\t\t\t\t\t\tandroid:layoutAnimation=\"@anim/layout_anim\">\n
+\t\t\t\t\t\t\t\t.\n
+\t\t\t\t\t\t\t\t.\n
+\t\t\t\t\t\t\t\t.\n
+</RelativeLayout>]]></string>
+    <string name="using_property_class1" formatted="false"><![CDATA[
+\t\t@Override\n
+public void setImageDrawable(\n
+\t\t\t\t\t\t\t\tDrawable drawable)\n
+{\n
+\t\t\t\t\t\t\t\t\tsuper.setImageDrawable(\n
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tdrawable.getConstantState()\n
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t.newDrawable());\n
+\t\t\t\t\t\t\t\tsetSaturation(1.0f);\n
+}\n
+]]></string>
+    <string name="using_property_class2" formatted="false"><![CDATA[
+\t\tpublic void setSaturation(float sat)\n
+{\n
+\t\t\t\t\t\t\t\tColorMatrix cm = new ColorMatrix();\n
+\t\t\t\t\t\t\t\tcm.setSaturation(sat);\n
+\t\t\t\t\t\t\t\tColorFilter filter =\n
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tnew ColorMatrixColorFilter(cm);\n
+\t\t\t\t\t\t\t\tgetDrawable().setColorFilter(filter);\n
+}\n
+]]></string>
+    <string name="using_property_anim" formatted="false"><![CDATA[
+\t\t<objectAnimator\n
+\t\t\t\t\t\t\t\txmlns:android=\"...\"\n
+\t\t\t\t\t\t\t\tandroid:propertyName=\"saturation\"\n
+\t\t\t\t\t\t\t\tandroid:valueFrom=\"1.0\"\n
+\t\t\t\t\t\t\t\tandroid:valueTo=\"0.0\"\n
+\t\t\t\t\t\t\t\tandroid:valueType=\"floatType\"\n
+\t\t\t\t\t\t\t\tandroid:repeatCount=\"infinite\"\n
+\t\t\t\t\t\t\t\tandroid:repeatMode=\"reverse\"\n
+\t\t\t\t\t\t\t\tandroid:duration=\"1000\" />\n
+]]></string>
+    <string name="drawables_1" formatted="false"><![CDATA[
+\t\t<animation-list\n
+\t\t\t\t\t\t\t\txmlns:android=\"...\"\n
+\t\t\t\t\t\t\t\tandroid:oneshot=\"false\">\n
+\t\t\t\t\t\t\t\t<item\n
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tandroid:drawable=\"@drawable/sa\"\n
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tandroid:duration=\"100\"/>\n
+\t\t\t\t\t\t\t\t<item\n
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tandroid:drawable=\"@drawable/sa60\"\n
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tandroid:duration=\"100\"/>\n
+\t\t\t\t\t\t\t\t<item\n
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tandroid:drawable=\"@drawable/sa120\"\n
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tandroid:duration=\"100\"/>\n
+]]></string>
+    <string name="drawables_2" formatted="false"><![CDATA[
+\t\t\t\t\t\t\t\t<item\n
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tandroid:drawable=\"@drawable/sa180\"\n
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tandroid:duration=\"100\"/>\n
+\t\t\t\t\t\t\t\t<item\n
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tandroid:drawable=\"@drawable/sa240\"\n
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tandroid:duration=\"100\"/>\n
+\t\t\t\t\t\t\t\t<item\n
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tandroid:drawable=\"@drawable/sa300\"\n
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tandroid:duration=\"100\"/>\n
+</animation-list>
+]]></string>
+    <string name="drawables_3" formatted="false"><![CDATA[
+\t\t<animated-rotate\n
+\t\t\t\t\t\t\t\txmlns:android=\"...\"\n
+\t\t\t\t\t\t\t\tandroid:drawable=\"@drawable/sa\"\n
+\t\t\t\t\t\t\t\tandroid:pivotX=\"50%\"\n
+\t\t\t\t\t\t\t\tandroid:pivotY=\"50%\"\n
+\t\t\t\t\t\t\t\tandroid:duration=\"600\"/>\n
+]]></string>
+</resources>

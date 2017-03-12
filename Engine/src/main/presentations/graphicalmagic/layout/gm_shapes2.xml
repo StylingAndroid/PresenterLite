@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stylingandroid.presenter.engine.presentation.SlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:sap="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@id/slide"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:layout_gravity="center"
+  android:orientation="horizontal"
+  android:weightSum="2"
+  tools:context=".display.DisplayActivity">
+
+  <FrameLayout
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="match_parent">
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+      android:layout_width="match_parent"
+      style="@style/Widget.TextView.Small.Code"
+      android:text="@string/gm_shapes_code1"
+      android:gravity="center_vertical"
+      sap:hidePhase="1"
+      sap:showAnimation="@anim/fadein"
+      sap:hideAnimation="@anim/fadeout"
+      android:layout_height="match_parent" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+      android:layout_width="match_parent"
+      style="@style/Widget.TextView.Small.Code"
+      android:text="@string/gm_shapes_code1"
+      android:gravity="center_vertical"
+      sap:highlightTextAppearance="@style/Widget.TextView.Small.Code.Highlight"
+      sap:pattern="(float width.*getHeight.*?;)"
+      sap:showPhase="1"
+      sap:hidePhase="2"
+      sap:showAnimation="@anim/fadein"
+      sap:hideAnimation="@anim/fadeout"
+      android:layout_height="match_parent" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+      android:layout_width="match_parent"
+      style="@style/Widget.TextView.Small.Code"
+      android:text="@string/gm_shapes_code1"
+      android:gravity="center_vertical"
+      sap:highlightTextAppearance="@style/Widget.TextView.Small.Code.Highlight"
+      sap:pattern="(Bitmap bitmap =.*?;)"
+      sap:showPhase="2"
+      sap:hidePhase="3"
+      sap:showAnimation="@anim/fadein"
+      sap:hideAnimation="@anim/fadeout"
+      android:layout_height="match_parent" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+      android:layout_width="match_parent"
+      style="@style/Widget.TextView.Small.Code"
+      android:text="@string/gm_shapes_code1"
+      android:gravity="center_vertical"
+      sap:highlightTextAppearance="@style/Widget.TextView.Small.Code.Highlight"
+      sap:pattern="(BitmapShader.*?;)"
+      sap:showPhase="3"
+      sap:hidePhase="4"
+      sap:showAnimation="@anim/fadein"
+      sap:hideAnimation="@anim/fadeout"
+      android:layout_height="match_parent" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+      android:layout_width="match_parent"
+      style="@style/Widget.TextView.Small.Code"
+      android:text="@string/gm_shapes_code1"
+      android:gravity="center_vertical"
+      sap:highlightTextAppearance="@style/Widget.TextView.Small.Code.Highlight"
+      sap:pattern="(Canvas.*?;)"
+      sap:showPhase="4"
+      sap:hidePhase="5"
+      sap:showAnimation="@anim/fadein"
+      sap:hideAnimation="@anim/fadeout"
+      android:layout_height="match_parent" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+      android:layout_width="match_parent"
+      style="@style/Widget.TextView.Small.Code"
+      android:text="@string/gm_shapes_code1"
+      android:gravity="center_vertical"
+      sap:highlightTextAppearance="@style/Widget.TextView.Small.Code.Highlight"
+      sap:pattern="(Paint.*shader.*?;)"
+      sap:showPhase="5"
+      sap:hidePhase="6"
+      sap:showAnimation="@anim/fadein"
+      sap:hideAnimation="@anim/scrollupout"
+      android:layout_height="match_parent" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+      android:layout_width="match_parent"
+      style="@style/Widget.TextView.Small.Code"
+      android:text="@string/gm_shapes_code2"
+      android:gravity="center_vertical"
+      android:visibility="invisible"
+      sap:highlightTextAppearance="@style/Widget.TextView.Small.Code.Highlight"
+      sap:pattern="(Path path.*?;)"
+      sap:showPhase="6"
+      sap:hidePhase="7"
+      sap:showAnimation="@anim/scrollupin"
+      sap:hideAnimation="@anim/fadeout"
+      android:layout_height="match_parent" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+      android:layout_width="match_parent"
+      style="@style/Widget.TextView.Small.Code"
+      android:text="@string/gm_shapes_code2"
+      android:gravity="center_vertical"
+      android:visibility="invisible"
+      sap:highlightTextAppearance="@style/Widget.TextView.Small.Code.Highlight"
+      sap:pattern="(RectF.*?;)"
+      sap:showPhase="7"
+      sap:hidePhase="8"
+      sap:showAnimation="@anim/fadein"
+      sap:hideAnimation="@anim/fadeout"
+      android:layout_height="match_parent" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+      android:layout_width="match_parent"
+      style="@style/Widget.TextView.Small.Code"
+      android:text="@string/gm_shapes_code2"
+      android:gravity="center_vertical"
+      android:visibility="invisible"
+      sap:highlightTextAppearance="@style/Widget.TextView.Small.Code.Highlight"
+      sap:pattern="(path\\.add.*?;)"
+      sap:showPhase="8"
+      sap:hidePhase="9"
+      sap:showAnimation="@anim/fadein"
+      sap:hideAnimation="@anim/scrollupout"
+      android:layout_height="match_parent" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+      android:layout_width="match_parent"
+      style="@style/Widget.TextView.Small.Code"
+      android:text="@string/gm_shapes_code3"
+      android:gravity="center_vertical"
+      android:visibility="invisible"
+      sap:highlightTextAppearance="@style/Widget.TextView.Small.Code.Highlight"
+      sap:pattern="(Matrix.*?;)"
+      sap:showPhase="9"
+      sap:hidePhase="10"
+      sap:showAnimation="@anim/scrollupin"
+      sap:hideAnimation="@anim/fadeout"
+      android:layout_height="match_parent" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+      android:layout_width="match_parent"
+      style="@style/Widget.TextView.Small.Code"
+      android:text="@string/gm_shapes_code3"
+      android:gravity="center_vertical"
+      android:visibility="invisible"
+      sap:highlightTextAppearance="@style/Widget.TextView.Small.Code.Highlight"
+      sap:pattern="(matrix\\.post.*?;)"
+      sap:showPhase="10"
+      sap:hidePhase="11"
+      sap:showAnimation="@anim/fadein"
+      sap:hideAnimation="@anim/fadeout"
+      android:layout_height="match_parent" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+      android:layout_width="match_parent"
+      style="@style/Widget.TextView.Small.Code"
+      android:text="@string/gm_shapes_code3"
+      android:gravity="center_vertical"
+      android:visibility="invisible"
+      sap:highlightTextAppearance="@style/Widget.TextView.Small.Code.Highlight"
+      sap:pattern="(path.*?;)"
+      sap:showPhase="11"
+      sap:hidePhase="12"
+      sap:showAnimation="@anim/fadein"
+      sap:hideAnimation="@anim/scrollupout"
+      android:layout_height="match_parent" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+      android:layout_width="match_parent"
+      style="@style/Widget.TextView.Small.Code"
+      android:text="@string/gm_shapes_code4"
+      android:gravity="center_vertical"
+      android:visibility="invisible"
+      sap:highlightTextAppearance="@style/Widget.TextView.Small.Code.Highlight"
+      sap:pattern="(Region region.*?;)"
+      sap:showPhase="12"
+      sap:hidePhase="13"
+      sap:showAnimation="@anim/scrollupin"
+      sap:hideAnimation="@anim/fadeout"
+      android:layout_height="match_parent" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+      android:layout_width="match_parent"
+      style="@style/Widget.TextView.Small.Code"
+      android:text="@string/gm_shapes_code4"
+      android:gravity="center_vertical"
+      android:visibility="invisible"
+      sap:highlightTextAppearance="@style/Widget.TextView.Small.Code.Highlight"
+      sap:pattern="(region\\.setPath.*?;)"
+      sap:showPhase="13"
+      sap:hidePhase="14"
+      sap:showAnimation="@anim/fadein"
+      sap:hideAnimation="@anim/fadeout"
+      android:layout_height="match_parent" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+      android:layout_width="match_parent"
+      style="@style/Widget.TextView.Small.Code"
+      android:text="@string/gm_shapes_code4"
+      android:gravity="center_vertical"
+      android:visibility="invisible"
+      sap:highlightTextAppearance="@style/Widget.TextView.Small.Code.Highlight"
+      sap:pattern="(canvas.*?;)"
+      sap:showPhase="14"
+      sap:hidePhase="15"
+      sap:showAnimation="@anim/fadein"
+      sap:hideAnimation="@anim/scrollupout"
+      android:layout_height="match_parent" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+      android:layout_width="match_parent"
+      style="@style/Widget.TextView.Small.Code"
+      android:text="@string/gm_shapes_code5"
+      android:gravity="center_vertical"
+      android:visibility="invisible"
+      sap:showPhase="15"
+      sap:showAnimation="@anim/scrollupin"
+      sap:hideAnimation="@anim/scrollupout"
+      android:layout_height="match_parent" />
+
+  </FrameLayout>
+
+  <FrameLayout
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="match_parent">
+
+    <com.stylingandroid.presenter.engine.presentation.TransitionLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      sap:scenes="gm_shapes2a,gm_shapes2b,gm_shapes2c,gm_shapes2d,gm_shapes2e"
+      sap:transitionManager="@transition/flatten"
+      sap:transitionPhases="6,9,12,15" />
+  </FrameLayout>
+
+
+</com.stylingandroid.presenter.engine.presentation.SlideLayout>

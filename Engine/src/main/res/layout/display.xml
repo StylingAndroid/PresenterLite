@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:sap="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  tools:context=".display.DisplayActivity">
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/display_background"
+    android:paddingLeft="@dimen/horizontal_margin"
+    android:paddingRight="@dimen/horizontal_margin"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <!--RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:clipChildren="false"
+      android:clipToPadding="false"
+      -->
+
+    <com.stylingandroid.presenter.engine.presentation.DisplayLayout
+      android:id="@+id/display"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:clipChildren="false"
+      android:clipToPadding="false"
+      android:padding="@dimen/displayPadding"
+      android:visibility="visible"
+      sap:inAnimation="@anim/slideinright"
+      sap:outAnimation="@anim/slideoutleft"
+      sap:slides="slides.json"
+      android:layout_marginRight="@dimen/displayMarginRight"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentRight="true"></com.stylingandroid.presenter.engine.presentation.DisplayLayout>
+
+    <LinearLayout
+      android:id="@id/waiting"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:gravity="center"
+      android:visibility="gone">
+
+      <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:padding="@dimen/padding" />
+
+      <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding"
+        android:text="Waiting for controller..."
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+    <!--/RelativeLayout-->
+
+    <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentTop="true"
+      android:layout_centerHorizontal="true"
+      android:background="@drawable/header_default"
+      android:id="@+id/banner"></FrameLayout>
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignBaseline="@id/banner"
+      android:layout_marginLeft="20dp"
+      android:layout_marginTop="@dimen/titlepadding"
+      android:padding="@dimen/padding"
+      android:shadowColor="#80000000"
+      android:shadowDx="2.0"
+      android:shadowDy="2.0"
+      android:shadowRadius="3.5"
+      android:text="Styling Android"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:textColor="@android:color/white"
+      android:textSize="@dimen/textSizeTitle"
+      android:layout_alignParentBottom="false" />
+
+    <ImageView
+      android:paddingTop="5dp"
+      android:paddingRight="5dp"
+      android:layout_width="@dimen/imageSizeTitle"
+      android:layout_height="@dimen/imageSizeTitle"
+      android:layout_alignBaseline="@id/banner"
+      android:layout_alignParentRight="true"
+      android:layout_marginRight="8dp"
+      android:src="@drawable/sa" />
+  </RelativeLayout>
+
+  <GridLayout
+    android:id="@+id/display_attributes"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:layout_margin="@dimen/popuppadding"
+    android:alpha="0"
+    android:background="@drawable/popup_background"
+    android:columnCount="2"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <TextView
+      android:layout_marginRight="@dimen/popuppadding"
+      android:text="@string/density_label"
+      android:textColor="@android:color/white" />
+
+    <TextView
+      android:id="@+id/density"
+      android:textColor="@android:color/white" />
+
+    <TextView
+      android:layout_marginRight="@dimen/popuppadding"
+      android:text="@string/size_label"
+      android:textColor="@android:color/white" />
+
+    <TextView
+      android:id="@+id/size"
+      android:textColor="@android:color/white" />
+
+    <TextView
+      android:layout_marginRight="@dimen/popuppadding"
+      android:text="@string/dimensions_label"
+      android:textColor="@android:color/white" />
+
+    <TextView
+      android:id="@+id/dimensions"
+      android:layout_gravity="left"
+      android:textColor="@android:color/white" />
+  </GridLayout>
+
+</RelativeLayout>

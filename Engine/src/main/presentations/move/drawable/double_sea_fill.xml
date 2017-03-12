@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:aapt="http://schemas.android.com/aapt"
+  android:drawable="@drawable/double_sea_wifi"
+  xmlns:tools="http://schemas.android.com/tools"
+  tools:ignore="MissingPrefix">
+
+  <target android:name="group">
+    <aapt:attr name="android:animation">
+      <set android:ordering="together">
+        <objectAnimator
+          android:duration="2000"
+          android:propertyName="translateY"
+          android:repeatCount="infinite"
+          android:repeatMode="reverse"
+          android:valueFrom="28"
+          android:valueTo="-2"
+          android:valueType="floatType" />
+
+        <objectAnimator
+          android:duration="2000"
+          android:interpolator="@android:interpolator/linear"
+          android:propertyName="translateX"
+          android:repeatCount="infinite"
+          android:valueFrom="-4"
+          android:valueTo="-28"
+          android:valueType="floatType" />
+
+        <objectAnimator
+          android:duration="2000"
+          android:propertyName="pivotX"
+          android:repeatCount="infinite"
+          android:valueFrom="12"
+          android:valueTo="36"
+          android:valueType="floatType" />
+
+        <objectAnimator
+          android:duration="250"
+          android:propertyName="rotation"
+          android:repeatCount="infinite"
+          android:repeatMode="reverse"
+          android:valueFrom="-10"
+          android:valueTo="10"
+          android:valueType="floatType" />
+      </set>
+    </aapt:attr>
+  </target>
+
+</animated-vector>

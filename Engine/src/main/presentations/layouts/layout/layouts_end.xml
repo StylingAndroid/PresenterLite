@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stylingandroid.presenter.engine.presentation.SlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:sap="http://schemas.android.com/apk/res-auto"
+  android:id="@id/slide"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:layout_gravity="center"
+  android:gravity="center"
+  android:orientation="vertical"
+  sap:nextInAnimation="@anim/zoomin"
+  sap:notes="@string/notes_presenter"
+  sap:tweet="@string/tweet_presenter">
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    style="@style/Widget.TextView.Large"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Presentation Software" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    style="@style/Widget.TextView.Medium"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    sap:showAnimation="@anim/fadein"
+    sap:showPhase="1"
+    android:text="Custom Android Application" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    style="@style/Widget.TextView.Small"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    sap:showAnimation="@anim/fadein"
+    sap:showPhase="1"
+    android:text="All slides made up using Android Layouts" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    style="@style/Widget.TextView.Medium"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="20dp"
+    sap:showAnimation="@anim/fadein"
+    sap:showPhase="2"
+    android:text="stylingandroid.com Blog Series" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    style="@style/Widget.TextView.Small"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    sap:showAnimation="@anim/fadein"
+    sap:showPhase="2"
+    android:text="Explaining how the app works" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    style="@style/Widget.TextView.Medium"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="20dp"
+    sap:showAnimation="@anim/fadein"
+    sap:showPhase="3"
+    android:text="Open-source" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    style="@style/Widget.TextView.Small"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    sap:showAnimation="@anim/fadein"
+    sap:showPhase="3"
+    android:text="Source code for basic version available on GitHub" />
+
+</com.stylingandroid.presenter.engine.presentation.SlideLayout>

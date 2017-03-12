@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <style name="DisplayTheme" parent="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+    <item name="android:textColor">#000</item>
+    <item name="android:textSize">32sp</item>
+    <item name="android:shadowColor">#FFF</item>
+    <item name="highlightCodeTextAppearance">@style/Widget.TextView.Small.Code.Highlight</item>
+  </style>
+
+  <style name="Widget.TextView" parent="@android:style/Widget.TextView">
+    <item name="android:textColor">#444</item>
+    <item name="android:clipChildren">false</item>
+    <item name="android:clipToPadding">false</item>
+  </style>
+
+  <style name="Widget.TextView.XLarge">
+    <item name="android:textSize">@dimen/textSizeXLarge</item>
+    <item name="android:textColor">@color/SAgreen</item>
+  </style>
+
+  <style name="Widget.TextView.Large">
+    <item name="android:textSize">@dimen/textSizeLarge</item>
+    <item name="android:textColor">@color/SAgreen</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <style name="Widget.TextView.Large.Dark">
+    <item name="android:textColor">#333</item>
+  </style>
+
+  <style name="Widget.TextView.Large.Code">
+    <item name="android:textColor">#333</item>
+    <item name="android:typeface">monospace</item>
+  </style>
+
+  <style name="Widget.TextView.Medium">
+    <item name="android:textSize">@dimen/textSizeMedium</item>
+  </style>
+
+  <style name="Widget.TextView.Medium.Dark">
+    <item name="android:textColor">#333</item>
+  </style>
+
+  <style name="Widget.TextView.Medium.Code">
+    <item name="android:textColor">#333</item>
+    <item name="android:typeface">monospace</item>
+    <item name="android:singleLine">false</item>
+    <!-- item name="android:layout_marginBottom">-6dp</item -->
+  </style>
+
+  <style name="Widget.TextView.Medium.Highlight">
+    <item name="android:textColor">@color/highlight</item>
+  </style>
+
+  <style name="Widget.TextView.Medium.Grey">
+    <item name="android:textColor">#AAA</item>
+  </style>
+
+  <style name="Widget.TextView.Small">
+    <item name="android:textColor">#888</item>
+    <item name="android:textSize">@dimen/textSizeSmall</item>
+  </style>
+
+  <style name="Widget.TextView.Small.Dark">
+    <item name="android:textColor">#333</item>
+  </style>
+
+  <style name="Widget.TextView.Small.Code">
+    <item name="android:textColor">#333</item>
+    <item name="android:typeface">monospace</item>
+    <item name="android:singleLine">false</item>
+    <!-- item name="android:layout_marginBottom">-6dp</item -->
+    <item name="android:textSize">@dimen/textSizeCode</item>
+    <item name="android:lineSpacingExtra">4dp</item>
+  </style>
+
+  <style name="Widget.TextView.Small.Code.Highlight">
+    <item name="android:textColor">@color/highlight</item>
+    <!-- item name="android:background">#FF0</item -->
+  </style>
+
+  <style name="Widget.TextView.Medium.Code.Highlight">
+    <item name="android:textColor">@color/highlight</item>
+    <!-- item name="android:background">#FF0</item -->
+  </style>
+
+  <style name="Widget.TextView.Graphic">
+    <item name="android:textColor">#333</item>
+  </style>
+
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string-array name="move">
+    <item>move_donts</item>
+
+    <item>move_title</item>
+    <item>move_title2</item>
+    <item>move_intro</item>
+    <item>move_fill1</item>
+    <item>move_fill2</item>
+    <item>move_fill3</item>
+    <item>move_fill4</item>
+    <item>move_fill5</item>
+    <item>move_fill6</item>
+    <item>move_fill7</item>
+    <item>move_interpolators_intro</item>
+    <item>move_interpolators_linear</item>
+    <item>move_interpolators_accelerate_decelerate</item>
+    <item>move_interpolators_accelerate</item>
+    <item>move_interpolators_anticipate</item>
+    <item>move_interpolators_decelerate</item>
+    <item>move_interpolators_overshoot</item>
+    <item>move_interpolators_bounce</item>
+    <item>move_interpolators_custom</item>
+    <item>move_dos</item>
+    <item>move_donts</item>
+    <item>vectors_end</item>
+    <item>vectors_questions</item>
+    <item>move_title</item>
+  </string-array>
+</resources>

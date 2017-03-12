@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stylingandroid.presenter.engine.presentation.SlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:sap="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@id/slide"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:layout_gravity="center"
+  android:gravity="left|center_vertical"
+  android:orientation="vertical"
+  tools:context=".display.DisplayActivity">
+
+
+  <TextView
+    style="@style/Widget.TextView.Large"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Coolest bitch on the block" />
+
+  <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+    android:layout_width="@dimen/allison_image_width"
+    android:layout_height="@dimen/allison_image_height"
+    android:layout_gravity="center_horizontal"
+    sap:showAnimation="@anim/fadein"
+    android:src="@drawable/allison" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    style="@style/Widget.TextView.Small"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="end"
+    sap:showAnimation="@anim/fadein"
+    android:text="http://www.urbandictionary.com/define.php?term=Allison" />
+
+</com.stylingandroid.presenter.engine.presentation.SlideLayout>

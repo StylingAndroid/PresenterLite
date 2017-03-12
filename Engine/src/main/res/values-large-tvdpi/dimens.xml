@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <dimen name="fullpadding">100dp</dimen>
+  <dimen name="halfpadding">50dp</dimen>
+  <dimen name="titlepadding">-5dp</dimen>
+
+  <dimen name="textSizeXLarge">50dp</dimen>
+  <dimen name="textSizeLarge">48dp</dimen>
+  <dimen name="textSizeMedium">32dp</dimen>
+  <dimen name="textSizeSmall">16dp</dimen>
+  <dimen name="textSizeCode">16dp</dimen>
+
+</resources>

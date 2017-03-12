@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+  android:width="@dimen/boatWidth"
+  android:height="@dimen/boatHeight"
+  android:viewportHeight="@dimen/viewportHeight"
+  android:viewportWidth="@dimen/viewportWidth">
+
+  <group android:name="stroke_group">
+    <path
+      android:name="stroke_path"
+      android:pathData="M1,2h24v24h-24z"
+      android:strokeColor="@color/sea_blue"
+      android:strokeWidth="0.3" />
+  </group>
+
+  <path
+    android:pathData="M1,2h24v24h-24z"
+    android:strokeColor="@color/grey"
+    android:strokeWidth="0.3" />
+
+
+  <group android:name="fill_group">
+    <path
+      android:name="fill_path"
+      android:fillColor="@color/sea_blue"
+      android:pathData="M1,2h24v24h-24z" />
+  </group>
+
+</vector>

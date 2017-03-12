@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <style name="Widget.TextView.Large.Transparent">
+    <item name="android:textColor">@android:color/transparent</item>
+  </style>
+
+  <style name="Widget.TextView.Large.SemiTransparent">
+    <item name="android:textColor">@color/SAGreen_transparent</item>
+  </style>
+
+  <style name="Widget.TextView.Small.Dictionary">
+    <item name="android:textSize">@dimen/textSizeMediumSmall</item>
+  </style>
+
+  <style name="Widget.TextView.Small.Dictionary.Black">
+    <item name="android:textColor">@android:color/black</item>
+  </style>
+</resources>

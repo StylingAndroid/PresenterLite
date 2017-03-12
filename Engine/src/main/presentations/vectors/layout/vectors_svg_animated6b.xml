@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:sap="http://schemas.android.com/apk/res-auto"
+  android:id="@+id/transition_graphics"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <TextView
+    android:id="@+id/title"
+    style="@style/Widget.TextView.Large"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="50dp"
+    android:gravity="center"
+    android:text="AnimatedVectorDrawable" />
+
+  <LinearLayout
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/title"
+    android:baselineAligned="false"
+    android:orientation="horizontal">
+
+    <FrameLayout
+      android:id="@+id/code_container"
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_weight="1">
+
+      <RelativeLayout
+        android:id="@+id/code_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+
+        <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+          android:id="@+id/vectors_animation_triangle_prefix"
+          style="@style/Widget.TextView.Small.Code"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentTop="true"
+          android:text="@string/vectors_animation_triangle_prefix"
+          sap:highlightTextAppearance="@style/Widget.TextView.Small.Code.Highlight"
+          sap:pattern="(android.propertyName=&quot;.*?&quot;)"/>
+
+
+        <TextView
+          android:id="@+id/vectors_animation_triangle_from"
+          style="@style/Widget.TextView.Small.Code"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/vectors_animation_triangle_prefix"
+          android:text="@string/vectors_animation_triangle_from" />
+
+        <TextView
+          android:id="@+id/vectors_animation_triangle_from_1"
+          style="@style/Widget.TextView.Small.Code"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBaseline="@id/vectors_animation_triangle_from"
+          android:layout_toEndOf="@id/vectors_animation_triangle_from"
+          android:text="@string/vectors_animation_triangle_from_1" />
+
+        <TextView
+          android:id="@+id/vectors_animation_triangle_from_2"
+          style="@style/Widget.TextView.Small.Code"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/vectors_code_space"
+          android:layout_alignBaseline="@id/vectors_animation_triangle_from_1"
+          android:layout_toEndOf="@id/vectors_animation_triangle_from_1"
+          android:text="@string/vectors_animation_triangle_from_2" />
+
+        <TextView
+          android:id="@+id/vectors_animation_triangle_from_3"
+          style="@style/Widget.TextView.Small.Code"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/vectors_code_space"
+          android:layout_alignBaseline="@id/vectors_animation_triangle_from_2"
+          android:layout_toEndOf="@id/vectors_animation_triangle_from_2"
+          android:text="@string/vectors_animation_triangle_from_3" />
+
+        <TextView
+          android:id="@+id/vectors_animation_triangle_from_4"
+          style="@style/Widget.TextView.Small.Code"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/vectors_code_space"
+          android:layout_alignBaseline="@id/vectors_animation_triangle_from_3"
+          android:layout_toEndOf="@id/vectors_animation_triangle_from_3"
+          android:text="@string/vectors_animation_triangle_from_4" />
+
+        <TextView
+          android:id="@+id/vectors_animation_triangle_from_5"
+          style="@style/Widget.TextView.Small.Code"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/vectors_code_space"
+          android:layout_alignBaseline="@id/vectors_animation_triangle_from_4"
+          android:layout_toEndOf="@id/vectors_animation_triangle_from_4"
+          android:text="@string/vectors_animation_triangle_from_5" />
+
+        <TextView
+          android:id="@+id/vectors_animation_triangle_from_end"
+          style="@style/Widget.TextView.Small.Code"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBaseline="@id/vectors_animation_triangle_from_5"
+          android:layout_toEndOf="@id/vectors_animation_triangle_from_5"
+          android:text="@string/vectors_animation_triangle_end_line" />
+
+        <TextView
+          android:id="@+id/vectors_animation_triangle_to"
+          style="@style/Widget.TextView.Small.Code"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/vectors_animation_triangle_from"
+          android:text="@string/vectors_animation_triangle_to" />
+
+        <TextView
+          android:id="@+id/vectors_animation_triangle_to_1"
+          style="@style/Widget.TextView.Small.Code"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBaseline="@id/vectors_animation_triangle_to"
+          android:layout_toEndOf="@id/vectors_animation_triangle_to"
+          android:text="@string/vectors_animation_triangle_to_1" />
+
+        <TextView
+          android:id="@+id/vectors_animation_triangle_to_2"
+          style="@style/Widget.TextView.Small.Code"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/vectors_code_space"
+          android:layout_alignBaseline="@id/vectors_animation_triangle_to_1"
+          android:layout_toEndOf="@id/vectors_animation_triangle_to_1"
+          android:text="@string/vectors_animation_triangle_to_2" />
+
+        <TextView
+          android:id="@+id/vectors_animation_triangle_to_3"
+          style="@style/Widget.TextView.Small.Code"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/vectors_code_space"
+          android:layout_alignBaseline="@id/vectors_animation_triangle_to_2"
+          android:layout_toEndOf="@id/vectors_animation_triangle_to_2"
+          android:text="@string/vectors_animation_triangle_to_3" />
+
+        <TextView
+          android:id="@+id/vectors_animation_triangle_to_4"
+          style="@style/Widget.TextView.Small.Code"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/vectors_code_space"
+          android:layout_alignBaseline="@id/vectors_animation_triangle_to_3"
+          android:layout_toEndOf="@id/vectors_animation_triangle_to_3"
+          android:text="@string/vectors_animation_triangle_to_4" />
+
+        <TextView
+          android:id="@+id/vectors_animation_triangle_to_5"
+          style="@style/Widget.TextView.Small.Code"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/vectors_code_space"
+          android:layout_alignBaseline="@id/vectors_animation_triangle_to_4"
+          android:layout_toEndOf="@id/vectors_animation_triangle_to_4"
+          android:text="@string/vectors_animation_triangle_to_5" />
+
+        <TextView
+          android:id="@+id/vectors_animation_triangle_to_end"
+          style="@style/Widget.TextView.Small.Code"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBaseline="@id/vectors_animation_triangle_to_5"
+          android:layout_toEndOf="@id/vectors_animation_triangle_to_5"
+          android:text="@string/vectors_animation_triangle_end_line" />
+
+        <TextView
+          android:id="@+id/vectors_animation_triangle_suffix"
+          style="@style/Widget.TextView.Small.Code"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/vectors_animation_triangle_to"
+          android:text="@string/vectors_animation_triangle_suffix" />
+
+      </RelativeLayout>
+
+    </FrameLayout>
+
+    <Space
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_weight="0" />
+
+  </LinearLayout>
+
+</RelativeLayout>

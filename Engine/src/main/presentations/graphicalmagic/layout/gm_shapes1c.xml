@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/transition_container"
+  android:orientation="horizontal"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    android:id="@+id/transition_code"
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    style="@style/Widget.TextView.Small.Code"
+    android:visibility="invisible"
+    android:gravity="center_vertical"
+    android:layout_height="match_parent" />
+
+  <View
+    android:id="@+id/transition_pad1"
+    android:layout_width="0dp"
+    android:layout_weight="0"
+    android:layout_height="match_parent" />
+
+  <FrameLayout
+    android:id="@+id/transition_graphics"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1">
+
+    <ImageView
+      android:id="@+id/transition_image"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/image_height"
+      android:layout_gravity="center_vertical"
+      android:src="@drawable/betty"
+      android:contentDescription="@null" />
+  </FrameLayout>
+
+  <View
+    android:id="@+id/transition_pad2"
+    android:layout_width="0dp"
+    android:layout_weight="0"
+    android:layout_height="match_parent" />
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stylingandroid.presenter.engine.presentation.SlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:sap="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@id/slide"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:layout_gravity="center"
+  android:orientation="horizontal"
+  android:weightSum="2"
+  android:gravity="center"
+  sap:tweet="@string/gm_tweet_timinglogger"
+  tools:context=".display.DisplayActivity">
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    style="@style/Widget.TextView.Small.Code"
+    android:text="@string/gm_timing"
+    android:layout_gravity="center" />
+
+</com.stylingandroid.presenter.engine.presentation.SlideLayout>

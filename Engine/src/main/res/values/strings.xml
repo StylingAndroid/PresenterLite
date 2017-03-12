@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <string name="hello">Hello World, PresenterActivity!</string>
+
+  <string name="density_label">Density:</string>
+  <string name="size_label">Size:</string>
+  <string name="dimensions_label">Dimensions:</string>
+
+  <string name="DroidConLondon2015">Droidcon London 30th October 2015|Droidcon London|#droidconUK</string>
+  <string name="DroidConNYC2015">Droidcon NYC 28th August 2015|Droidcon NYC|#droidconNYC</string>
+  <string name="DroidConItalia2014">DroidCon Italia 7th February 2014|DroidCon Italia|#droidconit</string>
+  <string name="WipMwc2014">WIPJam@MWC 27th February 2014|WIPJam@MWC|#WIPJam</string>
+  <string name="ADD2014">Android Developer Days 17th May 2014|ADD in Ankara|#androiddevdays #gdg</string>
+  <string name="DroidconSe">DroidCon Sweden 9th October 2014|Droidcon Sweden|#DroidconSe</string>
+  <string name="DroidconUk">Droidcon London 31st October 2014|Droidcon London|#droidconUK</string>
+  <string name="Mobiconf">Mobiconf Kraków 6th October 2016|Mobiconf Kraków|#mobiconf16</string>
+  <string name="GDGBucuresti">GDG Devfest București 25th November 2016|GDG Devfest București|#GDGDevfestRO</string>
+  <string name="Appdevcon">Appdevcon Amsterdam 17th March 2017|Appdevcon Amsterdam|#Appdevcon</string>
+  <string name="ChicagoRoboto">Chicago Roboto 20th April 2017|Chicago Roboto|#ChicagoRoboto</string>
+</resources>

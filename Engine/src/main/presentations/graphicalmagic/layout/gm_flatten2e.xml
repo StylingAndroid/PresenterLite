@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/transition_graphics"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <ImageView
+    android:id="@+id/transition_image_bg"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/image_height"
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="-100dp"
+    android:alpha="0.3"
+    android:src="@drawable/broadstairs" />
+
+  <ImageView
+    android:id="@+id/transition_image"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/image_height"
+    android:layout_centerInParent="true"
+    android:layout_marginTop="@dimen/text_margin"
+    android:src="@drawable/broadstairs" />
+
+  <View
+    android:id="@+id/transition_background"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/transition_text"
+    android:layout_alignRight="@+id/transition_text"
+    android:layout_alignTop="@+id/transition_text"
+    android:layout_alignBottom="@+id/transition_text"
+    android:background="@color/overlayBackground" />
+
+  <TextView
+    android:id="@+id/transition_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:textSize="48sp"
+    android:padding="20dp"
+    android:textStyle="bold"
+    android:text="Graphical Magic"
+    android:background="@null"
+    android:textColor="@color/overlayText" />
+
+</RelativeLayout>

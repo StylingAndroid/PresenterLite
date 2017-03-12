@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <item type="id" name="waiting" />
+  <item type="id" name="slide" />
+
+  <item type="id" name="event_long_name" />
+  <item type="id" name="event_short_name" />
+  <item type="id" name="event_hashtag" />
+
+  <item type="id" name="original_background" />
+</resources>

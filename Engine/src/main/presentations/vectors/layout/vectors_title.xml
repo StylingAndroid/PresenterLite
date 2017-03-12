@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stylingandroid.presenter.engine.presentation.SlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:sap="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@id/slide"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:layout_gravity="center"
+  android:gravity="start|center_vertical"
+  android:orientation="vertical"
+  sap:notes="@string/notes_title"
+  tools:context=".display.DisplayActivity">
+
+
+  <TextView
+    style="@style/Widget.TextView.Large"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Vector All The Things" />
+
+  <TextView
+    style="@style/Widget.TextView.Medium"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Mark Allison" />
+
+  <TextView
+    style="@style/Widget.TextView.Medium"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="http://blog.stylingandroid.com" />
+
+  <TextView
+    android:id="@id/event_long_name"
+    style="@style/Widget.TextView.Medium"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+  <FrameLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+      style="@style/Widget.TextView.Medium"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:paddingTop="@dimen/spacing"
+      android:text="Twitter: MarkIAllison"
+      sap:gonePhase="1"
+      sap:hideAnimation="@anim/fadeout"
+      sap:highlightTextAppearance="@style/Widget.TextView.Medium.Highlight" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+      style="@style/Widget.TextView.Medium"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:paddingTop="@dimen/spacing"
+      android:text="Twitter: MarkIAllison"
+      sap:highlightTextAppearance="@style/Widget.TextView.Medium.Highlight"
+      sap:pattern="(MarkIAllison)"
+      sap:showAnimation="@anim/fadein"
+      sap:showPhase="1" />
+  </FrameLayout>
+
+  <TextView
+    style="@style/Widget.TextView.Medium"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="G+: http://blog.stylingandroid.com/plus" />
+
+  <LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="horizontal">
+
+  </LinearLayout>
+
+
+</com.stylingandroid.presenter.engine.presentation.SlideLayout>

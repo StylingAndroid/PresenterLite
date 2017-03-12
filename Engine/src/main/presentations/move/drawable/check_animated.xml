@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:aapt="http://schemas.android.com/aapt"
+  xmlns:tools="http://schemas.android.com/tools"
+  tools:ignore="MissingPrefix">
+
+  <aapt:attr name="android:drawable">
+    <vector xmlns:android="http://schemas.android.com/apk/res/android"
+      android:width="@dimen/bullet_height"
+      android:height="@dimen/bullet_height"
+      android:viewportHeight="198.57143"
+      android:viewportWidth="173.52068">
+      <clip-path
+        android:name="clip"
+        android:pathData="M0,0h173.52068v198.57143h-173.52068z" />
+      <path
+        android:fillColor="@color/SAgreen"
+        android:pathData="m0,143.38 l20,-30c16.51,12.91 17.77,19.64 24.95,30.91 36.8,-72.31 74.95,-104.96 128.57,-144.29 -51.91,53.35 -83.22,89.32 -130,198.57 -16.19,-26.28 -27.33,-53.61 -43.52,-55.19z" />
+    </vector>
+
+  </aapt:attr>
+
+
+  <target android:name="clip">
+    <aapt:attr name="android:animation">
+      <objectAnimator
+        android:propertyName="pathData"
+        android:valueFrom="M-173.52068,0h173.52068v198.57143h-173.52068z"
+        android:valueTo="M0,0h173.52068v198.57143h-173.52068z"
+        android:startOffset="@integer/veryFastAnim"
+        android:duration="@integer/fastAnim"
+        android:interpolator="@android:interpolator/accelerate_cubic"
+        android:repeatCount="0"
+        android:repeatMode="restart"
+        android:valueType="pathType"/>
+    </aapt:attr>
+  </target>
+
+</animated-vector>

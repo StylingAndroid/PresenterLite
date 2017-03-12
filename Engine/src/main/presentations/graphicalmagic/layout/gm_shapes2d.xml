@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:sap="http://schemas.android.com/apk/res-auto"
+  android:id="@+id/transition_graphics"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <com.stylingandroid.presenter.engine.presentation.ShapedImageView
+    android:id="@+id/transition_image_bg"
+    android:layout_width="match_parent"
+    sap:shape="clipped_rotated_oval"
+    android:layout_height="@dimen/image_height"
+    android:layout_centerInParent="true"
+    android:layout_marginTop="@dimen/text_margin"
+    android:src="@drawable/betty" />
+
+</RelativeLayout>

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stylingandroid.presenter.engine.presentation.ConstraintSlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  app:nextInAnimation="@anim/fadein"
+  app:nextOutAnimation="@anim/fadeout"
+  app:tweet="@string/move_tweet_title"
+  app:notes="@string/move_notes_intro"
+  app:autoStart="true">
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    android:id="@+id/title"
+    style="@style/Widget.TextView.Large.Transparent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Animate"
+    app:highlightTextAppearance="@style/Widget.TextView.Large"
+    app:layout_constraintBottom_toTopOf="@+id/details"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_chainStyle="packed"
+    app:pattern="(A)"
+    app:showAnimation="@anim/slow_slideinright"
+    app:showPhase="1"
+    app:hidePhase="2"/>
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    style="@style/Widget.TextView.Large.Transparent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Animate"
+    app:highlightTextAppearance="@style/Widget.TextView.Large"
+    app:layout_constraintBottom_toBottomOf="@id/title"
+    app:layout_constraintEnd_toEndOf="@id/title"
+    app:layout_constraintStart_toStartOf="@id/title"
+    app:layout_constraintTop_toTopOf="@id/title"
+    app:pattern="(n)"
+    app:showAnimation="@anim/pushin"
+    app:showPhase="1"
+    app:hidePhase="2"/>
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    style="@style/Widget.TextView.Large.Transparent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Animate"
+    app:highlightTextAppearance="@style/Widget.TextView.Large"
+    app:layout_constraintBottom_toBottomOf="@id/title"
+    app:layout_constraintEnd_toEndOf="@id/title"
+    app:layout_constraintStart_toStartOf="@id/title"
+    app:layout_constraintTop_toTopOf="@id/title"
+    app:pattern="(i)"
+    app:showAnimation="@anim/diagonalleftbottom"
+    app:showPhase="1"
+    app:hidePhase="2"/>
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    style="@style/Widget.TextView.Large.Transparent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Animate"
+    app:highlightTextAppearance="@style/Widget.TextView.Large"
+    app:layout_constraintBottom_toBottomOf="@id/title"
+    app:layout_constraintEnd_toEndOf="@id/title"
+    app:layout_constraintStart_toStartOf="@id/title"
+    app:layout_constraintTop_toTopOf="@id/title"
+    app:pattern="(m)"
+    app:showAnimation="@anim/diagonalrighttop"
+    app:showPhase="1"
+    app:hidePhase="2"/>
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    style="@style/Widget.TextView.Large.Transparent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Animate"
+    app:highlightTextAppearance="@style/Widget.TextView.Large"
+    app:layout_constraintBottom_toBottomOf="@id/title"
+    app:layout_constraintEnd_toEndOf="@id/title"
+    app:layout_constraintStart_toStartOf="@id/title"
+    app:layout_constraintTop_toTopOf="@id/title"
+    app:pattern="(a)"
+    app:showAnimation="@anim/grow"
+    app:showPhase="1"
+    app:hidePhase="2"/>
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    style="@style/Widget.TextView.Large.Transparent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Animate"
+    app:highlightTextAppearance="@style/Widget.TextView.Large"
+    app:layout_constraintBottom_toBottomOf="@id/title"
+    app:layout_constraintEnd_toEndOf="@id/title"
+    app:layout_constraintStart_toStartOf="@id/title"
+    app:layout_constraintTop_toTopOf="@id/title"
+    app:pattern="(t)"
+    app:showAnimation="@anim/diagonalrightbottom"
+    app:showPhase="1"
+    app:hidePhase="2"
+    app:hideAnimation="@anim/fadeout"/>
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    style="@style/Widget.TextView.Large.Transparent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Animate"
+    app:highlightTextAppearance="@style/Widget.TextView.Large"
+    app:layout_constraintBottom_toBottomOf="@id/title"
+    app:layout_constraintEnd_toEndOf="@id/title"
+    app:layout_constraintStart_toStartOf="@id/title"
+    app:layout_constraintTop_toTopOf="@id/title"
+    app:pattern="(e)"
+    app:showAnimation="@anim/slow_slideinleft"
+    app:showPhase="1"
+    app:hidePhase="2"
+    app:hideAnimation="@anim/fadeout"/>
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    style="@style/Widget.TextView.Large"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Animate"
+    app:highlightTextAppearance="@style/Widget.TextView.Large.SemiTransparent"
+    app:layout_constraintBottom_toBottomOf="@id/title"
+    app:layout_constraintEnd_toEndOf="@id/title"
+    app:layout_constraintStart_toStartOf="@id/title"
+    app:layout_constraintTop_toTopOf="@id/title"
+    app:pattern="(te)"
+    app:showPhase="2"
+    app:hidePhase="3"
+    app:hideAnimation="@anim/fadeout" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    style="@style/Widget.TextView.Large"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Animal"
+    app:layout_constraintBottom_toBottomOf="@id/title"
+    app:layout_constraintStart_toStartOf="@id/title"
+    app:layout_constraintTop_toTopOf="@id/title"
+    app:showPhase="3"
+    app:hidePhase="4"
+    app:showAnimation="@anim/fadein"
+    app:hideAnimation="@anim/fadeout" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    style="@style/Widget.TextView.Large"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Animate"
+    app:layout_constraintBottom_toBottomOf="@id/title"
+    app:layout_constraintStart_toStartOf="@id/title"
+    app:layout_constraintTop_toTopOf="@id/title"
+    app:showPhase="4"
+    app:showAnimation="@anim/fadein" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    android:id="@+id/details"
+    style="@style/Widget.TextView.Medium"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="verb | an·i·mate | \\ˈa-nə-ˌmāt\\"
+    app:layout_constraintBottom_toTopOf="@+id/def1"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/title"
+    app:hidePhase="2"
+    app:hideAnimation="@anim/fadeout"/>
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    android:id="@+id/details1"
+    style="@style/Widget.TextView.Medium"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="verb | an·i·mate | \\ˈa-nə-ˌmāt\\"
+    app:layout_constraintTop_toTopOf="@id/details"
+    app:layout_constraintEnd_toEndOf="@id/details"
+    app:layout_constraintStart_toStartOf="@id/details"
+    app:layout_constraintBottom_toBottomOf="@id/details"
+    android:alpha="@dimen/disabledAlpha"
+    app:showPhase="2"
+    app:showAnimation="@anim/fadein" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    android:id="@+id/def1"
+    style="@style/Widget.TextView.Small.Dictionary"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:text="1    : to give life or energy to : make alive or lively"
+    app:layout_constraintBottom_toTopOf="@+id/def2"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/details"
+    app:hidePhase="2"
+    app:hideAnimation="@anim/fadeout" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    android:id="@+id/def1a"
+    style="@style/Widget.TextView.Small.Dictionary"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:alpha="@dimen/disabledAlpha"
+    android:text="1    : to give life or energy to : make alive or lively"
+    app:layout_constraintTop_toTopOf="@id/def1"
+    app:layout_constraintEnd_toEndOf="@id/def1"
+    app:layout_constraintStart_toStartOf="@id/def1"
+    app:layout_constraintBottom_toBottomOf="@id/def1"
+    app:showPhase="2"
+    app:hidePhase="4"
+    app:showAnimation="@anim/fadein"
+    app:hideAnimation="@anim/fadeout" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    android:id="@+id/def1b"
+    style="@style/Widget.TextView.Small.Dictionary.Black"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="1    : to give life or energy to : make alive or lively"
+    app:layout_constraintBaseline_toBaselineOf="@id/def1"
+    app:layout_constraintEnd_toEndOf="@id/def1"
+    app:layout_constraintStart_toStartOf="@id/def1"
+    app:layout_constraintTop_toTopOf="@id/def1"
+    app:showPhase="4"
+    app:showAnimation="@anim/fadein"/>
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    android:id="@+id/def2"
+    style="@style/Widget.TextView.Small.Dictionary"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="2    : to make appear to move"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="@id/def1"
+    app:layout_constraintTop_toBottomOf="@id/def1"
+    app:hidePhase="2"
+    app:hideAnimation="@anim/fadeout"/>
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    android:id="@+id/def2a"
+    style="@style/Widget.TextView.Small.Dictionary"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:alpha="@dimen/disabledAlpha"
+    android:text="2    : to make appear to move"
+    app:layout_constraintBottom_toBottomOf="@id/def2"
+    app:layout_constraintTop_toTopOf="@id/def2"
+    app:layout_constraintStart_toStartOf="@id/def2"
+    app:layout_constraintTop_toBottomOf="@id/def2"
+    app:showPhase="2"
+    app:showAnimation="@anim/fadein" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    style="@style/Widget.TextView.Small"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:text="Merriam-Webster Dictionary"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent" />
+</com.stylingandroid.presenter.engine.presentation.ConstraintSlideLayout>

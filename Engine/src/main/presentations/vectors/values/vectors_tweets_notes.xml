@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="vectors_tweet_title">I am currently speaking about VectorDrawable at %2$s %3$s</string>
+  <string name="vectors_tweet_svg_path1">The SVG Path specification can be found at http://mark.al/1IDy4t8 %3$s</string>
+  <string name="vectors_tweet_svg_path3">For a more complex example of a VectorDrawable check out http://mark.al/13OzTlG %3$s</string>
+  <string name="vectors_tweet_svg_animated5">For another path tracing example take a look at http://mark.al/1CuxisQ %3$s</string>
+  <string name="vectors_tweet_svg_animated6">For further explanation of square to triangle path transformations see http://mark.al/1I2uxj3 %3$s</string>
+  <string name="vectors_tweet_svg_animated9">See the plus to minus animation in action on a FAB at http://mark.al/1Lp0c2N %3$s</string>
+  <string name="vectors_tweet_svg_animated10">The full post on animating the Android logo is at see http://mark.al/13SLK1Y %3$s</string>
+  <string name="vectors_tweet_svg_animated11">The series on isometric animation starts at http://mark.al/isometricAVD %3$s</string>
+  <string name="vectors_tweet_presenter">The presentation source is at http://mark.al/10c1fPT and the articles are at http://mark.al/1turq1F %3$s</string>
+  <string name="vectors_notes_svg_path3">Path: Alphas, trimPath, Line cap / join / miter|Group: translate, scale</string>
+  <string name="vectors_note_intro">Vector Asset in Android Studio</string>
+</resources>

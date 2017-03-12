@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.stylingandroid.presenter.engine.presentation.SlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@id/slide"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:layout_gravity="center"
+  android:gravity="center"
+  android:orientation="vertical"
+  tools:context=".display.DisplayActivity">
+
+  <TextView
+    style="@style/Widget.TextView.Large"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Interpolators" />
+
+  <GridLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:columnCount="3">
+
+    <TextView
+      android:text="Elapsed\n(ms)"
+      android:paddingLeft="16dp"
+      android:paddingRight="16dp"
+      android:textColor="@android:color/white"
+      style="@style/Widget.TextView.Medium"
+      android:background="@drawable/header_start"
+      android:layout_gravity="fill_horizontal"
+      android:gravity="center" />
+
+    <TextView
+      android:text="Elapsed fraction\nLinear"
+      android:paddingLeft="16dp"
+      android:paddingRight="16dp"
+      android:textColor="@android:color/white"
+      style="@style/Widget.TextView.Medium"
+      android:background="@drawable/header"
+      android:layout_gravity="fill_horizontal"
+      android:gravity="center" />
+
+    <TextView
+      android:text="Elapsed fraction\nAccelerate Decelerate"
+      android:textColor="@android:color/white"
+      style="@style/Widget.TextView.Medium"
+      android:background="@drawable/header_end"
+      android:layout_gravity="fill_horizontal"
+      android:gravity="center" />
+
+    <TextView
+      android:text="0"
+      style="@style/Widget.TextView.Medium.Dark"
+      android:background="@drawable/cell"
+      android:layout_gravity="fill_horizontal"
+      android:gravity="center" />
+
+    <TextView
+      android:text="0.0"
+      style="@style/Widget.TextView.Medium.Dark"
+      android:background="@drawable/cell"
+      android:layout_gravity="fill_horizontal"
+      android:gravity="center" />
+
+    <TextView
+      android:text="0.0"
+      style="@style/Widget.TextView.Medium.Dark"
+      android:background="@drawable/cell_end"
+      android:layout_gravity="fill_horizontal"
+      android:gravity="center" />
+
+    <TextView
+      android:text="200"
+      style="@style/Widget.TextView.Medium.Dark"
+      android:background="@drawable/cell"
+      android:layout_gravity="fill_horizontal"
+      android:gravity="center" />
+
+    <TextView
+      android:text="0.2"
+      style="@style/Widget.TextView.Medium.Dark"
+      android:background="@drawable/cell"
+      android:layout_gravity="fill_horizontal"
+      android:gravity="center" />
+
+    <TextView
+      android:text="0.1"
+      style="@style/Widget.TextView.Medium.Dark"
+      android:background="@drawable/cell_end"
+      android:layout_gravity="fill_horizontal"
+      android:gravity="center" />
+
+    <TextView
+      android:text="400"
+      style="@style/Widget.TextView.Medium.Dark"
+      android:background="@drawable/cell"
+      android:layout_gravity="fill_horizontal"
+      android:gravity="center" />
+
+    <TextView
+      android:text="0.4"
+      style="@style/Widget.TextView.Medium.Dark"
+      android:background="@drawable/cell"
+      android:layout_gravity="fill_horizontal"
+      android:gravity="center" />
+
+    <TextView
+      android:text="0.345"
+      style="@style/Widget.TextView.Medium.Dark"
+      android:background="@drawable/cell_end"
+      android:layout_gravity="fill_horizontal"
+      android:gravity="center" />
+
+    <TextView
+      android:text="600"
+      style="@style/Widget.TextView.Medium.Dark"
+      android:background="@drawable/cell"
+      android:layout_gravity="fill_horizontal"
+      android:gravity="center" />
+
+    <TextView
+      android:text="0.6"
+      style="@style/Widget.TextView.Medium.Dark"
+      android:background="@drawable/cell"
+      android:layout_gravity="fill_horizontal"
+      android:gravity="center" />
+
+    <TextView
+      android:text="0.8"
+      style="@style/Widget.TextView.Medium.Dark"
+      android:background="@drawable/cell_end"
+      android:layout_gravity="fill_horizontal"
+      android:gravity="center" />
+
+    <TextView
+      android:text="800"
+      style="@style/Widget.TextView.Medium.Dark"
+      android:background="@drawable/cell"
+      android:layout_gravity="fill_horizontal"
+      android:gravity="center" />
+
+    <TextView
+      android:text="0.8"
+      style="@style/Widget.TextView.Medium.Dark"
+      android:background="@drawable/cell"
+      android:layout_gravity="fill_horizontal"
+      android:gravity="center" />
+
+
+    <TextView
+      android:text="0.9"
+      style="@style/Widget.TextView.Medium.Dark"
+      android:background="@drawable/cell_end"
+      android:layout_gravity="fill_horizontal"
+      android:gravity="center" />
+
+
+    <TextView
+      android:text="1000"
+      android:background="@drawable/cell_bottom"
+      style="@style/Widget.TextView.Medium.Dark"
+      android:layout_gravity="fill_horizontal"
+      android:gravity="center" />
+
+
+    <TextView
+      android:text="1.0"
+      style="@style/Widget.TextView.Medium.Dark"
+      android:background="@drawable/cell_bottom"
+      android:layout_gravity="fill_horizontal"
+      android:gravity="center" />
+
+
+    <TextView
+      android:text="1.0"
+      style="@style/Widget.TextView.Medium.Dark"
+      android:background="@drawable/cell_bottom_end"
+      android:layout_gravity="fill_horizontal"
+      android:gravity="center" />
+
+
+  </GridLayout>
+
+
+</com.stylingandroid.presenter.engine.presentation.SlideLayout>
