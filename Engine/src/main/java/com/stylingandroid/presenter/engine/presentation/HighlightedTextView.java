@@ -122,7 +122,7 @@ public class HighlightedTextView extends TextView implements Phaseable, Animatab
     @Override
     public void start() {
         if (bullet instanceof Animatable) {
-            ((Animatable)bullet).start();
+            ((Animatable) bullet).start();
         }
     }
 

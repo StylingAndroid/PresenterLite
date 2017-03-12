@@ -16,6 +16,7 @@ import java.util.List;
 
 final class PhasedLayout {
     private static final String TAG = StandaloneDisplayActivity.TAG;
+    public static final int AUTOSTART_DELAY = 500;
 
     private Context context;
 
@@ -73,7 +74,7 @@ final class PhasedLayout {
         }
 
         if (autoStart) {
-            handler.postDelayed(runnable, 500);
+            handler.postDelayed(runnable, AUTOSTART_DELAY);
         }
     }
 

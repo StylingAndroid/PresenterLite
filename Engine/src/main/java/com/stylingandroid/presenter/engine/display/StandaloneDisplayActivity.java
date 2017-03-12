@@ -98,9 +98,9 @@ public class StandaloneDisplayActivity extends FragmentActivity {
             case KeyEvent.KEYCODE_MEDIA_PLAY_PAUSE:
                 display();
                 return true;
+            default:
+                return super.onKeyUp(keyCode, event);
         }
-
-        return super.onKeyUp(keyCode, event);
     }
 
     private void updatePresentation() {

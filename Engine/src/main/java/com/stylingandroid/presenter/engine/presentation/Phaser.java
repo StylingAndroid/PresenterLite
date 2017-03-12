@@ -70,7 +70,7 @@ public class Phaser {
                 view.startAnimation(showAnimation);
             }
             if (view instanceof Animatable) {
-                ((Animatable)view).start();
+                ((Animatable) view).start();
             }
         } else {
             if (hidePhase.contains(phase) || gonePhase.contains(phase)) {
