@@ -11,7 +11,6 @@ import android.support.annotation.AnimRes;
 import android.support.annotation.AnimatorRes;
 import android.support.annotation.DrawableRes;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
@@ -119,26 +118,25 @@ public class AnimatedImageView extends ImageView implements Phaseable {
             animator.start();
         }
         Drawable drawable = getDrawable();
-        if (callback != null && drawable instanceof Animatable2) {
-            ((Animatable2) drawable).registerAnimationCallback(callback);
+        if (drawable instanceof Animatable2) {
+            if (callback != null) {
+                ((Animatable2) drawable).registerAnimationCallback(callback);
+            }
             ((Animatable2) drawable).start();
         }
     }
 
     private void reverse() {
-        Log.d("Mark", "reverse");
         Drawable current = getDrawable();
-        if (callback != null) {
-            if (current instanceof Animatable2) {
-                ((Animatable2) current).unregisterAnimationCallback(callback);
-            }
-            if (otherDrawable instanceof Animatable2) {
-                ((Animatable2) otherDrawable).registerAnimationCallback(callback);
-                ((Animatable2) otherDrawable).start();
-            }
-            setImageDrawable(otherDrawable);
-            otherDrawable = current;
+        if (current instanceof Animatable2) {
+            ((Animatable2) current).unregisterAnimationCallback(callback);
         }
+        if (otherDrawable instanceof Animatable2) {
+            ((Animatable2) otherDrawable).registerAnimationCallback(callback);
+            ((Animatable2) otherDrawable).start();
+        }
+        setImageDrawable(otherDrawable);
+        otherDrawable = current;
     }
 
     @Override
@@ -160,14 +158,12 @@ public class AnimatedImageView extends ImageView implements Phaseable {
         @Override
         public void onAnimationEnd(Drawable drawable) {
             super.onAnimationEnd(drawable);
-            Log.d("Mark", "onAnimationEnd, pause: " + pause);
             handler.postDelayed(animationReverser, pause);
         }
 
         private Runnable animationReverser = new Runnable() {
             @Override
             public void run() {
-                Log.d("Mark", "run");
                 AnimatedImageView view = weakReference.get();
                 if (view != null && view.isAttachedToWindow()) {
                     view.reverse();
