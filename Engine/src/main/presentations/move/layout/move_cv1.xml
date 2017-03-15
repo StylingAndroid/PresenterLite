@@ -17,7 +17,7 @@
   <com.stylingandroid.presenter.engine.presentation.TransitionLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    sap:scenes="move_fill7a, move_fill7b"
+    sap:scenes="move_cv1a, move_cv1b"
     sap:transitionManager="@transition/move"
     sap:transitionPhases="1" />
 

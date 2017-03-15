@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:aapt="http://schemas.android.com/aapt"
+  xmlns:tools="http://schemas.android.com/tools"
+  tools:ignore="MissingPrefix">
+
+  <aapt:attr name="android:drawable">
+    <vector xmlns:android="http://schemas.android.com/apk/res/android"
+      android:width="@dimen/cvWidth"
+      android:height="@dimen/cvHeight"
+      android:viewportHeight="24.0"
+      android:viewportWidth="24.0">
+
+      <group>
+        <clip-path
+          android:name="stand_clip"
+          android:pathData="M0,11h24v24H0z" />
+        <path
+          android:name="stand"
+          android:fillColor="#4EE147"
+          android:pathData="M17.3,11c0,3 -2.54,5.1 -5.3,5.1S6.7,14 6.7,11L5,11c0,3.41 2.72,6.23 6,6.72L11,21h2v-3.28c3.28,-0.48 6,-3.3 6,-6.72h-1.7z" />
+      </group>
+
+      <group android:name="element_group">
+        <path
+          android:name="element"
+          android:fillColor="#4EE147"
+          android:pathData="M9,5hc0,-4 6,-4 6,0v6c0,4 -6,4 -6,0z" />
+      </group>
+    </vector>
+  </aapt:attr>
+
+  <target android:name="stand_clip">
+    <aapt:attr name="android:animation">
+      <objectAnimator
+        android:duration="@android:integer/config_longAnimTime"
+        android:interpolator="@android:interpolator/accelerate_decelerate"
+        android:propertyName="pathData"
+        android:startOffset="0"
+        android:valueTo="M0,11h24v24H0z"
+        android:valueFrom="M0,24h24v24H0z"
+        android:valueType="pathType" />
+    </aapt:attr>
+  </target>
+
+  <target android:name="element">
+    <aapt:attr name="android:animation">
+      <objectAnimator
+        android:duration="@android:integer/config_longAnimTime"
+        android:interpolator="@android:interpolator/decelerate_cubic"
+        android:propertyName="pathData"
+        android:startOffset="0"
+        android:valueFrom="M9,5hc0,0 6,0 6,0v6c0,0 -6,0 -6,0z"
+        android:valueTo="M9,5hc0,-4 6,-4 6,0v6c0,4 -6,4 -6,0z"
+        android:valueType="pathType" />
+    </aapt:attr>
+  </target>
+
+  <target android:name="element_group">
+    <aapt:attr name="android:animation">
+      <objectAnimator
+        android:duration="@android:integer/config_longAnimTime"
+        android:interpolator="@android:interpolator/decelerate_cubic"
+        android:propertyName="translateY"
+        android:startOffset="0"
+        android:valueFrom="3"
+        android:valueTo="0"
+        android:valueType="floatType" />
+    </aapt:attr>
+  </target>
+</animated-vector>

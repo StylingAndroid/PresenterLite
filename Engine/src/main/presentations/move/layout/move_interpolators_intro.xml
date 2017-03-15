@@ -5,7 +5,7 @@
   android:layout_height="match_parent"
   app:nextInAnimation="@anim/fadein"
   app:nextOutAnimation="@anim/fadeout"
-  app:notes="Jeb Stuart"
+  app:notes="@string/move_notes_interpolators_intro"
   app:tweet="@string/move_tweet_interpolator">
 
   <TextView

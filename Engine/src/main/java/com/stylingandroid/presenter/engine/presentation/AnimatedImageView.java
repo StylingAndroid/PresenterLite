@@ -4,14 +4,21 @@ import android.animation.Animator;
 import android.animation.AnimatorInflater;
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.graphics.drawable.AnimatedVectorDrawable;
+import android.graphics.drawable.Animatable2;
 import android.graphics.drawable.Drawable;
+import android.os.Handler;
+import android.support.annotation.AnimRes;
+import android.support.annotation.AnimatorRes;
+import android.support.annotation.DrawableRes;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
 import com.stylingandroid.presenter.R;
+
+import java.lang.ref.WeakReference;
 
 /**
  * Created by markallison on 01/06/2013.
@@ -19,11 +26,21 @@ import com.stylingandroid.presenter.R;
 public class AnimatedImageView extends ImageView implements Phaseable {
     private Phaser phaser = null;
 
+    @AnimRes
     private int animId = 0;
     private Animation anim = null;
+
+    @AnimatorRes
     private int animatorId = 0;
     private Animator animator = null;
+
     private boolean synced = false;
+
+    @DrawableRes
+    private int reverseId = 0;
+    private Drawable otherDrawable = null;
+
+    private Callback callback;
 
     public AnimatedImageView(Context context, AttributeSet attrs) {
         this(context, attrs, -1);
@@ -41,7 +58,20 @@ public class AnimatedImageView extends ImageView implements Phaseable {
             animId = ta.getResourceId(R.styleable.AnimatedImageView_anim, 0);
             animatorId = ta.getResourceId(R.styleable.AnimatedImageView_animator, 0);
             synced = ta.getBoolean(R.styleable.AnimatedImageView_synchronised, false);
+            reverseId = ta.getResourceId(R.styleable.AnimatedImageView_reverse, 0);
+            int pauseId = ta.getResourceId(R.styleable.AnimatedImageView_pause, 0);
+            int pause;
+            if (pauseId > 0) {
+                pause = context.getResources().getInteger(pauseId);
+            } else {
+                pause = ta.getInteger(R.styleable.AnimatedImageView_pause, 0);
+            }
 
+            if (reverseId > 0) {
+                otherDrawable = context.getDrawable(reverseId);
+                Handler handler = new Handler(context.getMainLooper());
+                callback = new Callback(new WeakReference<>(this), handler, pause);
+            }
             ta.recycle();
             phaser = new Phaser(context, attrs);
             phaser.setInitialVisibility(this);
@@ -89,8 +119,71 @@ public class AnimatedImageView extends ImageView implements Phaseable {
             animator.start();
         }
         Drawable drawable = getDrawable();
-        if (drawable instanceof AnimatedVectorDrawable) {
-            ((AnimatedVectorDrawable) drawable).start();
+        if (callback != null && drawable instanceof Animatable2) {
+            ((Animatable2) drawable).registerAnimationCallback(callback);
+            ((Animatable2) drawable).start();
         }
     }
+
+    private void reverse() {
+        Log.d("Mark", "reverse");
+        Drawable current = getDrawable();
+        if (callback != null) {
+            if (current instanceof Animatable2) {
+                ((Animatable2) current).unregisterAnimationCallback(callback);
+            }
+            if (otherDrawable instanceof Animatable2) {
+                ((Animatable2) otherDrawable).registerAnimationCallback(callback);
+                ((Animatable2) otherDrawable).start();
+            }
+            setImageDrawable(otherDrawable);
+            otherDrawable = current;
+        }
+    }
+
+    @Override
+    protected void onAnimationStart() {
+        super.onAnimationStart();
+    }
+
+    private static final class Callback extends Animatable2.AnimationCallback {
+        private final WeakReference<AnimatedImageView> weakReference;
+        private final Handler handler;
+        private final int pause;
+
+        private Callback(WeakReference<AnimatedImageView> weakReference, Handler handler, int pause) {
+            this.weakReference = weakReference;
+            this.handler = handler;
+            this.pause = pause;
+        }
+
+        @Override
+        public void onAnimationEnd(Drawable drawable) {
+            super.onAnimationEnd(drawable);
+            Log.d("Mark", "onAnimationEnd, pause: " + pause);
+            handler.postDelayed(animationReverser, pause);
+        }
+
+        private Runnable animationReverser = new Runnable() {
+            @Override
+            public void run() {
+                Log.d("Mark", "run");
+                AnimatedImageView view = weakReference.get();
+                if (view != null && view.isAttachedToWindow()) {
+                    view.reverse();
+                }
+            }
+        };
+    }
+
+    @Override
+    protected void onDetachedFromWindow() {
+        super.onDetachedFromWindow();
+        Drawable drawable = getDrawable();
+        if (callback != null && drawable instanceof Animatable2) {
+            ((Animatable2) drawable).unregisterAnimationCallback(callback);
+            ((Animatable2) drawable).stop();
+        }
+    }
+
 }

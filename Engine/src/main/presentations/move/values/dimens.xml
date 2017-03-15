@@ -19,4 +19,9 @@
   <dimen name="intHeight">300dp</dimen>
   <dimen name="intWidth">900dp</dimen>
 
+  <dimen name="cvHeight">400dp</dimen>
+  <dimen name="cvWidth">400dp</dimen>
+
+  <integer name="fab_animation_duration">@android:integer/config_shortAnimTime</integer>
+
 </resources>

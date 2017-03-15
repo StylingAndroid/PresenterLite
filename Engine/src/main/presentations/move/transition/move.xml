@@ -5,4 +5,8 @@
     android:toScene="@layout/move_fill7b"
     android:transition="@transition/auto" />
 
+  <transition
+    android:toScene="@layout/move_cv1b"
+    android:transition="@transition/auto" />
+
 </transitionManager>

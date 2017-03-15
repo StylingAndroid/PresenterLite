@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="move_tweet_title">I am currently giving my \"I like the way you move\' talk at %2$s %3$s</string>
-  <string name="move_tweet_intro">Merriam-Webster Student definition of \'Animate\' can be found at http://mark.al/2mx0LTB</string>
-  <string name="move_tweet_path">The official SVG path data spec is at http://mark.al/2lPSeMY and an intro to using it in VectorDrawable is at http://bit.ly/13OzTlG</string>
-  <string name="move_tweet_interpolator">Jeb Stuart\'s Android Animation Interpolators article is available at http://mark.al/2narBCL</string>
-  <string name="move_tweet_custom_interpolator">An example of a custom PathInterpolator is here: http://mark.al/2dNyjZq</string>
+  <string name="move_tweet_intro">Merriam-Webster Student definition of \'Animate\' can be found at http://mark.al/2mx0LTB %3$s</string>
+  <string name="move_tweet_path">The SVG path data spec is at http://mark.al/2lPSeMY and an intro to using in VectorDrawable is at http://bit.ly/13OzTlG %3$s</string>
+  <string name="move_tweet_interpolator">Jeb Stuart\'s Android Animation Interpolators article is available at http://mark.al/2narBCL %3$s</string>
+  <string name="move_tweet_custom_interpolator">An example of a custom PathInterpolator is here: http://mark.al/2dNyjZq %3$s</string>
+  <string name="move_tweet_christmas_voice">For more information on Christmas Voice go to http://mark.al/2hOY12h and the app is available at http://mark.al/2nmGnq7</string>
+  <string name="move_tweet_presenter">The presentation source is at http://bit.ly/sdIyBH and the articles are at http://bit.ly/1turq1F %3$s</string>
 
   <string name="move_notes_title">stylingandroid.com|Amex|Live tweets</string>
   <string name="move_notes_intro">Merriam-Webster student|Latin: breath / spirit</string>
+  <string name="move_notes_interpolators_intro">Jeb Stuart</string>
   <string name="move_notes_donts">Clippy: MS Office 97|Shared element transitions: too busy</string>
 </resources>

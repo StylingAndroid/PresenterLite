@@ -6,7 +6,7 @@ repositories {
 
 dependencies {
     compile 'com.android.support:support-v4:25.2.0'
-    compile project("${prefix}:Engine")
+    compile project(":Engine")
 }
 
 android {
@@ -14,7 +14,7 @@ android {
     buildToolsVersion "25.0.2"
 
     defaultConfig {
-        minSdkVersion 21
+        minSdkVersion 23
         targetSdkVersion 25
     }
 

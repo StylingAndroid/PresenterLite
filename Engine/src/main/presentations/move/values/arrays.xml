@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string-array name="move">
-    <item>move_donts</item>
-
     <item>move_title</item>
     <item>move_title2</item>
     <item>move_intro</item>
@@ -22,9 +20,11 @@
     <item>move_interpolators_overshoot</item>
     <item>move_interpolators_bounce</item>
     <item>move_interpolators_custom</item>
+    <item>move_cv1</item>
+    <item>move_cv2</item>
     <item>move_dos</item>
     <item>move_donts</item>
-    <item>vectors_end</item>
+    <item>move_end</item>
     <item>vectors_questions</item>
     <item>move_title</item>
   </string-array>

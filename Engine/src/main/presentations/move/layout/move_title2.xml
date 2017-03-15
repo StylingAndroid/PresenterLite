@@ -31,7 +31,7 @@
     style="@style/Widget.TextView.Medium"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="http://blog.stylingandroid.com" />
+    android:text="https://blog.stylingandroid.com" />
 
   <TextView
     android:id="@id/event_long_name"

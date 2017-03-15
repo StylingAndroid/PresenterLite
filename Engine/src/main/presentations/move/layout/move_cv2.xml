@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stylingandroid.presenter.engine.presentation.ConstraintSlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:id="@+id/slide"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  app:nextInAnimation="@anim/none"
+  app:nextOutAnimation="@anim/none">
+
+  <ImageView
+    android:id="@+id/background1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/move_cv_background"
+    app:layout_constraintBottom_toBottomOf="@+id/image1"
+    app:layout_constraintEnd_toEndOf="@+id/image1"
+    app:layout_constraintStart_toStartOf="@+id/image1"
+    app:layout_constraintTop_toTopOf="@+id/image1" />
+
+  <ImageView
+    android:id="@+id/background2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/move_cv_background"
+    app:layout_constraintBottom_toBottomOf="@+id/image1"
+    app:layout_constraintEnd_toEndOf="@+id/image1"
+    app:layout_constraintStart_toStartOf="@+id/image1"
+    app:layout_constraintTop_toTopOf="@+id/image1" />
+
+  <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+    android:id="@+id/image1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/move_cv_stand_forward"
+    app:hideAnimation="@anim/fadeout"
+    app:hidePhase="1"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:pause="@android:integer/config_mediumAnimTime"
+    app:reverse="@drawable/move_cv_stand_reverse"
+    app:synchronised="true" />
+
+  <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/move_cv_mic1_forward"
+    app:hideAnimation="@anim/fadeout"
+    app:hidePhase="2"
+    app:layout_constraintBottom_toBottomOf="@+id/image1"
+    app:layout_constraintEnd_toEndOf="@+id/image1"
+    app:layout_constraintStart_toStartOf="@+id/image1"
+    app:layout_constraintTop_toTopOf="@+id/image1"
+    app:pause="@android:integer/config_mediumAnimTime"
+    app:reverse="@drawable/move_cv_mic1_reverse"
+    app:showAnimation="@anim/fadein"
+    app:showPhase="1"
+    app:synchronised="true" />
+
+  <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/move_cv_mic2_forward"
+    app:hideAnimation="@anim/fadeout"
+    app:hidePhase="3"
+    app:layout_constraintBottom_toBottomOf="@+id/image1"
+    app:layout_constraintEnd_toEndOf="@+id/image1"
+    app:layout_constraintStart_toStartOf="@+id/image1"
+    app:layout_constraintTop_toTopOf="@+id/image1"
+    app:pause="@android:integer/config_mediumAnimTime"
+    app:reverse="@drawable/move_cv_mic2_reverse"
+    app:showAnimation="@anim/fadein"
+    app:showPhase="2"
+    app:synchronised="true" />
+
+  <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/move_cv_mic3_forward"
+    app:hideAnimation="@anim/fadeout"
+    app:hidePhase="4"
+    app:layout_constraintBottom_toBottomOf="@+id/image1"
+    app:layout_constraintEnd_toEndOf="@+id/image1"
+    app:layout_constraintStart_toStartOf="@+id/image1"
+    app:layout_constraintTop_toTopOf="@+id/image1"
+    app:pause="@android:integer/config_mediumAnimTime"
+    app:reverse="@drawable/move_cv_mic3_reverse"
+    app:showAnimation="@anim/fadein"
+    app:showPhase="3"
+    app:synchronised="true" />
+
+  <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/move_cv_square_forward"
+    app:hideAnimation="@anim/fadeout"
+    app:hidePhase="5"
+    app:layout_constraintBottom_toBottomOf="@+id/image1"
+    app:layout_constraintEnd_toEndOf="@+id/image1"
+    app:layout_constraintStart_toStartOf="@+id/image1"
+    app:layout_constraintTop_toTopOf="@+id/image1"
+    app:pause="@android:integer/config_mediumAnimTime"
+    app:reverse="@drawable/move_cv_square_reverse"
+    app:showAnimation="@anim/fadein"
+    app:showPhase="4"
+    app:synchronised="true" />
+
+  <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/move_cv_full_forward"
+    app:layout_constraintBottom_toBottomOf="@+id/image1"
+    app:layout_constraintEnd_toEndOf="@+id/image1"
+    app:layout_constraintStart_toStartOf="@+id/image1"
+    app:layout_constraintTop_toTopOf="@+id/image1"
+    app:pause="@android:integer/config_mediumAnimTime"
+    app:reverse="@drawable/move_cv_full_reverse"
+    app:showAnimation="@anim/fadein"
+    app:showPhase="5"
+    app:synchronised="true" />
+
+</com.stylingandroid.presenter.engine.presentation.ConstraintSlideLayout>

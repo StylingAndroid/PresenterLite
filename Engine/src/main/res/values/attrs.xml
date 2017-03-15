@@ -54,6 +54,8 @@
     <attr format="reference" name="anim" />
     <attr format="reference" name="animator" />
     <attr format="boolean" name="synchronised" />
+    <attr format="reference" name="reverse" />
+    <attr format="integer|reference" name="pause" />
   </declare-styleable>
 
   <declare-styleable name="GraphicalLayout_Layout">

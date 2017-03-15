@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stylingandroid.presenter.engine.presentation.ConstraintSlideLayout
+  android:id="@+id/slide"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  app:nextInAnimation="@anim/none"
+  app:nextOutAnimation="@anim/none">
+
+  <ImageView
+    android:id="@+id/background1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/move_cv_background"
+    app:layout_constraintTop_toTopOf="@+id/image1"
+    app:layout_constraintBottom_toBottomOf="@+id/image1"
+    app:layout_constraintStart_toStartOf="@+id/image1"
+    app:layout_constraintEnd_toEndOf="@+id/image1" />
+
+  <ImageView
+    android:id="@+id/background2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/move_cv_background"
+    app:layout_constraintTop_toTopOf="@+id/image2"
+    app:layout_constraintBottom_toBottomOf="@+id/image2"
+    app:layout_constraintStart_toStartOf="@+id/image2"
+    app:layout_constraintEnd_toEndOf="@+id/image2" />
+
+  <ImageView
+    android:id="@+id/image1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/move_cv_mic"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toLeftOf="@+id/image2"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent" />
+
+  <ImageView
+    android:id="@+id/image2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/move_cv_stop"
+    app:layout_constraintLeft_toRightOf="@+id/image1"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent" />
+
+</com.stylingandroid.presenter.engine.presentation.ConstraintSlideLayout>
