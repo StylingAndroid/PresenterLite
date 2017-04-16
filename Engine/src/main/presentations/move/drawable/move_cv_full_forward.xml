@@ -27,10 +27,10 @@
           android:fillColor="#4EE147"
           android:pathData="M9,5hc0,-4 6,-4 6,0v6c0,4 -6,4 -6,0z" />
 
-        <path
+        <!--path
           android:name="square"
-          android:fillColor="#4EE147"
-          android:pathData="M9,5h6v6H9z" />
+          android:fillColor="#FF0000"
+          android:pathData="M9,5h0v0H0z" /-->
       </group>
     </vector>
   </aapt:attr>
@@ -50,14 +50,24 @@
 
   <target android:name="element">
     <aapt:attr name="android:animation">
-      <objectAnimator
-        android:duration="@integer/fab_animation_duration"
-        android:interpolator="@android:interpolator/accelerate_cubic"
-        android:propertyName="pathData"
-        android:startOffset="0"
-        android:valueFrom="M9,5hc0,-4 6,-4 6,0v6c0,4 -6,4 -6,0z"
-        android:valueTo="M9,5hc0,0 6,0 6,0v6c0,0 -6,0 -6,0z"
-        android:valueType="pathType" />
+      <set ordering="together">
+        <objectAnimator
+          android:duration="@integer/fab_animation_duration"
+          android:interpolator="@android:interpolator/accelerate_cubic"
+          android:propertyName="pathData"
+          android:startOffset="0"
+          android:valueFrom="M9,5hc0,-4 6,-4 6,0v6c0,4 -6,4 -6,0z"
+          android:valueTo="M9,5hc0,0 6,0 6,0v6c0,0 -6,0 -6,0z"
+          android:valueType="pathType" />
+        <objectAnimator
+          android:duration="@integer/fab_animation_duration"
+          android:interpolator="@android:interpolator/decelerate_cubic"
+          android:propertyName="pathData"
+          android:startOffset="@integer/fab_animation_duration"
+          android:valueFrom="M9,5hc0,0 6,0 6,0v6c0,0 -6,0 -6,0z"
+          android:valueTo="M6,3hc0,0 12,0 12,0v12c0,0 -12,0 -12,0z"
+          android:valueType="pathType" />
+      </set>
     </aapt:attr>
   </target>
 
@@ -74,16 +84,34 @@
     </aapt:attr>
   </target>
 
-  <target android:name="square">
+  <!--target android:name="square">
     <aapt:attr name="android:animation">
-      <objectAnimator
-        android:duration="@integer/fab_animation_duration"
-        android:interpolator="@android:interpolator/decelerate_cubic"
-        android:propertyName="pathData"
-        android:startOffset="@integer/fab_animation_duration"
-        android:valueFrom="M9,5h6v6H9z"
-        android:valueTo="M6,3h12v12H6z"
-        android:valueType="pathType" />
+      <set>
+        <objectAnimator
+          android:duration="@integer/fab_animation_duration"
+          android:interpolator="@android:interpolator/decelerate_cubic"
+          android:propertyName="pathData"
+          android:startOffset="@integer/fab_animation_duration"
+          android:valueFrom="M9,5h6v6H9z"
+          android:valueTo="M6,3h12v12H6z"
+          android:valueType="pathType" />
+        <objectAnimator
+          android:duration="0"
+          android:interpolator="@android:interpolator/decelerate_cubic"
+          android:propertyName="fillAlpha"
+          android:startOffset="0"
+          android:valueFrom="0"
+          android:valueTo="0"
+          android:valueType="floatType" />
+        <objectAnimator
+          android:duration="0"
+          android:interpolator="@android:interpolator/decelerate_cubic"
+          android:propertyName="fillAlpha"
+          android:startOffset="2500"
+          android:valueFrom="1"
+          android:valueTo="1"
+          android:valueType="floatType" />
+      </set>
     </aapt:attr>
-  </target>
+  </target-->
 </animated-vector>
