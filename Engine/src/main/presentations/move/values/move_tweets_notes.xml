@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="move_tweet_title">I am currently giving my \"I like the way you move\' talk at %2$s %3$s</string>
+  <string name="move_tweet_title">I am currently speaking about Android animations at %2$s %3$s</string>
   <string name="move_tweet_intro">Merriam-Webster Student definition of \'Animate\' can be found at http://mark.al/2mx0LTB %3$s</string>
   <string name="move_tweet_path">The SVG path data spec is at http://mark.al/2lPSeMY and an intro to using in VectorDrawable is at http://bit.ly/13OzTlG %3$s</string>
   <string name="move_tweet_interpolator">Jeb Stuart\'s Android Animation Interpolators article is available at http://mark.al/2narBCL %3$s</string>

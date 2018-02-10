@@ -9,6 +9,8 @@
   </string-array>
 
   <string-array name="events">
+    <item>GDGBayern</item>
+    <item>GDGLondon</item>
     <item>ChicagoRoboto</item>
     <item>Appdevcon</item>
     <item>GDGBucuresti</item>
