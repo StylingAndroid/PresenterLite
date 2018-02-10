@@ -5,21 +5,21 @@ repositories {
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:25.2.0'
+    compile 'com.android.support:support-v4:27.0.2'
     compile project(":Engine")
 }
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
 
     defaultConfig {
         minSdkVersion 23
-        targetSdkVersion 25
+        targetSdkVersion 27
     }
 
     lintOptions {
-        abortOnError true;
+        abortOnError true
         quiet true
         lintConfig file("${project(':').projectDir}/config/lint/config.xml")
     }
