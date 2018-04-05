@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="vectors2_tweet_title">I am currently speaking about VectorDrawable at %2$s %3$s</string>
+  <string name="vectors2_tweet_fill_windings">Fill up on fill windings at https://mark.al/2eH8Kqx %3$s</string>
+  <string name="vectors2_tweet_inline">For more details of Inline XML resource please go to https://mark.al/2eIILit %3$s</string>
+  <string name="vectors2_tweet_gradients">Learn more about Gradients in VectorDrawable at https://mark.al/2CK0O8i %3$s</string>
+  <string name="vectors2_tweet_presenter">The presentation source is at https://mark.al/2uVgu5t and the articles are at https://mark.al/1turq1F %3$s</string>
+
+  <string name="vectors2_note_title">Live Tweets|BNR</string>
+  <string name="vectors2_note_inline">Android Asset Packaging Tool|Party Game</string>
+
+</resources>

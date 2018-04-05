@@ -1,7 +1,11 @@
 package com.stylingandroid.presenter.engine.display;
 
 import android.app.Presentation;
+import android.content.Context;
+import android.content.res.Resources;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.Display;
 import android.view.View;
 
@@ -12,11 +16,16 @@ public class DisplayPresentation extends Presentation {
     public static final int DURATION = 5000;
     private DisplayLayout display;
     private StandaloneDisplayActivity activity;
+    private Context outerContext;
 
     public DisplayPresentation(StandaloneDisplayActivity outerContext,
                                Display display) {
         super(outerContext, display);
+        DisplayMetrics dm1 = outerContext.getResources().getDisplayMetrics();
+        DisplayMetrics dm2 = new DisplayMetrics();
+        display.getMetrics(dm2);
         activity = outerContext;
+        this.outerContext = outerContext;
     }
 
     @Override
@@ -29,6 +38,20 @@ public class DisplayPresentation extends Presentation {
         DisplayInfoHelper.populate(getContext(), view,
                 getDisplay());
         DisplayInfoHelper.show(view, DURATION);
+    }
+
+    @Override
+    protected void onStart() {
+        Log.v("", "Display Changed");
+        DisplayMetrics dm = getResources().getDisplayMetrics();
+        super.onStart();
+    }
+
+    @Override
+    public void onDisplayChanged() {
+        super.onDisplayChanged();
+
+        Log.v("", "Display Changed");
     }
 
     public void advance() {
@@ -51,4 +74,8 @@ public class DisplayPresentation extends Presentation {
         display.go(currentSlidePos, currentSlidePhase);
     }
 
+    @Override
+    public Resources getResources() {
+        return outerContext.getResources();
+    }
 }

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:aapt="http://schemas.android.com/aapt"
+  android:width="320dp"
+  android:height="320dp"
+  android:viewportHeight="100"
+  android:viewportWidth="100">
+
+  <clip-path android:pathData="M5,5h90v90h-90z" />
+
+  <path
+    android:name="lower_fill"
+    android:pathData="M5,5h90v90h-90z">
+    <aapt:attr name="android:fillColor">
+      <gradient
+        android:centerX="50"
+        android:centerY="50"
+        android:endColor="#FF14A404"
+        android:gradientRadius="45"
+        android:startColor="#FFFFFFFF"
+        android:type="sweep" />
+    </aapt:attr>
+  </path>
+
+  <group
+    android:name="lower_mask"
+    android:pivotX="50"
+    android:pivotY="50"
+    android:rotation="90">
+    <path
+      android:fillColor="#FFF"
+      android:pathData="M-50,50h200v100h-200z" />
+  </group>
+
+  <!--group
+    android:name="upper_mask"
+    android:pivotX="50"
+    android:pivotY="50">
+  </group-->
+
+  <path
+    android:name="upper_mask"
+    android:fillColor="#FFF"
+    android:fillAlpha="0"
+    android:pathData="M0,0h100v50h-100z" />
+
+  <clip-path android:pathData="M5,50h100v50h-100z" />
+  <path
+    android:name="upper_fill"
+    android:fillAlpha="0"
+    android:pathData="M5,5h90v90h-90z">
+    <aapt:attr name="android:fillColor">
+      <gradient
+        android:centerX="50"
+        android:centerY="50"
+        android:endColor="#FF14A404"
+        android:gradientRadius="45"
+        android:startColor="#FFFFFFFF"
+        android:type="sweep" />
+    </aapt:attr>
+  </path>
+
+</vector>

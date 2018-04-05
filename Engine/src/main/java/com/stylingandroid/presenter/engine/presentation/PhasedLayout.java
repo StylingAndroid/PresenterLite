@@ -45,19 +45,20 @@ final class PhasedLayout {
         phase = 0;
     }
 
-    void onFinishInflate(ViewGroup layout) {
+    void onFinishInflate(ViewGroup layout, boolean recursive) {
         phaseables.clear();
-        getPhases(layout, phaseables);
+        getPhases(layout, phaseables, recursive);
         phase = 0;
-        if (context instanceof TweetNotes) {
-            TweetNotes tweetNotes = (TweetNotes) context;
-            if (tweet != null) {
-                tweetNotes.tweet(tweet);
-            }
+        if (context instanceof Tweet && tweet != null) {
+            Tweet tweeter = (Tweet) context;
+            tweeter.tweet(tweet);
+        }
+        if (context instanceof Notes) {
+            Notes noter = (Notes) context;
             if (notes != null) {
-                tweetNotes.notes(notes);
+                noter.notes(notes);
             } else {
-                tweetNotes.notes("");
+                noter.notes("");
             }
         }
         View eventLongName = layout.findViewById(R.id.event_long_name);
@@ -78,19 +79,17 @@ final class PhasedLayout {
         }
     }
 
-    private static void getPhases(ViewGroup parent, List<Phaseable> phaseables) {
+    private static void getPhases(ViewGroup parent, List<Phaseable> phaseables, boolean recursive) {
         for (int i = 0; i < parent.getChildCount(); i++) {
             View child = parent.getChildAt(i);
-            int phase = 0;
             if (child instanceof Phaseable) {
                 Phaseable phaseable = (Phaseable) child;
                 if (phaseable.getLastPhase() > 0) {
                     phaseables.add((Phaseable) child);
                 }
             }
-            Log.d(TAG, "Phase: " + phase + "; " + child.toString());
-            if (child instanceof ViewGroup) {
-                getPhases((ViewGroup) child, phaseables);
+            if (recursive && child instanceof ViewGroup) {
+                getPhases((ViewGroup) child, phaseables, recursive);
             }
         }
     }
@@ -102,6 +101,7 @@ final class PhasedLayout {
 
     public void nextPhase() {
         phase++;
+        Log.d(TAG, "nextPhase: " + phase);
         List<Phaseable> complete = new ArrayList<>();
         for (Phaseable phaseable : phaseables) {
             if (phaseable.setPhase(phase)) {
@@ -109,6 +109,7 @@ final class PhasedLayout {
             }
         }
         phaseables.removeAll(complete);
+        Log.d(TAG, "nextPhase remaining: " + phaseables.size());
     }
 
     public int getPhase() {

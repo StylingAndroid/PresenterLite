@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stylingandroid.presenter.engine.presentation.ConstraintSlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:id="@id/slide"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  app:nextInAnimation="@anim/fadein"
+  app:nextOutAnimation="@anim/fadeout">
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    android:id="@+id/title"
+    style="@style/Widget.TextView.Large"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Gradients"
+    app:layout_constraintBottom_toTopOf="@+id/image1"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_chainStyle="packed" />
+
+  <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+    android:id="@+id/fill"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/vectors2_sweep_gradient2"
+    app:layout_constraintBottom_toBottomOf="@id/image1"
+    app:layout_constraintEnd_toEndOf="@id/image1"
+    app:layout_constraintStart_toStartOf="@id/image1"
+    app:layout_constraintTop_toTopOf="@id/image1" />
+
+  <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+    android:id="@+id/image1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="32dp"
+    android:src="@drawable/vectors2_gradient_outline"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@id/code"
+    app:layout_constraintTop_toBottomOf="@id/title" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    android:id="@+id/label"
+    style="@style/Widget.TextView.Medium"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:text="Sweep"
+    app:layout_constraintEnd_toEndOf="@id/image1"
+    app:layout_constraintTop_toBottomOf="@id/image1" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    android:id="@+id/code"
+    style="@style/Widget.TextView.Small.Code"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/vectors2_gradient_sweep2"
+    app:layout_constraintBottom_toBottomOf="@id/image1"
+    app:layout_constraintEnd_toStartOf="@id/image1"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/image1"
+    app:layout_constraintTop_toTopOf="@id/image1" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    style="@style/Widget.TextView.Small.Code"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/vectors2_gradient_sweep2"
+    app:highlightTextAppearance="@style/Widget.TextView.Small.Code.Highlight"
+    app:layout_constraintBottom_toBottomOf="@id/image1"
+    app:layout_constraintEnd_toStartOf="@id/image1"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/image1"
+    app:layout_constraintTop_toTopOf="@id/image1"
+    app:pattern="(&lt;item android:offset=\\&quot;1.0.*?/&gt;)" />
+
+</com.stylingandroid.presenter.engine.presentation.ConstraintSlideLayout>

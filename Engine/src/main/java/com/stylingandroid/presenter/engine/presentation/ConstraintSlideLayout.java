@@ -52,7 +52,7 @@ public class ConstraintSlideLayout extends ConstraintLayout implements PhaseCont
 
         LayoutParams(Context context, AttributeSet attributeSet) {
             super(context, attributeSet);
-            TypedArray ta = context.obtainStyledAttributes(attributeSet, R.styleable.SlideLayout_Layout);
+            TypedArray ta = context.obtainStyledAttributes(attributeSet, R.styleable.ConstraintSlideLayout_Layout);
             int anim = ta.getResourceId(R.styleable.ConstraintSlideLayout_Layout_layout_animation, -1);
             if (anim >= 0) {
                 animation = AnimationUtils.loadAnimation(context, anim);
@@ -69,7 +69,7 @@ public class ConstraintSlideLayout extends ConstraintLayout implements PhaseCont
     protected void onFinishInflate() {
         super.onFinishInflate();
         if (phasedLayout != null) {
-            phasedLayout.onFinishInflate(this);
+            phasedLayout.onFinishInflate(this, true);
         }
     }
 

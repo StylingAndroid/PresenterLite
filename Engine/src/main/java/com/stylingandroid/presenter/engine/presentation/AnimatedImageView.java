@@ -10,10 +10,10 @@ import android.os.Handler;
 import android.support.annotation.AnimRes;
 import android.support.annotation.AnimatorRes;
 import android.support.annotation.DrawableRes;
+import android.support.v7.widget.AppCompatImageView;
 import android.util.AttributeSet;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.widget.ImageView;
 
 import com.stylingandroid.presenter.R;
 
@@ -22,7 +22,7 @@ import java.lang.ref.WeakReference;
 /**
  * Created by markallison on 01/06/2013.
  */
-public class AnimatedImageView extends ImageView implements Phaseable {
+public class AnimatedImageView extends AppCompatImageView implements Phaseable {
     private Phaser phaser = null;
 
     @AnimRes

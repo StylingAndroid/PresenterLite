@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
 
 repositories {
     jcenter()
@@ -6,16 +7,19 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.android.support:support-v4:27.0.2'
-    implementation 'com.android.support.constraint:constraint-layout:1.1.0-beta5'
+    api "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    api 'com.android.support:support-v4:27.1.0'
+    api 'com.android.support:appcompat-v7:27.1.0'
+    api 'com.android.support.constraint:constraint-layout:1.1.0-beta6'
+    api 'com.android.support:support-compat:27.1.0'
+    api 'com.android.support:mediarouter-v7:27.1.0'
 }
 
 android {
     compileSdkVersion 27
-    buildToolsVersion "27.0.3"
 
     defaultConfig {
-        minSdkVersion 23
+        minSdkVersion 24
         targetSdkVersion 27
     }
     sourceSets {
@@ -26,7 +30,8 @@ android {
                     'src/main/presentations/layouts',
                     'src/main/presentations/graphicalmagic',
                     'src/main/presentations/vectors',
-                    'src/main/presentations/move'
+                    'src/main/presentations/move',
+                    'src/main/presentations/vectors2'
             ]
 
         }

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stylingandroid.presenter.engine.presentation.ConstraintSlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:id="@id/slide"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  app:nextInAnimation="@anim/hold"
+  app:nextOutAnimation="@anim/fadeout">
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    android:id="@+id/title"
+    style="@style/Widget.TextView.Large"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Gradients"
+    app:layout_constraintBottom_toTopOf="@+id/image1"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_chainStyle="packed" />
+
+  <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+    android:id="@+id/fill_white"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toTopOf="@id/image1"
+    app:layout_constraintStart_toStartOf="@id/image1"
+    app:layout_constraintEnd_toEndOf="@id/image1"
+    app:layout_constraintBottom_toBottomOf="@id/image1"
+    android:src="@drawable/vectors2_gradient_fill_white" />
+
+  <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/vectors2_radial_gradient_full"
+    app:layout_constraintBottom_toBottomOf="@id/image1"
+    app:layout_constraintEnd_toEndOf="@id/image1"
+    app:layout_constraintStart_toStartOf="@id/image1"
+    app:layout_constraintTop_toTopOf="@id/image1"/>
+
+  <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+    android:id="@+id/image1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="32dp"
+    android:src="@drawable/vectors2_gradient_outline"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@id/code"
+    app:layout_constraintTop_toBottomOf="@id/title" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    android:id="@+id/label"
+    style="@style/Widget.TextView.Medium"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:text="Radial"
+    app:layout_constraintEnd_toEndOf="@id/image1"
+    app:layout_constraintTop_toBottomOf="@id/image1" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    android:id="@+id/code"
+    style="@style/Widget.TextView.Small.Code"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/vectors2_gradient_radial_larger"
+    app:layout_constraintBottom_toBottomOf="@id/image1"
+    app:layout_constraintEnd_toStartOf="@id/image1"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="@id/image1"
+    app:showAnimation="@anim/fadein"
+    app:showPhase="3" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    style="@style/Widget.TextView.Small.Code"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/vectors2_gradient_radial_larger"
+    app:highlightTextAppearance="@style/Widget.TextView.Small.Code.Highlight"
+    app:layout_constraintBottom_toBottomOf="@id/code"
+    app:layout_constraintEnd_toEndOf="@id/code"
+    app:layout_constraintStart_toStartOf="@id/code"
+    app:layout_constraintTop_toTopOf="@id/code"
+    app:pattern="(70.71)"
+    app:showAnimation="@anim/fadein"
+    app:showPhase="3" />
+
+</com.stylingandroid.presenter.engine.presentation.ConstraintSlideLayout>

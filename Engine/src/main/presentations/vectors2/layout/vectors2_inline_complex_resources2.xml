@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stylingandroid.presenter.engine.presentation.ConstraintSlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:id="@id/slide"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  app:notes="@string/vectors2_note_inline"
+  app:nextInAnimation="@anim/fadein"
+  app:nextOutAnimation="@anim/fadeout">
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    android:id="@+id/code1"
+    style="@style/Widget.TextView.Small.Code"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/vectors2_icl_complete1"
+    android:layout_marginTop="48dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    style="@style/Widget.TextView.Small.Code"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/vectors2_icl_complete1"
+    app:layout_constraintBottom_toBottomOf="@id/code1"
+    app:layout_constraintEnd_toEndOf="@id/code1"
+    app:layout_constraintStart_toStartOf="@id/code1"
+    app:layout_constraintTop_toTopOf="@id/code1"
+    app:pattern="(xmlns:aapt.*?>)"
+    app:highlightTextAppearance="@style/Widget.TextView.Small.Code.Highlight"
+    app:hideAnimation="@anim/fadeout"
+    app:hidePhase="2"
+    app:showAnimation="@anim/fadein"
+    app:showPhase="1" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    style="@style/Widget.TextView.Small.Code"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/vectors2_icl_complete1"
+    app:layout_constraintBottom_toBottomOf="@id/code1"
+    app:layout_constraintEnd_toEndOf="@id/code1"
+    app:layout_constraintStart_toStartOf="@id/code1"
+    app:layout_constraintTop_toTopOf="@id/code1"
+    app:pattern="(.?.?aapt:attr.*?>)"
+    app:highlightTextAppearance="@style/Widget.TextView.Small.Code.Highlight"
+    app:hideAnimation="@anim/fadeout"
+    app:hidePhase="3"
+    app:showAnimation="@anim/fadein"
+    app:showPhase="2" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    style="@style/Widget.TextView.Small.Code"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/vectors2_icl_complete1"
+    app:layout_constraintBottom_toBottomOf="@id/code1"
+    app:layout_constraintEnd_toEndOf="@id/code1"
+    app:layout_constraintStart_toStartOf="@id/code1"
+    app:layout_constraintTop_toTopOf="@id/code1"
+    app:pattern="(.?vector\n.*?vector>)"
+    app:highlightTextAppearance="@style/Widget.TextView.Small.Code.Highlight"
+    app:showAnimation="@anim/fadein"
+    app:showPhase="3" />
+
+</com.stylingandroid.presenter.engine.presentation.ConstraintSlideLayout>

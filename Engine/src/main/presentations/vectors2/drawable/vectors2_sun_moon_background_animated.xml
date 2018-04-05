@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+  android:drawable="@drawable/vectors2_sun_moon_background"
+  xmlns:aapt="http://schemas.android.com/aapt">
+
+  <target
+    android:name="background">
+    <aapt:attr name="android:animation">
+      <objectAnimator
+        android:duration="1500"
+        android:interpolator="@android:interpolator/accelerate_decelerate"
+        android:propertyName="fillColor"
+        android:repeatCount="infinite"
+        android:repeatMode="reverse"
+        android:valueFrom="#3d9eff"
+        android:valueTo="#00264d"
+        android:valueType="colorType" />
+    </aapt:attr>
+  </target>
+</animated-vector>

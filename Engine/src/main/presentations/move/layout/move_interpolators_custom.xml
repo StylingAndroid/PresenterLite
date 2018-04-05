@@ -40,10 +40,23 @@
     android:layout_height="wrap_content"
     android:text="Can define &amp; apply in XML"
     app:layout_constraintTop_toBottomOf="@id/bullet1"
-    app:layout_constraintBottom_toTopOf="@+id/bullet3"
+    app:layout_constraintBottom_toTopOf="@+id/bullet2"
     app:layout_constraintStart_toStartOf="@id/bullet1"
     android:layout_marginStart="72dp"
     app:showPhase="2"
+    app:showAnimation="@anim/fadein" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    android:id="@+id/bullet2"
+    style="@style/Widget.TextView.Medium"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Custom Interpolators using Paths"
+    app:bulletDrawable="@drawable/bullet_animated"
+    app:layout_constraintTop_toBottomOf="@id/bullet2"
+    app:layout_constraintBottom_toTopOf="@+id/bullet3"
+    app:layout_constraintStart_toStartOf="@id/bullet1"
+    app:showPhase="3"
     app:showAnimation="@anim/fadein" />
 
   <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
@@ -51,21 +64,8 @@
     style="@style/Widget.TextView.Medium"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="Custom Interpolators using Paths"
-    app:bulletDrawable="@drawable/bullet_animated"
-    app:layout_constraintTop_toBottomOf="@id/bullet2"
-    app:layout_constraintBottom_toTopOf="@+id/bullet4"
-    app:layout_constraintStart_toStartOf="@id/bullet1"
-    app:showPhase="3"
-    app:showAnimation="@anim/fadein" />
-
-  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
-    android:id="@+id/bullet4"
-    style="@style/Widget.TextView.Medium"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
     android:text="Must define &amp; apply programmatically"
-    app:layout_constraintTop_toBottomOf="@id/bullet3"
+    app:layout_constraintTop_toBottomOf="@id/bullet2"
     app:layout_constraintStart_toStartOf="@id/bullet1"
     app:layout_constraintBottom_toBottomOf="parent"
     android:layout_marginStart="72dp"

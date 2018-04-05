@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:aapt="http://schemas.android.com/aapt"
+  android:drawable="@drawable/vectors2_linear_gradient_line">
+
+  <target
+    android:name="all">
+    <aapt:attr name="android:animation">
+      <objectAnimator
+        android:propertyName="translateX"
+        android:valueFrom="0"
+        android:valueTo="89"
+        android:valueType="floatType"
+        android:interpolator="@android:interpolator/accelerate_decelerate"
+        android:duration="2000"
+        android:repeatCount="infinite"
+        android:repeatMode="reverse" />
+    </aapt:attr>
+  </target>
+</animated-vector>

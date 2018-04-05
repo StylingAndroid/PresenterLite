@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stylingandroid.presenter.engine.presentation.ConstraintSlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:id="@id/slide"
+  app:nextInAnimation="@anim/fadein"
+  app:nextOutAnimation="@anim/fadeout"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    android:id="@+id/title"
+    style="@style/Widget.TextView.Medium"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Even Odd Rule"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toTopOf="@id/nonZero"
+    app:layout_constraintVertical_chainStyle="packed" />
+
+  <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:adjustViewBounds="true"
+    android:contentDescription="@null"
+    android:src="@drawable/vectors2_donut_even_odd"
+    app:layout_constraintBottom_toBottomOf="@id/nonZero"
+    app:layout_constraintEnd_toEndOf="@id/nonZero"
+    app:layout_constraintStart_toStartOf="@id/nonZero"
+    app:layout_constraintTop_toTopOf="@id/nonZero"
+    app:showPhase="11"
+    app:showAnimation="@anim/fadein" />
+
+  <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+    android:id="@+id/nonZero"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:adjustViewBounds="true"
+    android:contentDescription="@null"
+    android:src="@drawable/vectors2_donut_circles2"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/title"
+    app:hideAnimation="@anim/none" />
+
+  <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:adjustViewBounds="true"
+    android:contentDescription="@null"
+    android:src="@drawable/vectors2_donut_dot2"
+    app:layout_constraintBottom_toBottomOf="@id/nonZero"
+    app:layout_constraintEnd_toEndOf="@id/nonZero"
+    app:layout_constraintStart_toStartOf="@id/nonZero"
+    app:layout_constraintTop_toTopOf="@id/nonZero"
+    app:hidePhase="1"
+    app:hideAnimation="@anim/none" />
+
+  <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:adjustViewBounds="true"
+    android:contentDescription="@null"
+    android:src="@drawable/vectors2_donut_dot2a_animated"
+    app:layout_constraintBottom_toBottomOf="@id/nonZero"
+    app:layout_constraintEnd_toEndOf="@id/nonZero"
+    app:layout_constraintStart_toStartOf="@id/nonZero"
+    app:layout_constraintTop_toTopOf="@id/nonZero"
+    android:visibility="gone"
+    app:showPhase="1"
+    app:hidePhase="2"
+    app:showAnimation="@anim/none"
+    app:synchronised="true" />
+
+  <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:adjustViewBounds="true"
+    android:contentDescription="@null"
+    android:src="@drawable/vectors2_donut_dot2b_animated"
+    app:layout_constraintBottom_toBottomOf="@id/nonZero"
+    app:layout_constraintEnd_toEndOf="@id/nonZero"
+    app:layout_constraintStart_toStartOf="@id/nonZero"
+    app:layout_constraintTop_toTopOf="@id/nonZero"
+    android:visibility="gone"
+    app:showPhase="2"
+    app:hidePhase="3"
+    app:showAnimation="@anim/none"
+    app:synchronised="true" />
+
+  <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:adjustViewBounds="true"
+    android:contentDescription="@null"
+    android:src="@drawable/vectors2_donut_dot2c_animated"
+    app:layout_constraintBottom_toBottomOf="@id/nonZero"
+    app:layout_constraintEnd_toEndOf="@id/nonZero"
+    app:layout_constraintStart_toStartOf="@id/nonZero"
+    app:layout_constraintTop_toTopOf="@id/nonZero"
+    android:visibility="gone"
+    app:showPhase="3"
+    app:hidePhase="4"
+    app:showAnimation="@anim/none"
+    app:synchronised="true" />
+
+  <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:adjustViewBounds="true"
+    android:contentDescription="@null"
+    android:src="@drawable/vectors2_donut_dot2d"
+    app:layout_constraintBottom_toBottomOf="@id/nonZero"
+    app:layout_constraintEnd_toEndOf="@id/nonZero"
+    app:layout_constraintStart_toStartOf="@id/nonZero"
+    app:layout_constraintTop_toTopOf="@id/nonZero"
+    android:visibility="gone"
+    app:showPhase="4"
+    app:hidePhase="5"
+    app:showAnimation="@anim/none"
+    app:synchronised="true" />
+
+  <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:adjustViewBounds="true"
+    android:contentDescription="@null"
+    android:src="@drawable/vectors2_donut_dot2e_animated"
+    app:layout_constraintBottom_toBottomOf="@id/nonZero"
+    app:layout_constraintEnd_toEndOf="@id/nonZero"
+    app:layout_constraintStart_toStartOf="@id/nonZero"
+    app:layout_constraintTop_toTopOf="@id/nonZero"
+    android:visibility="gone"
+    app:showPhase="5"
+    app:hidePhase="6"
+    app:showAnimation="@anim/none"
+    app:synchronised="true" />
+
+  <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:adjustViewBounds="true"
+    android:contentDescription="@null"
+    android:src="@drawable/vectors2_donut_dot2f_animated"
+    app:layout_constraintBottom_toBottomOf="@id/nonZero"
+    app:layout_constraintEnd_toEndOf="@id/nonZero"
+    app:layout_constraintStart_toStartOf="@id/nonZero"
+    app:layout_constraintTop_toTopOf="@id/nonZero"
+    android:visibility="gone"
+    app:showPhase="6"
+    app:hidePhase="7"
+    app:showAnimation="@anim/none"
+    app:synchronised="true" />
+
+  <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:adjustViewBounds="true"
+    android:contentDescription="@null"
+    android:src="@drawable/vectors2_donut_dot2g_animated"
+    app:layout_constraintBottom_toBottomOf="@id/nonZero"
+    app:layout_constraintEnd_toEndOf="@id/nonZero"
+    app:layout_constraintStart_toStartOf="@id/nonZero"
+    app:layout_constraintTop_toTopOf="@id/nonZero"
+    android:visibility="gone"
+    app:showPhase="7"
+    app:hidePhase="8"
+    app:showAnimation="@anim/none"
+    app:synchronised="true" />
+
+  <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:adjustViewBounds="true"
+    android:contentDescription="@null"
+    android:src="@drawable/vectors2_donut_dot2h_animated"
+    app:layout_constraintBottom_toBottomOf="@id/nonZero"
+    app:layout_constraintEnd_toEndOf="@id/nonZero"
+    app:layout_constraintStart_toStartOf="@id/nonZero"
+    app:layout_constraintTop_toTopOf="@id/nonZero"
+    android:visibility="gone"
+    app:showPhase="8"
+    app:hidePhase="9"
+    app:showAnimation="@anim/none"
+    app:synchronised="true" />
+
+  <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:adjustViewBounds="true"
+    android:contentDescription="@null"
+    android:src="@drawable/vectors2_donut_dot2i_animated"
+    app:layout_constraintBottom_toBottomOf="@id/nonZero"
+    app:layout_constraintEnd_toEndOf="@id/nonZero"
+    app:layout_constraintStart_toStartOf="@id/nonZero"
+    app:layout_constraintTop_toTopOf="@id/nonZero"
+    android:visibility="gone"
+    app:showPhase="9"
+    app:hidePhase="10"
+    app:showAnimation="@anim/none"
+    app:synchronised="true" />
+
+  <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:adjustViewBounds="true"
+    android:contentDescription="@null"
+    android:src="@drawable/vectors2_donut_dot2j_animated"
+    app:layout_constraintBottom_toBottomOf="@id/nonZero"
+    app:layout_constraintEnd_toEndOf="@id/nonZero"
+    app:layout_constraintStart_toStartOf="@id/nonZero"
+    app:layout_constraintTop_toTopOf="@id/nonZero"
+    android:visibility="gone"
+    app:showPhase="10"
+    app:showAnimation="@anim/none"
+    app:hidePhase="11"
+    app:synchronised="true" />
+
+</com.stylingandroid.presenter.engine.presentation.ConstraintSlideLayout>
