@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string-array name="vectors2">
-    <item>vectors2_sun_moon1</item>
     <item>vectors2_title</item>
     <item>vectors2_intro</item>
     <item>vectors2_fill_windings1</item>

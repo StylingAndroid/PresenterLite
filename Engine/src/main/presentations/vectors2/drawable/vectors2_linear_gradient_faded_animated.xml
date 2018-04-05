@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:aapt="http://schemas.android.com/aapt"
+  android:drawable="@drawable/vectors2_linear_gradient_faded">
+
+  <target android:name="fill">
+    <aapt:attr name="android:animation">
+      <objectAnimator
+        android:duration="500"
+        android:propertyName="fillAlpha"
+        android:repeatCount="0"
+        android:valueFrom="1.0"
+        android:valueTo="0.2"
+        android:valueType="floatType" />
+    </aapt:attr>
+  </target>
+</animated-vector>
