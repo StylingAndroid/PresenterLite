@@ -8,12 +8,12 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
+import android.support.v7.widget.AppCompatImageView;
 import android.util.AttributeSet;
-import android.widget.ImageView;
 
 import com.stylingandroid.presenter.R;
 
-public class PorterDuffImageView extends ImageView implements Phaseable {
+public class PorterDuffImageView extends AppCompatImageView implements Phaseable {
     private PorterDuff.Mode mMode = null;
     private Bitmap mSrc = null;
     private Bitmap mDst = null;

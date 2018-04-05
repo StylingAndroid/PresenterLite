@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stylingandroid.presenter.engine.presentation.ConstraintSlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:sap="http://schemas.android.com/apk/res-auto"
+  android:id="@id/slide"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:layout_gravity="center"
+  sap:nextInAnimation="@anim/fadein"
+  sap:nextOutAnimation="@anim/fadeout">
+
+  <TextView
+    android:id="@+id/title"
+    style="@style/Widget.TextView.Large"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="wow. very vector. such love"
+    sap:layout_constraintBottom_toTopOf="@id/me"
+    sap:layout_constraintEnd_toEndOf="parent"
+    sap:layout_constraintStart_toStartOf="parent"
+    sap:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+    android:id="@+id/me"
+    style="@style/Widget.TextView.Medium"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Mark Allison"
+    sap:layout_constraintBottom_toTopOf="@id/blog"
+    sap:layout_constraintStart_toStartOf="@id/title"
+    sap:layout_constraintTop_toBottomOf="@id/title" />
+
+  <TextView
+    android:id="@+id/blog"
+    style="@style/Widget.TextView.Medium"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="https://blog.stylingandroid.com"
+    sap:layout_constraintBottom_toTopOf="@id/event_long_name"
+    sap:layout_constraintStart_toStartOf="@id/title"
+    sap:layout_constraintTop_toBottomOf="@id/me" />
+
+  <TextView
+    android:id="@id/event_long_name"
+    style="@style/Widget.TextView.Medium"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    sap:layout_constraintBottom_toTopOf="@id/twitter"
+    sap:layout_constraintStart_toStartOf="@id/title"
+    sap:layout_constraintTop_toBottomOf="@id/blog" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    android:id="@+id/twitter"
+    style="@style/Widget.TextView.Medium"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/spacing"
+    android:text="Twitter: MarkIAllison"
+    sap:highlightTextAppearance="@style/Widget.TextView.Medium.Highlight"
+    sap:layout_constraintBottom_toBottomOf="parent"
+    sap:layout_constraintStart_toStartOf="@id/title"
+    sap:layout_constraintTop_toBottomOf="@id/event_long_name" />
+
+</com.stylingandroid.presenter.engine.presentation.ConstraintSlideLayout>

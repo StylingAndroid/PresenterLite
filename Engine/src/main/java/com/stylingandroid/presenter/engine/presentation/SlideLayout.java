@@ -66,7 +66,7 @@ public class SlideLayout extends LinearLayout implements PhaseContainer {
     protected void onFinishInflate() {
         super.onFinishInflate();
         if (phasedLayout != null) {
-            phasedLayout.onFinishInflate(this);
+            phasedLayout.onFinishInflate(this, false);
         }
     }
 

@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.drawable.Animatable;
 import android.graphics.drawable.Drawable;
+import android.support.v7.widget.AppCompatTextView;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.Spanned;
@@ -11,14 +12,13 @@ import android.text.style.DynamicDrawableSpan;
 import android.text.style.ImageSpan;
 import android.text.style.TextAppearanceSpan;
 import android.util.AttributeSet;
-import android.widget.TextView;
 
 import com.stylingandroid.presenter.R;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class HighlightedTextView extends TextView implements Phaseable, Animatable {
+public class HighlightedTextView extends AppCompatTextView implements Phaseable, Animatable {
     private Pattern pattern = null;
     private int highlightStyle = 0;
 

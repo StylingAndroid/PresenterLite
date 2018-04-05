@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:aapt="http://schemas.android.com/aapt"
+  android:drawable="@drawable/vectors2_sweep_gradient_masked">
+
+  <target android:name="lower_mask">
+    <aapt:attr name="android:animation">
+      <set>
+        <objectAnimator
+          android:duration="1500"
+          android:interpolator="@android:interpolator/accelerate_decelerate"
+          android:propertyName="rotation"
+          android:repeatCount="0"
+          android:valueFrom="0"
+          android:valueTo="360"
+          android:valueType="floatType" />
+      </set>
+    </aapt:attr>
+  </target>
+
+  <target android:name="upper_fill">
+    <aapt:attr name="android:animation">
+      <objectAnimator
+        android:startOffset="750"
+        android:duration="0"
+        android:interpolator="@android:interpolator/accelerate_cubic"
+        android:propertyName="fillAlpha"
+        android:repeatCount="0"
+        android:valueFrom="0.0"
+        android:valueTo="1.0"
+        android:valueType="floatType" />
+    </aapt:attr>
+  </target>
+
+  <target android:name="upper_mask">
+    <aapt:attr name="android:animation">
+      <set>
+        <objectAnimator
+          android:startOffset="750"
+          android:duration="0"
+          android:propertyName="fillAlpha"
+          android:repeatCount="0"
+          android:valueFrom="1.0"
+          android:valueTo="0.0"
+          android:valueType="floatType" />
+      </set>
+    </aapt:attr>
+  </target>
+
+</animated-vector>

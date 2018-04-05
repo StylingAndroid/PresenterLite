@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+  android:drawable="@drawable/vectors2_donut_arrows_different">
+
+  <target
+    android:name="outer"
+    android:animation="@animator/vectors2_rotate_anticlockwise_linear" />
+
+  <target
+    android:name="inner"
+    android:animation="@animator/vectors2_rotate_clockwise_linear" />
+</animated-vector>

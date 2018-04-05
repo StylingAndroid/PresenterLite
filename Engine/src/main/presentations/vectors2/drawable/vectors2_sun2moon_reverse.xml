@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:aapt="http://schemas.android.com/aapt"
+  android:drawable="@drawable/vectors2_sun">
+
+  <target android:name="background">
+    <aapt:attr name="android:animation">
+      <objectAnimator
+        android:duration="1500"
+        android:interpolator="@android:interpolator/accelerate_decelerate"
+        android:propertyName="fillColor"
+        android:repeatCount="infinite"
+        android:repeatMode="reverse"
+        android:valueFrom="#3d9eff"
+        android:valueTo="#00264d"
+        android:valueType="colorType" />
+    </aapt:attr>
+  </target>
+
+  <target android:name="outer">
+    <aapt:attr name="android:animation">
+      <set>
+        <objectAnimator
+          android:duration="1500"
+          android:interpolator="@android:interpolator/accelerate_decelerate"
+          android:propertyName="rotation"
+          android:repeatCount="infinite"
+          android:repeatMode="reverse"
+          android:valueFrom="30"
+          android:valueTo="0"
+          android:valueType="floatType" />
+        <objectAnimator
+          android:duration="1500"
+          android:interpolator="@android:interpolator/accelerate_decelerate"
+          android:propertyName="scaleX"
+          android:repeatCount="infinite"
+          android:repeatMode="reverse"
+          android:valueFrom="1"
+          android:valueTo="1.4"
+          android:valueType="floatType" />
+        <objectAnimator
+          android:duration="1500"
+          android:interpolator="@android:interpolator/accelerate_decelerate"
+          android:propertyName="scaleY"
+          android:repeatCount="infinite"
+          android:repeatMode="reverse"
+          android:valueFrom="1"
+          android:valueTo="1.4"
+          android:valueType="floatType" />
+      </set>
+    </aapt:attr>
+  </target>
+
+  <target android:name="ray1">
+    <aapt:attr name="android:animation">
+      <set>
+        <objectAnimator
+          android:duration="1500"
+          android:interpolator="@android:interpolator/accelerate_decelerate"
+          android:propertyName="trimPathStart"
+          android:repeatCount="infinite"
+          android:repeatMode="reverse"
+          android:valueFrom="0"
+          android:valueTo="1"
+          android:valueType="floatType" />
+        <objectAnimator
+          android:duration="1500"
+          android:interpolator="@android:interpolator/accelerate_decelerate"
+          android:propertyName="strokeAlpha"
+          android:repeatCount="infinite"
+          android:repeatMode="reverse"
+          android:valueFrom="1"
+          android:valueTo="0"
+          android:valueType="floatType" />
+        <objectAnimator
+          android:duration="1500"
+          android:interpolator="@android:interpolator/accelerate_decelerate"
+          android:propertyName="strokeColor"
+          android:repeatCount="infinite"
+          android:repeatMode="reverse"
+          android:valueFrom="#FF0"
+          android:valueTo="#B3B3B3"
+          android:valueType="colorType" />
+      </set>
+    </aapt:attr>
+  </target>
+
+  <target android:name="ray2">
+    <aapt:attr name="android:animation">
+      <set>
+        <objectAnimator
+          android:duration="1500"
+          android:interpolator="@android:interpolator/accelerate_decelerate"
+          android:propertyName="trimPathStart"
+          android:repeatCount="infinite"
+          android:repeatMode="reverse"
+          android:valueFrom="0"
+          android:valueTo="1"
+          android:valueType="floatType" />
+        <objectAnimator
+          android:duration="1500"
+          android:interpolator="@android:interpolator/accelerate_decelerate"
+          android:propertyName="strokeAlpha"
+          android:repeatCount="infinite"
+          android:repeatMode="reverse"
+          android:valueFrom="1"
+          android:valueTo="0"
+          android:valueType="floatType" />
+        <objectAnimator
+          android:duration="1500"
+          android:interpolator="@android:interpolator/accelerate_decelerate"
+          android:propertyName="strokeColor"
+          android:repeatCount="infinite"
+          android:repeatMode="reverse"
+          android:valueFrom="#FF0"
+          android:valueTo="#B3B3B3"
+          android:valueType="colorType" />
+      </set>
+    </aapt:attr>
+  </target>
+
+  <target android:name="ray3">
+    <aapt:attr name="android:animation">
+      <set>
+        <objectAnimator
+          android:duration="1500"
+          android:interpolator="@android:interpolator/accelerate_decelerate"
+          android:propertyName="trimPathStart"
+          android:repeatCount="infinite"
+          android:repeatMode="reverse"
+          android:valueFrom="0"
+          android:valueTo="1"
+          android:valueType="floatType" />
+        <objectAnimator
+          android:duration="1500"
+          android:interpolator="@android:interpolator/accelerate_decelerate"
+          android:propertyName="strokeAlpha"
+          android:repeatCount="infinite"
+          android:repeatMode="reverse"
+          android:valueFrom="1"
+          android:valueTo="0"
+          android:valueType="floatType" />
+        <objectAnimator
+          android:duration="1500"
+          android:interpolator="@android:interpolator/accelerate_decelerate"
+          android:propertyName="strokeColor"
+          android:repeatCount="infinite"
+          android:repeatMode="reverse"
+          android:valueFrom="#FF0"
+          android:valueTo="#B3B3B3"
+          android:valueType="colorType" />
+      </set>
+    </aapt:attr>
+  </target>
+
+  <target android:name="ray4">
+    <aapt:attr name="android:animation">
+      <set>
+        <objectAnimator
+          android:duration="1500"
+          android:interpolator="@android:interpolator/accelerate_decelerate"
+          android:propertyName="trimPathStart"
+          android:repeatCount="infinite"
+          android:repeatMode="reverse"
+          android:valueFrom="0"
+          android:valueTo="1"
+          android:valueType="floatType" />
+        <objectAnimator
+          android:duration="1500"
+          android:interpolator="@android:interpolator/accelerate_decelerate"
+          android:propertyName="strokeAlpha"
+          android:repeatCount="infinite"
+          android:repeatMode="reverse"
+          android:valueFrom="1"
+          android:valueTo="0"
+          android:valueType="floatType" />
+        <objectAnimator
+          android:duration="1500"
+          android:interpolator="@android:interpolator/accelerate_decelerate"
+          android:propertyName="strokeColor"
+          android:repeatCount="infinite"
+          android:repeatMode="reverse"
+          android:valueFrom="#FF0"
+          android:valueTo="#B3B3B3"
+          android:valueType="colorType" />
+      </set>
+    </aapt:attr>
+  </target>
+
+  <target android:name="ray5">
+    <aapt:attr name="android:animation">
+      <set>
+        <objectAnimator
+          android:duration="1500"
+          android:interpolator="@android:interpolator/accelerate_decelerate"
+          android:propertyName="trimPathStart"
+          android:repeatCount="infinite"
+          android:repeatMode="reverse"
+          android:valueFrom="0"
+          android:valueTo="1"
+          android:valueType="floatType" />
+        <objectAnimator
+          android:duration="1500"
+          android:interpolator="@android:interpolator/accelerate_decelerate"
+          android:propertyName="strokeAlpha"
+          android:repeatCount="infinite"
+          android:repeatMode="reverse"
+          android:valueFrom="1"
+          android:valueTo="0"
+          android:valueType="floatType" />
+        <objectAnimator
+          android:duration="1500"
+          android:interpolator="@android:interpolator/accelerate_decelerate"
+          android:propertyName="strokeColor"
+          android:repeatCount="infinite"
+          android:repeatMode="reverse"
+          android:valueFrom="#FF0"
+          android:valueTo="#B3B3B3"
+          android:valueType="colorType" />
+      </set>
+    </aapt:attr>
+  </target>
+
+  <target android:name="ray6">
+    <aapt:attr name="android:animation">
+      <set>
+        <objectAnimator
+          android:duration="1500"
+          android:interpolator="@android:interpolator/accelerate_decelerate"
+          android:propertyName="trimPathStart"
+          android:repeatCount="infinite"
+          android:repeatMode="reverse"
+          android:valueFrom="0"
+          android:valueTo="1"
+          android:valueType="floatType" />
+        <objectAnimator
+          android:duration="1500"
+          android:interpolator="@android:interpolator/accelerate_decelerate"
+          android:propertyName="strokeAlpha"
+          android:repeatCount="infinite"
+          android:repeatMode="reverse"
+          android:valueFrom="1"
+          android:valueTo="0"
+          android:valueType="floatType" />
+        <objectAnimator
+          android:duration="1500"
+          android:interpolator="@android:interpolator/accelerate_decelerate"
+          android:propertyName="strokeColor"
+          android:repeatCount="infinite"
+          android:repeatMode="reverse"
+          android:valueFrom="#FF0"
+          android:valueTo="#B3B3B3"
+          android:valueType="colorType" />
+      </set>
+    </aapt:attr>
+  </target>
+
+  <target android:name="ray7">
+    <aapt:attr name="android:animation">
+      <set>
+        <objectAnimator
+          android:duration="1500"
+          android:interpolator="@android:interpolator/accelerate_decelerate"
+          android:propertyName="trimPathStart"
+          android:repeatCount="infinite"
+          android:repeatMode="reverse"
+          android:valueFrom="0"
+          android:valueTo="1"
+          android:valueType="floatType" />
+        <objectAnimator
+          android:duration="1500"
+          android:interpolator="@android:interpolator/accelerate_decelerate"
+          android:propertyName="strokeAlpha"
+          android:repeatCount="infinite"
+          android:repeatMode="reverse"
+          android:valueFrom="1"
+          android:valueTo="0"
+          android:valueType="floatType" />
+        <objectAnimator
+          android:duration="1500"
+          android:interpolator="@android:interpolator/accelerate_decelerate"
+          android:propertyName="strokeColor"
+          android:repeatCount="infinite"
+          android:repeatMode="reverse"
+          android:valueFrom="#FF0"
+          android:valueTo="#B3B3B3"
+          android:valueType="colorType" />
+      </set>
+    </aapt:attr>
+  </target>
+
+  <target android:name="ray8">
+    <aapt:attr name="android:animation">
+      <set>
+        <objectAnimator
+          android:duration="1500"
+          android:interpolator="@android:interpolator/accelerate_decelerate"
+          android:propertyName="trimPathStart"
+          android:repeatCount="infinite"
+          android:repeatMode="reverse"
+          android:valueFrom="0"
+          android:valueTo="1"
+          android:valueType="floatType" />
+        <objectAnimator
+          android:duration="1500"
+          android:interpolator="@android:interpolator/accelerate_decelerate"
+          android:propertyName="strokeAlpha"
+          android:repeatCount="infinite"
+          android:repeatMode="reverse"
+          android:valueFrom="1"
+          android:valueTo="0"
+          android:valueType="floatType" />
+        <objectAnimator
+          android:duration="1500"
+          android:interpolator="@android:interpolator/accelerate_decelerate"
+          android:propertyName="strokeColor"
+          android:repeatCount="infinite"
+          android:repeatMode="reverse"
+          android:valueFrom="#FF0"
+          android:valueTo="#B3B3B3"
+          android:valueType="colorType" />
+      </set>
+    </aapt:attr>
+  </target>
+
+  <target android:name="ray9">
+    <aapt:attr name="android:animation">
+      <set>
+        <objectAnimator
+          android:duration="1500"
+          android:interpolator="@android:interpolator/accelerate_decelerate"
+          android:propertyName="trimPathStart"
+          android:repeatCount="infinite"
+          android:repeatMode="reverse"
+          android:valueFrom="0"
+          android:valueTo="1"
+          android:valueType="floatType" />
+        <objectAnimator
+          android:duration="1500"
+          android:interpolator="@android:interpolator/accelerate_decelerate"
+          android:propertyName="strokeAlpha"
+          android:repeatCount="infinite"
+          android:repeatMode="reverse"
+          android:valueFrom="1"
+          android:valueTo="0"
+          android:valueType="floatType" />
+        <objectAnimator
+          android:duration="1500"
+          android:interpolator="@android:interpolator/accelerate_decelerate"
+          android:propertyName="strokeColor"
+          android:repeatCount="infinite"
+          android:repeatMode="reverse"
+          android:valueFrom="#FF0"
+          android:valueTo="#B3B3B3"
+          android:valueType="colorType" />
+      </set>
+    </aapt:attr>
+  </target>
+
+  <target android:name="ray10">
+    <aapt:attr name="android:animation">
+      <set>
+        <objectAnimator
+          android:duration="1500"
+          android:interpolator="@android:interpolator/accelerate_decelerate"
+          android:propertyName="trimPathStart"
+          android:repeatCount="infinite"
+          android:repeatMode="reverse"
+          android:valueFrom="0"
+          android:valueTo="1"
+          android:valueType="floatType" />
+        <objectAnimator
+          android:duration="1500"
+          android:interpolator="@android:interpolator/accelerate_decelerate"
+          android:propertyName="strokeAlpha"
+          android:repeatCount="infinite"
+          android:repeatMode="reverse"
+          android:valueFrom="1"
+          android:valueTo="0"
+          android:valueType="floatType" />
+        <objectAnimator
+          android:duration="1500"
+          android:interpolator="@android:interpolator/accelerate_decelerate"
+          android:propertyName="strokeColor"
+          android:repeatCount="infinite"
+          android:repeatMode="reverse"
+          android:valueFrom="#FF0"
+          android:valueTo="#B3B3B3"
+          android:valueType="colorType" />
+      </set>
+    </aapt:attr>
+  </target>
+
+  <target android:name="ray11">
+    <aapt:attr name="android:animation">
+      <set>
+        <objectAnimator
+          android:duration="1500"
+          android:interpolator="@android:interpolator/accelerate_decelerate"
+          android:propertyName="trimPathStart"
+          android:repeatCount="infinite"
+          android:repeatMode="reverse"
+          android:valueFrom="0"
+          android:valueTo="1"
+          android:valueType="floatType" />
+        <objectAnimator
+          android:duration="1500"
+          android:interpolator="@android:interpolator/accelerate_decelerate"
+          android:propertyName="strokeAlpha"
+          android:repeatCount="infinite"
+          android:repeatMode="reverse"
+          android:valueFrom="1"
+          android:valueTo="0"
+          android:valueType="floatType" />
+        <objectAnimator
+          android:duration="1500"
+          android:interpolator="@android:interpolator/accelerate_decelerate"
+          android:propertyName="strokeColor"
+          android:repeatCount="infinite"
+          android:repeatMode="reverse"
+          android:valueFrom="#FF0"
+          android:valueTo="#B3B3B3"
+          android:valueType="colorType" />
+      </set>
+    </aapt:attr>
+  </target>
+
+  <target android:name="ray12">
+    <aapt:attr name="android:animation">
+      <set>
+        <objectAnimator
+          android:duration="1500"
+          android:interpolator="@android:interpolator/accelerate_decelerate"
+          android:propertyName="trimPathStart"
+          android:repeatCount="infinite"
+          android:repeatMode="reverse"
+          android:valueFrom="0"
+          android:valueTo="1"
+          android:valueType="floatType" />
+        <objectAnimator
+          android:duration="1500"
+          android:interpolator="@android:interpolator/accelerate_decelerate"
+          android:propertyName="strokeAlpha"
+          android:repeatCount="infinite"
+          android:repeatMode="reverse"
+          android:valueFrom="1"
+          android:valueTo="0"
+          android:valueType="floatType" />
+        <objectAnimator
+          android:duration="1500"
+          android:interpolator="@android:interpolator/accelerate_decelerate"
+          android:propertyName="strokeColor"
+          android:repeatCount="infinite"
+          android:repeatMode="reverse"
+          android:valueFrom="#FF0"
+          android:valueTo="#B3B3B3"
+          android:valueType="colorType" />
+      </set>
+    </aapt:attr>
+  </target>
+
+  <target android:name="sun">
+    <aapt:attr name="android:animation">
+      <set>
+        <objectAnimator
+          android:duration="1500"
+          android:interpolator="@android:interpolator/accelerate_decelerate"
+          android:propertyName="pathData"
+          android:repeatCount="infinite"
+          android:repeatMode="reverse"
+          android:valueFrom="M100,50 A49,49,0,1,0,143.3,122.5 C161.8,90.5 137,50 100,50z"
+          android:valueTo="M100,50 A49,49,0,1,0,143.3,122.5 C103.3,122.5 80,84.64 100,50z"
+          android:valueType="pathType" />
+        <objectAnimator
+          android:duration="1500"
+          android:interpolator="@android:interpolator/accelerate_decelerate"
+          android:propertyName="fillColor"
+          android:repeatCount="infinite"
+          android:repeatMode="reverse"
+          android:valueFrom="#FF0"
+          android:valueTo="#B3B3B3"
+          android:valueType="colorType" />
+      </set>
+    </aapt:attr>
+  </target>
+</animated-vector>

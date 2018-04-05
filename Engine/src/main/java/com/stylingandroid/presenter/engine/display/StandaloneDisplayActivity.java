@@ -4,11 +4,13 @@ import android.app.ActionBar;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnDismissListener;
 import android.content.Intent;
-import android.media.MediaRouter;
-import android.media.MediaRouter.RouteInfo;
-import android.media.MediaRouter.SimpleCallback;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.media.MediaControlIntent;
+import android.support.v7.media.MediaRouteSelector;
+import android.support.v7.media.MediaRouter;
+import android.support.v7.media.MediaRouter.Callback;
+import android.support.v7.media.MediaRouter.RouteInfo;
 import android.util.Log;
 import android.view.Display;
 import android.view.KeyEvent;
@@ -19,7 +21,7 @@ import android.view.WindowManager;
 import com.stylingandroid.presenter.R;
 import com.stylingandroid.presenter.engine.presentation.DisplayLayout;
 
-public class StandaloneDisplayActivity extends FragmentActivity {
+public class StandaloneDisplayActivity extends AppCompatActivity {
     public static final String TAG = "Presenter";
 
     public static final String EXTRA_MIRROR_DISPLAY = "EXTRA_MIRROR_DISPLAY";
@@ -31,7 +33,7 @@ public class StandaloneDisplayActivity extends FragmentActivity {
 
     private MediaRouter mediaRouter = null;
 
-    private SimpleCallback callback = new SimpleCallback() {
+    private Callback callback = new Callback() {
         public void onRoutePresentationDisplayChanged(MediaRouter router, RouteInfo info) {
             updatePresentation();
         }
@@ -63,9 +65,12 @@ public class StandaloneDisplayActivity extends FragmentActivity {
             ab.hide();
         }
         if (!getIntent().getBooleanExtra(EXTRA_MIRROR_DISPLAY, false)) {
-            mediaRouter = (MediaRouter) getSystemService(MEDIA_ROUTER_SERVICE);
+            mediaRouter = MediaRouter.getInstance(this);
+            MediaRouteSelector selector = new MediaRouteSelector.Builder()
+                    .addControlCategory(MediaControlIntent.CATEGORY_LIVE_VIDEO)
+                    .build();
             mediaRouter
-                    .addCallback(MediaRouter.ROUTE_TYPE_LIVE_VIDEO, callback);
+                    .addCallback(selector, callback);
             updatePresentation();
         }
         displayLayout.go(0, false);
@@ -88,12 +93,14 @@ public class StandaloneDisplayActivity extends FragmentActivity {
         switch (event.getKeyCode()) {
             case KeyEvent.KEYCODE_DPAD_LEFT:
             case KeyEvent.KEYCODE_PAGE_UP:
+            case KeyEvent.KEYCODE_NAVIGATE_PREVIOUS:
                 previous();
                 return true;
             case KeyEvent.KEYCODE_SPACE:
             case KeyEvent.KEYCODE_DPAD_RIGHT:
             case KeyEvent.KEYCODE_DPAD_CENTER:
             case KeyEvent.KEYCODE_PAGE_DOWN:
+            case KeyEvent.KEYCODE_NAVIGATE_NEXT:
                 advance();
                 return true;
             case KeyEvent.KEYCODE_I:
@@ -106,17 +113,20 @@ public class StandaloneDisplayActivity extends FragmentActivity {
         }
     }
 
+    protected Display getCurrentDisplay() {
+        MediaRouter.RouteInfo route = mediaRouter.getSelectedRoute();
+        return route.getPresentationDisplay();
+    }
+
     private void updatePresentation() {
-        MediaRouter.RouteInfo route = mediaRouter
-                .getSelectedRoute(MediaRouter.ROUTE_TYPE_LIVE_VIDEO);
-        Display presentationDisplay = route != null ? route
-                .getPresentationDisplay() : null;
+        Display presentationDisplay = getCurrentDisplay();
         if (displayPresentation != null
                 && displayPresentation.getDisplay() != presentationDisplay) {
             displayPresentation.dismiss();
             displayPresentation = null;
         }
         if (displayPresentation == null && presentationDisplay != null) {
+            Log.v(TAG, "Create new presentation");
             displayPresentation = new DisplayPresentation(this, presentationDisplay);
             displayPresentation.setOnDismissListener(
                     new OnDismissListener() {
@@ -129,8 +139,9 @@ public class StandaloneDisplayActivity extends FragmentActivity {
                         }
                     }
             );
+            Log.v(TAG, "Show presentation");
             displayPresentation.show();
-            displayPresentation.go(displayLayout.getCurrentSlidePos(), displayLayout.getCurrentSlidePhase());
+            //displayPresentation.go(displayLayout.getCurrentSlidePos(), displayLayout.getCurrentSlidePhase());
         }
     }
 

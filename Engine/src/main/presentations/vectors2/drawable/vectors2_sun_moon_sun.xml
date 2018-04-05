@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+  android:width="320dp"
+  android:height="320dp"
+  android:viewportHeight="200"
+  android:viewportWidth="200">
+
+  <path
+    android:name="background"
+    android:fillColor="#3d9eff"
+    android:pathData="M0,0h200v200h-200z" />
+
+  <group android:name="outer"
+    android:pivotX="100"
+    android:pivotY="100">
+
+    <group
+      android:pivotX="100"
+      android:pivotY="100"
+      android:rotation="0">
+      <path
+        android:name="ray1"
+        android:pathData="M100,40 V20"
+        android:strokeColor="#FF0"
+        android:strokeWidth="4" />
+    </group>
+
+    <group
+      android:pivotX="100"
+      android:pivotY="100"
+      android:rotation="30">
+      <path
+        android:name="ray2"
+        android:pathData="M100,40 V20"
+        android:strokeColor="#FF0"
+        android:strokeWidth="4" />
+    </group>
+    <group
+      android:pivotX="100"
+      android:pivotY="100"
+      android:rotation="60">
+      <path
+        android:name="ray3"
+        android:pathData="M100,40 V20"
+        android:strokeColor="#FF0"
+        android:strokeWidth="4" />
+    </group>
+    <group
+      android:pivotX="100"
+      android:pivotY="100"
+      android:rotation="90">
+      <path
+        android:name="ray4"
+        android:pathData="M100,40 V20"
+        android:strokeColor="#FF0"
+        android:strokeWidth="4" />
+    </group>
+    <group
+      android:pivotX="100"
+      android:pivotY="100"
+      android:rotation="120">
+      <path
+        android:name="ray5"
+        android:pathData="M100,40 V20"
+        android:strokeColor="#FF0"
+        android:strokeWidth="4" />
+    </group>
+    <group
+      android:pivotX="100"
+      android:pivotY="100"
+      android:rotation="150">
+      <path
+        android:name="ray6"
+        android:pathData="M100,40 V20"
+        android:strokeColor="#FF0"
+        android:strokeWidth="4" />
+    </group>
+    <group
+      android:pivotX="100"
+      android:pivotY="100"
+      android:rotation="180">
+      <path
+        android:name="ray7"
+        android:pathData="M100,40 V20"
+        android:strokeColor="#FF0"
+        android:strokeWidth="4" />
+    </group>
+    <group
+      android:pivotX="100"
+      android:pivotY="100"
+      android:rotation="210">
+      <path
+        android:name="ray8"
+        android:pathData="M100,40 V20"
+        android:strokeColor="#FF0"
+        android:strokeWidth="4" />
+    </group>
+    <group
+      android:pivotX="100"
+      android:pivotY="100"
+      android:rotation="240">
+      <path
+        android:name="ray9"
+        android:pathData="M100,40 V20"
+        android:strokeColor="#FF0"
+        android:strokeWidth="4" />
+    </group>
+    <group
+      android:pivotX="100"
+      android:pivotY="100"
+      android:rotation="270">
+      <path
+        android:name="ray10"
+        android:pathData="M100,40 V20"
+        android:strokeColor="#FF0"
+        android:strokeWidth="4" />
+    </group>
+    <group
+      android:pivotX="100"
+      android:pivotY="100"
+      android:rotation="300">
+      <path
+        android:name="ray11"
+        android:pathData="M100,40 V20"
+        android:strokeColor="#FF0"
+        android:strokeWidth="4" />
+    </group>
+    <group
+      android:pivotX="100"
+      android:pivotY="100"
+      android:rotation="330">
+      <path
+        android:name="ray12"
+        android:pathData="M100,40 V20"
+        android:strokeColor="#FF0"
+        android:strokeWidth="4" />
+    </group>
+
+    <path
+      android:name="sun"
+      android:fillColor="#FF0"
+      android:pathData="M100,50 A49,49,0,1,0,143.3,122.5 C161.8,90.5 137,50 100,50z"
+      android:strokeWidth="1" />
+  </group>
+
+
+</vector>

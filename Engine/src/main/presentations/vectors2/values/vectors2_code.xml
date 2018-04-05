@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="vectors2_even_odd_path"
+    formatted="false"><![CDATA[
+<path\n
+\tandroid:fillColor=\"#14A804\"\n
+\tandroid:fillType=\"evenOdd\"\n
+\tandroid:pathData=\"\n
+\t\t\t\tM55,1a49,49,0,1,0,1,0z\n
+\t\t\t\tM55,21a29,29,0,1,0,1,0z\" />]]></string>
+  <string name="vectors2_non_zero_path"
+    formatted="false"><![CDATA[
+  <path\n
+    \tandroid:fillColor=\"#14A804\"\n
+    \tandroid:fillType=\"nonZero\"\n
+    \tandroid:pathData=\"\n
+      \t\t\t\tM55,1a49,49,0,1,0,1,0z\n
+      \t\t\t\tM55,21a29,29,0,1,0,1,0z\" />
+  ]]></string>
+  <string name="vectors2_use_support">use the\nsupport\nlibrary</string>
+  <string name="vectors2_icl_vector" formatted="false"><![CDATA[
+<vector\n
+\t\txmlns:android=\"…\"\n
+\t\tandroid:width=\"24dp\"\n
+\t\tandroid:height=\"24dp\"\n
+\t\tandroid:viewportHeight=\"24.0\"\n
+\t\tandroid:viewportWidth=\"24.0\">\n
+\t\t<path\n
+\t\t\t\tandroid:name=\"square\"\n
+\t\t\t\tandroid:fillColor=\"#14A804\"\n
+\t\t\t\tandroid:pathData=\"M6,6h12v12H6z\" />\n
+</vector>\n
+  ]]></string>
+  <string name="vectors2_icl_animator" formatted="false"><![CDATA[
+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<objectAnimator xmlns:android=\"…\"\n
+\t\tandroid:propertyName=\"fillAlpha\"\n
+\t\tandroid:valueFrom=\"1.0\"\n
+\t\tandroid:valueTo=\"0.0\"\n
+\t\tandroid:valueType=\"floatType\"\n
+\t\tandroid:interpolator=\"…\"\n
+\t\tandroid:duration=\"1000\"\n
+\t\tandroid:repeatCount=\"infinite\"\n
+\t\tandroid:repeatMode=\"reverse\" />\n
+  ]]></string>
+  <string name="vectors2_icl_avd"
+    formatted="false"><![CDATA[
+<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<animated-vector\n\t\txmlns:android=\"…\"\n
+\t\tandroid:drawable=\"@drawable/square\">\n
+\t\t<target android:name=\"square\"\n
+\t\t\t\tandroid:animation=\"@animator/alpha\" />\n
+</animated-vector>
+  ]]></string>
+  <string name="vectors2_icl_complete1"
+    formatted="false"><![CDATA[
+<animated-vector xmlns:android=\"…\"\n
+\t\txmlns:aapt=\"http://schemas.android.com/aapt\">\n\n
+\t\t<aapt:attr name=\"android:drawable\">\n
+\t\t\t\t<vector\n
+\t\t\t\t\t\tandroid:width=\"24dp\"\n
+\t\t\t\t\t\tandroid:height=\"24dp\"\n
+\t\t\t\t\t\tandroid:viewportHeight=\"24.0\"\n
+\t\t\t\t\t\tandroid:viewportWidth=\"24.0\">\n
+\t\t\t\t\t\t<path\n
+\t\t\t\t\t\t\t\tandroid:name=\"square\"\n
+\t\t\t\t\t\t\t\tandroid:fillColor=\"#14A804\"\n
+\t\t\t\t\t\t\t\tandroid:pathData=\"M6,6h12v12H6z\" />\n
+\t\t\t\t</vector>\n
+\t\t</aapt:attr>\n\n
+\t\t<target android:name=\"square\"\n
+\t\t\t\tandroid:animation=\"vectors2_alpha\" />\n
+</animated-vector>
+  ]]></string>
+  <string name="vectors2_gradient_linear"
+    formatted="false"><![CDATA[
+<gradient\n
+\t\tandroid:endColor=\"#FF14A404\"\n
+\t\tandroid:endX=\"0\"\n
+\t\tandroid:endY=\"100\"\n
+\t\tandroid:startColor=\"#0014A404\"\n
+\t\tandroid:startX=\"0\"\n
+\t\tandroid:startY=\"0\"\n
+\t\tandroid:type=\"linear\" />
+    ]]></string>
+  <string name="vectors2_gradient_linear_diagonal"
+    formatted="false"><![CDATA[
+<gradient\n
+\t\tandroid:endColor=\"#FF14A404\"\n
+\t\tandroid:endX=\"100\"\n
+\t\tandroid:endY=\"100\"\n
+\t\tandroid:startColor=\"#0014A404\"\n
+\t\tandroid:startX=\"0\"\n
+\t\tandroid:startY=\"0\"\n
+\t\tandroid:type=\"linear\" />
+    ]]></string>
+  <string name="vectors2_gradient_radial"
+    formatted="false"><![CDATA[
+<gradient\n
+\t\tandroid:centerX=\"50\"\n
+\t\tandroid:centerY=\"50\"\n
+\t\tandroid:endColor=\"#FF14A404\"\n
+\t\tandroid:gradientRadius=\"50\"\n
+\t\tandroid:startColor=\"#0014A404\"\n
+\t\tandroid:type=\"radial\" />
+    ]]></string>
+  <string name="vectors2_gradient_radial_larger"
+    formatted="false"><![CDATA[
+<gradient\n
+\t\tandroid:centerX=\"50\"\n
+\t\tandroid:centerY=\"50\"\n
+\t\tandroid:endColor=\"#FF14A404\"\n
+\t\tandroid:gradientRadius=\"70.71\"\n
+\t\tandroid:startColor=\"#0014A404\"\n
+\t\tandroid:type=\"radial\" />
+    ]]></string>
+  <string name="vectors2_gradient_sweep"
+    formatted="false"><![CDATA[
+<gradient\n
+\t\tandroid:centerX=\"50\"\n
+\t\tandroid:centerY=\"50\"\n
+\t\tandroid:endColor=\"#FF14A404\"\n
+\t\tandroid:startColor=\"#0014A404\"\n
+\t\tandroid:type=\"sweep\" />
+    ]]></string>
+  <string name="vectors2_gradient_sweep2"
+    formatted="false"><![CDATA[
+<gradient\n
+\t\tandroid:centerX=\"50\"\n
+\t\tandroid:centerY=\"50\"\n
+\t\tandroid:type=\"sweep\">\n
+\t\t\t\t<item android:offset=\"0.0\"\n
+\t\t\t\t\t\tandroid:color=\"#0014A404\" />\n
+\t\t\t\t<item android:offset=\"0.5\"\n
+\t\t\t\t\t\tandroid:color=\"#FF14A404\" />\n
+\t\t\t\t<item android:offset=\"1.0\"\n
+\t\t\t\t\t\tandroid:color=\"#0014A404\" />\n
+</gradient>
+    ]]></string>
+  <string name="vectors2_sun_moon_background"
+    formatted="false"><![CDATA[
+<objectAnimator\n
+\t\tandroid:duration=\"500\"\n
+\t\tandroid:interpolator=\"…\"\n
+\t\tandroid:propertyName=\"fillColor\"\n
+\t\tandroid:repeatCount=\"0\"\n
+\t\tandroid:valueFrom=\"#3d9eff\"\n
+\t\tandroid:valueTo=\"#00264d\"\n
+\t\tandroid:valueType=\"colorType\" />\n
+    ]]></string>
+  <string name="vectors2_sun_moon_ray1"
+    formatted="false"><![CDATA[
+<objectAnimator\n
+\t\tandroid:duration=\"500\"\n
+\t\tandroid:interpolator=\"…\"\n
+\t\tandroid:propertyName=\"trimPathStart\"\n
+\t\tandroid:repeatCount=\"0\"\n
+\t\tandroid:valueFrom=\"0\"\n
+\t\tandroid:valueTo=\"1\"\n
+\t\tandroid:valueType=\"floatType\" />\n
+    ]]></string>
+  <string name="vectors2_sun_moon_ray2"
+    formatted="false"><![CDATA[
+<objectAnimator\n
+\t\tandroid:duration=\"500\"\n
+\t\tandroid:interpolator=\"…\"\n
+\t\tandroid:propertyName=\"strokeColor\"\n
+\t\tandroid:repeatCount=\"0\"\n
+\t\tandroid:valueFrom=\"#FFFFFF00\"\n
+\t\tandroid:valueTo=\"#00B3B3B3\"\n
+\t\tandroid:valueType=\"colorType\" />\n
+    ]]></string>
+  <string name="vectors2_sun_moon_ray3"
+    formatted="false"><![CDATA[
+<objectAnimator\n
+\t\tandroid:duration=\"500\"\n
+\t\tandroid:interpolator=\"…\"\n
+\t\tandroid:propertyName=\"strokeAlpha\"\n
+\t\tandroid:repeatCount=\"0\"\n
+\t\tandroid:valueFrom=\"1\"\n
+\t\tandroid:valueTo=\"0\"\n
+\t\tandroid:valueType=\"floatType\" />\n
+    ]]></string>
+  <string name="vectors2_sun_moon_rotate"
+    formatted="false"><![CDATA[
+<objectAnimator\n
+\t\tandroid:duration=\"500\"\n
+\t\tandroid:interpolator=\"…\"\n
+\t\tandroid:propertyName=\"rotation\"\n
+\t\tandroid:repeatCount=\"0\"\n
+\t\tandroid:valueFrom=\"30\"\n
+\t\tandroid:valueTo=\"0\"\n
+\t\tandroid:valueType=\"floatType\" />\n
+    ]]></string>
+  <string name="vectors2_sun_moon_grow"
+    formatted="false"><![CDATA[
+<objectAnimator\n
+\t\tandroid:duration=\"500\"\n
+\t\tandroid:interpolator=\"…\"\n
+\t\tandroid:propertyName=\"scaleX\"\n
+\t\tandroid:repeatCount=\"0\"\n
+\t\tandroid:valueFrom=\"1.0\"\n
+\t\tandroid:valueTo=\"1.4\"\n
+\t\tandroid:valueType=\"floatType\" />\n
+    ]]></string>
+  <string name="vectors2_sun"
+    formatted="false"><![CDATA[M 100,50\nA 49,49 0 1 0 143.3,122.5\nC 161.8,90.5 137,50 100,50\nz]]></string>
+  <string name="vectors2_sun_other_sweep"
+    formatted="false"><![CDATA[M 100,50\nA 49,49 0 1 1 143.3,122.5\nC 161.8,90.5 137,50 100,50\nz]]></string>
+  <string name="vectors2_sun_short_arc"
+    formatted="false"><![CDATA[M 100,50\nA 49,49 0 0 0 143.3,122.5\nC 161.8,90.5 137,50 100,50\nz]]></string>
+  <string name="vectors2_sun_beziers"
+    formatted="false"><![CDATA[C 161.8,90.5 137,50 100,50\nC 103.3,122.5 80,84.64 100,50\n]]></string>
+  <string name="vectors2_sun_colour"
+    formatted="false"><![CDATA[
+<objectAnimator\n
+\t\tandroid:duration=\"500\"\n
+\t\tandroid:interpolator=\"…\"\n
+\t\tandroid:propertyName=\"fillColor\"\n
+\t\tandroid:repeatCount=\"0\"\n
+\t\tandroid:valueFrom=\"#FFFFFF00\"\n
+\t\tandroid:valueTo=\"#00B3B3B3\"\n
+\t\tandroid:valueType=\"colorType\" />\n
+    ]]></string>
+</resources>

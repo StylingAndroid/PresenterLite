@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stylingandroid.presenter.engine.presentation.SlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:sap="http://schemas.android.com/apk/res-auto"
+  android:id="@id/slide"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:layout_gravity="center"
+  android:gravity="center"
+  sap:nextInAnimation="@anim/fadein"
+  sap:nextOutAnimation="@anim/fadeout"
+  android:orientation="vertical">
+
+
+  <ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="50dp"
+    android:src="@drawable/question" />
+
+</com.stylingandroid.presenter.engine.presentation.SlideLayout>

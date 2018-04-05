@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stylingandroid.presenter.engine.presentation.ConstraintSlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:id="@+id/slide"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  app:nextInAnimation="@anim/none"
+  app:nextOutAnimation="@anim/none">
+
+  <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+    android:id="@+id/evenOdd"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:adjustViewBounds="true"
+    android:contentDescription="@null"
+    android:src="@drawable/vectors2_even_odd"
+    app:layout_constraintBottom_toTopOf="@id/evenOdd_code"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_chainStyle="packed" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    android:id="@+id/evenOdd_code"
+    style="@style/Widget.TextView.Small.Code"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:text="@string/vectors2_even_odd_path"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/evenOdd"
+    app:layout_constraintBottom_toBottomOf="parent" />
+
+</com.stylingandroid.presenter.engine.presentation.ConstraintSlideLayout>

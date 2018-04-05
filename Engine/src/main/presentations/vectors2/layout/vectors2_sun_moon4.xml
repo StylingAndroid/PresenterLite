@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stylingandroid.presenter.engine.presentation.ConstraintSlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  app:nextInAnimation="@anim/fadein"
+  app:nextOutAnimation="@anim/fadeout">
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    android:id="@+id/title"
+    style="@style/Widget.TextView.Large"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Example"
+    app:layout_constraintBottom_toTopOf="@id/image1"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_chainStyle="packed" />
+
+  <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+    android:id="@+id/image1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="32dp"
+    android:src="@drawable/vectors2_sun_moon_background"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@id/code"
+    app:layout_constraintTop_toBottomOf="@id/title" />
+
+  <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/vectors2_sun_bezier1"
+    app:hidePhase="1"
+    app:layout_constraintBottom_toBottomOf="@id/image1"
+    app:layout_constraintEnd_toEndOf="@id/image1"
+    app:layout_constraintStart_toStartOf="@id/image1"
+    app:layout_constraintTop_toTopOf="@id/image1" />
+
+  <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/vectors2_sun_bezier2"
+    app:hidePhase="2"
+    app:layout_constraintBottom_toBottomOf="@id/image1"
+    app:layout_constraintEnd_toEndOf="@id/image1"
+    app:layout_constraintStart_toStartOf="@id/image1"
+    app:layout_constraintTop_toTopOf="@id/image1"
+    app:showPhase="1" />
+
+  <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/vectors2_sun_bezier3"
+    app:hidePhase="3"
+    app:layout_constraintBottom_toBottomOf="@id/image1"
+    app:layout_constraintEnd_toEndOf="@id/image1"
+    app:layout_constraintStart_toStartOf="@id/image1"
+    app:layout_constraintTop_toTopOf="@id/image1"
+    app:showPhase="2" />
+
+  <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/vectors2_sun_bezier4"
+    app:hidePhase="4"
+    app:layout_constraintBottom_toBottomOf="@id/image1"
+    app:layout_constraintEnd_toEndOf="@id/image1"
+    app:layout_constraintStart_toStartOf="@id/image1"
+    app:layout_constraintTop_toTopOf="@id/image1"
+    app:showPhase="3" />
+
+  <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/vectors2_sun_bezier5"
+    app:hidePhase="5"
+    app:layout_constraintBottom_toBottomOf="@id/image1"
+    app:layout_constraintEnd_toEndOf="@id/image1"
+    app:layout_constraintStart_toStartOf="@id/image1"
+    app:layout_constraintTop_toTopOf="@id/image1"
+    app:showPhase="4" />
+
+  <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/vectors2_sun_bezier6"
+    app:hidePhase="6"
+    app:layout_constraintBottom_toBottomOf="@id/image1"
+    app:layout_constraintEnd_toEndOf="@id/image1"
+    app:layout_constraintStart_toStartOf="@id/image1"
+    app:layout_constraintTop_toTopOf="@id/image1"
+    app:showPhase="5" />
+
+  <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/vectors2_sun_bezier7"
+    app:layout_constraintBottom_toBottomOf="@id/image1"
+    app:layout_constraintEnd_toEndOf="@id/image1"
+    app:layout_constraintStart_toStartOf="@id/image1"
+    app:layout_constraintTop_toTopOf="@id/image1"
+    app:showPhase="6" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    android:id="@+id/code"
+    style="@style/Widget.TextView.Small.Code"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/vectors2_sun_colour"
+    app:hideAnimation="@anim/fadeout"
+    app:highlightTextAppearance="@style/Widget.TextView.Small.Code.Highlight"
+    app:layout_constraintBottom_toBottomOf="@id/image1"
+    app:layout_constraintEnd_toStartOf="@id/image1"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="@id/image1"
+    app:showAnimation="@anim/fadein"
+    android:visibility="invisible"/>
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    style="@style/Widget.TextView.Small.Code"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/vectors2_sun"
+    app:hideAnimation="@anim/fadeout"
+    app:hidePhase="1"
+    app:highlightTextAppearance="@style/Widget.TextView.Small.Code.Highlight"
+    app:layout_constraintBottom_toBottomOf="@id/code"
+    app:layout_constraintEnd_toEndOf="@id/code"
+    app:layout_constraintStart_toStartOf="@id/code"
+    app:layout_constraintTop_toTopOf="@id/code"
+    app:pattern="(C)"
+    app:showAnimation="@anim/fadeout" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    style="@style/Widget.TextView.Small.Code"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/vectors2_sun"
+    app:hideAnimation="@anim/fadeout"
+    app:hidePhase="2"
+    app:highlightTextAppearance="@style/Widget.TextView.Small.Code.Highlight"
+    app:layout_constraintBottom_toBottomOf="@id/code"
+    app:layout_constraintEnd_toEndOf="@id/code"
+    app:layout_constraintStart_toStartOf="@id/code"
+    app:layout_constraintTop_toTopOf="@id/code"
+    app:showAnimation="@anim/fadein"
+    app:showPhase="1" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    style="@style/Widget.TextView.Small.Code"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/vectors2_sun"
+    app:hideAnimation="@anim/fadeout"
+    app:hidePhase="3"
+    app:highlightTextAppearance="@style/Widget.TextView.Small.Code.Highlight"
+    app:layout_constraintBottom_toBottomOf="@id/code"
+    app:layout_constraintEnd_toEndOf="@id/code"
+    app:layout_constraintStart_toStartOf="@id/code"
+    app:layout_constraintTop_toTopOf="@id/code"
+    app:pattern="((?&lt;=50 )100,50)"
+    app:showAnimation="@anim/fadein"
+    app:showPhase="2" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    style="@style/Widget.TextView.Small.Code"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/vectors2_sun"
+    app:hideAnimation="@anim/fadeout"
+    app:hidePhase="4"
+    app:highlightTextAppearance="@style/Widget.TextView.Small.Code.Highlight"
+    app:layout_constraintBottom_toBottomOf="@id/code"
+    app:layout_constraintEnd_toEndOf="@id/code"
+    app:layout_constraintStart_toStartOf="@id/code"
+    app:layout_constraintTop_toTopOf="@id/code"
+    app:pattern="(161.8,90.5)"
+    app:showAnimation="@anim/fadein"
+    app:showPhase="3" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    style="@style/Widget.TextView.Small.Code"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/vectors2_sun"
+    app:hideAnimation="@anim/fadeout"
+    app:hidePhase="5"
+    app:highlightTextAppearance="@style/Widget.TextView.Small.Code.Highlight"
+    app:layout_constraintBottom_toBottomOf="@id/code"
+    app:layout_constraintEnd_toEndOf="@id/code"
+    app:layout_constraintStart_toStartOf="@id/code"
+    app:layout_constraintTop_toTopOf="@id/code"
+    app:pattern="(137,50)"
+    app:showAnimation="@anim/fadein"
+    app:showPhase="4" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    style="@style/Widget.TextView.Small.Code"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/vectors2_sun"
+    app:hideAnimation="@anim/fadeout"
+    app:hidePhase="6"
+    app:highlightTextAppearance="@style/Widget.TextView.Small.Code.Highlight"
+    app:layout_constraintBottom_toBottomOf="@id/code"
+    app:layout_constraintEnd_toEndOf="@id/code"
+    app:layout_constraintStart_toStartOf="@id/code"
+    app:layout_constraintTop_toTopOf="@id/code"
+    app:showAnimation="@anim/fadein"
+    app:showPhase="5" />
+
+  <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+    style="@style/Widget.TextView.Small.Code"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/vectors2_sun_beziers"
+    app:hideAnimation="@anim/fadeout"
+    app:highlightTextAppearance="@style/Widget.TextView.Small.Code.Highlight"
+    app:layout_constraintBottom_toBottomOf="@id/code"
+    app:layout_constraintEnd_toEndOf="@id/code"
+    app:layout_constraintStart_toStartOf="@id/code"
+    app:layout_constraintTop_toTopOf="@id/code"
+    app:pattern="(137,50|80,84.64|161.8,90.5|103.3,122.5)"
+    app:showAnimation="@anim/fadein"
+    app:showPhase="6" />
+
+</com.stylingandroid.presenter.engine.presentation.ConstraintSlideLayout>

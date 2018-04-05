@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:aapt="http://schemas.android.com/aapt">
+  <aapt:attr name="android:drawable">
+    <vector xmlns:android="http://schemas.android.com/apk/res/android"
+      android:width="320dp"
+      android:height="320dp"
+      android:viewportHeight="200"
+      android:viewportWidth="200">
+
+      <path
+        android:name="control1_line"
+        android:pathData="M143.3,122.5 L161.8,90.5"
+        android:strokeColor="#80FFFF00"
+        android:strokeWidth="1" />
+
+      <group
+        android:name="end_dot"
+        android:translateX="100"
+        android:translateY="50">
+
+        <path
+          android:fillColor="#FF0"
+          android:pathData="M0,-3 a3,3 0 1 0 0.01,0z" />
+      </group>
+
+      <group
+        android:name="start_dot"
+        android:translateX="143.3"
+        android:translateY="122.5">
+
+        <path
+          android:fillColor="#FF0"
+          android:pathData="M0,-3 a3,3 0 1 0 0.01,0z" />
+      </group>
+
+      <path
+        android:name="radius1"
+        android:pathData="M100,50 A49,49 0 1 0 143.3,122.5"
+        android:strokeColor="#FF0"
+        android:strokeWidth="1" />
+
+      <group
+        android:name="control1_dot"
+        android:translateX="161.8"
+        android:translateY="90.5">
+
+        <path
+          android:fillColor="#FF0"
+          android:pathData="M0,-3 a3,3 0 1 0 0.01,0z" />
+      </group>
+
+    </vector>
+  </aapt:attr>
+
+  <target
+    android:name="control1_dot"
+    android:animation="@animator/vectors2_grow" />
+
+
+  <target android:name="control1_line">
+    <aapt:attr name="android:animation">
+      <set>
+        <objectAnimator
+          android:duration="500"
+          android:interpolator="@android:interpolator/accelerate_decelerate"
+          android:propertyName="trimPathEnd"
+          android:repeatCount="0"
+          android:valueFrom="0"
+          android:valueTo="1"
+          android:valueType="floatType" />
+      </set>
+    </aapt:attr>
+  </target>
+
+</animated-vector>
