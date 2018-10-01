@@ -10,6 +10,7 @@
   </string-array>
 
   <string-array name="events">
+    <item>Mobiconf2018</item>
     <item>AtlAndroidClub</item>
     <item>ChicagoRoboto2018</item>
     <item>GDGBayern</item>
