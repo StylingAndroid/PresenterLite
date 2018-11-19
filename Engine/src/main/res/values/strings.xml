@@ -23,5 +23,6 @@
   <string name="ChicagoRoboto2018">Chicago Roboto 12th April 2018|Chicago Roboto|#ChicagoRoboto</string>
   <string name="AtlAndroidClub">Atlanta Android Club / GDG Atl 17th April 2018|Chicago Roboto|#GDGAtl</string>
   <string name="Mobiconf2018">Mobiconf Kraków 4th October 2018|Mobiconf Kraków|#mobiconf</string>
-  <string name="GDGLondon2018">GDG DevFest London 1st December 2018|GDG DevFest London|#DevFest18 #GDGLondon</string>
+  <string name="LondroidNov2018">Londroid 20<annotation format="superscript">th</annotation> November 2018|Moonpig Londroid|#Londroid</string>
+  <string name="GDGLondon2018">GDG DevFest London 1<annotation format="superscript">st</annotation> December 2018|GDG DevFest London|#DevFest18 #GDGLondon</string>
 </resources>

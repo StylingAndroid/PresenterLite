@@ -217,7 +217,7 @@
 \t\tandroid:propertyName=\"fillColor\"\n
 \t\tandroid:repeatCount=\"0\"\n
 \t\tandroid:valueFrom=\"#FFFFFF00\"\n
-\t\tandroid:valueTo=\"#00B3B3B3\"\n
+\t\tandroid:valueTo=\"#FFB3B3B3\"\n
 \t\tandroid:valueType=\"colorType\" />\n
     ]]></string>
 </resources>

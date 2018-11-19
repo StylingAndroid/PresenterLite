@@ -5,11 +5,11 @@ package com.stylingandroid.presenter.engine;
  */
 public final class AppState {
     private static AppState instance = new AppState();
-    private String presentationName = null;
+    private CharSequence presentationName = null;
 
-    private String eventLongName;
-    private String eventShortName;
-    private String eventHashtag;
+    private CharSequence eventLongName;
+    private CharSequence eventShortName;
+    private CharSequence eventHashtag;
 
     public static AppState getInstance() {
         return instance;
@@ -19,32 +19,32 @@ public final class AppState {
         super();
     }
 
-    public String getPresentationName() {
+    public CharSequence getPresentationName() {
         if (presentationName == null) {
             return "move";
         }
         return presentationName;
     }
 
-    public void setPresentationName(String presentationName) {
+    public void setPresentationName(CharSequence presentationName) {
         this.presentationName = presentationName;
     }
 
-    public void setEvent(String longName, String shortName, String hashtag) {
+    public void setEvent(CharSequence longName, CharSequence shortName, CharSequence hashtag) {
         this.eventLongName = longName;
         this.eventShortName = shortName;
         this.eventHashtag = hashtag;
     }
 
-    public String getEventLongName() {
+    public CharSequence getEventLongName() {
         return eventLongName;
     }
 
-    public String getEventShortName() {
+    public CharSequence getEventShortName() {
         return eventShortName;
     }
 
-    public String getEventHashtag() {
+    public CharSequence getEventHashtag() {
         return eventHashtag;
     }
 }

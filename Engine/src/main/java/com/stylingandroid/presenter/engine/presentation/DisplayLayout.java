@@ -12,12 +12,12 @@ import com.stylingandroid.presenter.R;
 import com.stylingandroid.presenter.engine.AppState;
 import com.stylingandroid.presenter.engine.display.StandaloneDisplayActivity;
 
+import org.xmlpull.v1.XmlPullParserException;
+import org.xmlpull.v1.XmlPullParserFactory;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
-import org.xmlpull.v1.XmlPullParserException;
-import org.xmlpull.v1.XmlPullParserFactory;
 
 public class DisplayLayout extends ViewSwitcher {
     private List<String> slides = new ArrayList<>();
@@ -46,10 +46,10 @@ public class DisplayLayout extends ViewSwitcher {
                 R.styleable.DisplayLayout
         );
 
-        String presentationName = AppState.getInstance().getPresentationName();
+        CharSequence presentationName = AppState.getInstance().getPresentationName();
         if (presentationName != null) {
             Log.v(TAG, "Presentation: " + presentationName);
-            int id = getResources().getIdentifier(presentationName, "array", context.getPackageName());
+            int id = getResources().getIdentifier(presentationName.toString(), "array", context.getPackageName());
             Log.v(TAG, "id: " + id);
             if (id > 0) {
                 String[] slideNames = getResources().getStringArray(id);

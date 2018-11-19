@@ -5,11 +5,15 @@ import android.content.res.TypedArray;
 import android.graphics.drawable.Animatable;
 import android.graphics.drawable.Drawable;
 import android.support.v7.widget.AppCompatTextView;
+import android.text.Annotation;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.Spanned;
+import android.text.SpannedString;
 import android.text.style.DynamicDrawableSpan;
 import android.text.style.ImageSpan;
+import android.text.style.RelativeSizeSpan;
+import android.text.style.SuperscriptSpan;
 import android.text.style.TextAppearanceSpan;
 import android.util.AttributeSet;
 
@@ -91,6 +95,26 @@ public class HighlightedTextView extends AppCompatTextView implements Phaseable,
             spannable.setSpan(is, 0, 1, Spanned.SPAN_INCLUSIVE_INCLUSIVE);
         } else {
             spannable = new SpannableString(text);
+        }
+        if (text instanceof SpannedString) {
+            SpannedString spanned = (SpannedString)text;
+            Annotation[] annotations = spanned.getSpans(0, spanned.length(), Annotation.class);
+            for (Annotation annotation : annotations) {
+                if (annotation.getKey().equals("format") && annotation.getValue().equals("superscript")) {
+                    spannable.setSpan(
+                            new SuperscriptSpan(),
+                            spanned.getSpanStart(annotation),
+                            spanned.getSpanEnd(annotation),
+                            Spanned.SPAN_INCLUSIVE_INCLUSIVE
+                    );
+                    spannable.setSpan(
+                            new RelativeSizeSpan(0.5f),
+                            spanned.getSpanStart(annotation),
+                            spanned.getSpanEnd(annotation),
+                            Spanned.SPAN_INCLUSIVE_INCLUSIVE
+                    );
+                }
+            }
         }
         if (pattern != null) {
             Matcher matcher = pattern.matcher(text);

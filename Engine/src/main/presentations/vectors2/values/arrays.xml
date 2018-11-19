@@ -28,4 +28,29 @@
     <item>vectors2_questions</item>
     <item>vectors2_end_title</item>
   </string-array>
+  <string-array name="vectors2_short">
+    <item>vectors2_title</item>
+    <item>vectors2_intro</item>
+    <item>vectors2_fill_windings1</item>
+    <item>vectors2_fill_windings2</item>
+    <item>vectors2_fill_windings3</item>
+    <item>vectors2_fill_windings4</item>
+    <item>vectors2_gradients1</item>
+    <item>vectors2_gradients2</item>
+    <item>vectors2_gradients3</item>
+    <item>vectors2_gradients4</item>
+    <item>vectors2_gradients5</item>
+    <item>vectors2_gradients6</item>
+    <item>vectors2_gradients7</item>
+    <item>vectors2_gradients8</item>
+    <item>vectors2_gradients9</item>
+    <item>vectors2_sun_moon1</item>
+    <item>vectors2_sun_moon2</item>
+    <item>vectors2_sun_moon3</item>
+    <item>vectors2_sun_moon4</item>
+    <item>vectors2_sun_moon5</item>
+    <item>vectors2_end</item>
+    <item>vectors2_questions</item>
+    <item>vectors2_end_title</item>
+  </string-array>
 </resources>

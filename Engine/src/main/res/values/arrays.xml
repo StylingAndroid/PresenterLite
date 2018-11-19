@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string-array name="presentations">
+    <item>vectors2_short</item>
     <item>vectors2</item>
     <item>move</item>
     <item>vectors</item>
@@ -11,6 +12,7 @@
 
   <string-array name="events">
     <item>GDGLondon2018</item>
+    <item>LondroidNov2018</item>
     <item>Mobiconf2018</item>
     <item>AtlAndroidClub</item>
     <item>ChicagoRoboto2018</item>
