@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stylingandroid.presenter.engine.presentation.SlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.stylingandroid.presenter.engine.presentation.TransitionLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:scenes="theme_style_example1, theme_style_example2"
+        app:transitionPhases="1"/>
+
+</com.stylingandroid.presenter.engine.presentation.SlideLayout>

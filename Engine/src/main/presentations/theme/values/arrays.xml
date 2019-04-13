@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="theme">
+        <item>theme_title</item>
+        <item>theme_types</item>
+        <item>theme_style</item>
+    </array>
+</resources>

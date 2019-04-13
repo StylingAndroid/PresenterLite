@@ -20,6 +20,11 @@
     <item name="android:textColor">@color/SAgreen</item>
   </style>
 
+  <style name="Widget.TextView.XLarge.Dark">
+    <item name="android:textColor">#333</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
   <style name="Widget.TextView.Large">
     <item name="android:textSize">@dimen/textSizeLarge</item>
     <item name="android:textColor">@color/SAgreen</item>

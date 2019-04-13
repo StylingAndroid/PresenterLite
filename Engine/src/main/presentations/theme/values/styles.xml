@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <style name="Widget.TextView.Stamp.Big">
+    <item name="android:rotation">-30</item>
+    <item name="android:fontFamily">@font/bowlby_one_sc</item>
+    <item name="android:textSize">100sp</item>
+    <item name="android:layout_margin">20dp</item>
+    <item name="android:textAllCaps">false</item>
+    <item name="android:textColor">#333</item>
+    <item name="android:tint">#333</item>
+    <item name="android:background">@drawable/round_rect</item>
+    <item name="android:padding">40dp</item>
+  </style>
+
+  <style name="Widget.TextView.Stamp.Big.Faded">
+    <item name="android:textColor">@color/faded_stamp</item>
+    <item name="android:background">@drawable/round_rect</item>
+    <item name="android:backgroundTint">@color/faded_stamp</item>
+    <item name="android:backgroundTintMode">src_in</item>
+  </style>
+
+</resources>
