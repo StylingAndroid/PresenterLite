@@ -29,7 +29,7 @@ public class PhaseableView extends View implements Phaseable {
     }
 
     @Override
-    public int getLastPhase() {
-        return phaser.getLastPhase();
+    public boolean hasMorePhases(int phase) {
+        return phaser.getLastPhase() > phase;
     }
 }

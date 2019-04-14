@@ -39,7 +39,7 @@
         style="@style/Widget.TextView.Small.Code"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="&lt;resources&gt;\n\n\t\t&lt;style name=&quot;MyStyle&quot; &gt;"
+        android:text="&lt;resources&gt;\n\n\t\t&lt;style name=&quot;WidgetStyle&quot; &gt;"
         app:layout_constraintBottom_toTopOf="@id/style_end"
         app:layout_constraintEnd_toEndOf="@id/centre"
         app:layout_constraintStart_toStartOf="parent"
@@ -52,10 +52,20 @@
         style="@style/Widget.TextView.Small.Code"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="\t\t&lt;/style&gt;\n\n&lt;/resources&gt;"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="\t\t&lt;/style&gt;"
+        app:layout_constraintBottom_toTopOf="@id/resources_end"
         app:layout_constraintStart_toStartOf="@id/style_start"
         app:layout_constraintTop_toBottomOf="@id/style_start" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+        android:id="@+id/resources_end"
+        style="@style/Widget.TextView.Small.Code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\n&lt;/resources&gt;"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/style_start"
+        app:layout_constraintTop_toBottomOf="@id/style_end" />
 
     <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
         android:id="@+id/layout_start"
@@ -76,9 +86,55 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="\t\tandroid:layout_width=&quot;wrap_content&quot;\n\t\tandroid:layout_height=&quot;wrap_content&quot;"
-        app:layout_constraintBottom_toTopOf="@id/text_color_line"
+        app:layout_constraintBottom_toTopOf="@id/background_line"
         app:layout_constraintStart_toStartOf="@id/layout_start"
         app:layout_constraintTop_toBottomOf="@id/layout_start" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+        android:id="@+id/background_line"
+        style="@style/Widget.TextView.Small.Code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\t\t"
+        app:layout_constraintBottom_toTopOf="@id/text_color_line"
+        app:layout_constraintStart_toStartOf="@id/layout_start"
+        app:layout_constraintTop_toBottomOf="@id/layout_layout" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+        android:id="@+id/background_name"
+        style="@style/Widget.TextView.Small.Code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="android:background"
+        app:layout_constraintBaseline_toBaselineOf="@id/background_line"
+        app:layout_constraintStart_toEndOf="@id/background_line" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+        android:id="@+id/background_equals"
+        style="@style/Widget.TextView.Small.Code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="=&quot;"
+        app:layout_constraintBaseline_toBaselineOf="@id/background_line"
+        app:layout_constraintStart_toEndOf="@id/background_name" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+        android:id="@+id/background_value"
+        style="@style/Widget.TextView.Small.Code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="#0F0"
+        app:layout_constraintBaseline_toBaselineOf="@id/background_line"
+        app:layout_constraintStart_toEndOf="@id/background_equals" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+        android:id="@+id/background_end"
+        style="@style/Widget.TextView.Small.Code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="&quot;"
+        app:layout_constraintBaseline_toBaselineOf="@id/background_line"
+        app:layout_constraintStart_toEndOf="@id/background_value" />
 
     <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
         android:id="@+id/text_color_line"
@@ -88,7 +144,7 @@
         android:text="\t\t"
         app:layout_constraintBottom_toTopOf="@id/layout_end"
         app:layout_constraintStart_toStartOf="@id/layout_start"
-        app:layout_constraintTop_toBottomOf="@id/layout_layout" />
+        app:layout_constraintTop_toBottomOf="@id/background_line" />
 
     <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
         android:id="@+id/text_color_name"
@@ -113,7 +169,7 @@
         style="@style/Widget.TextView.Small.Code"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="#0F0"
+        android:text="#000"
         app:layout_constraintBaseline_toBaselineOf="@id/text_color_line"
         app:layout_constraintStart_toEndOf="@id/text_color_equals" />
 

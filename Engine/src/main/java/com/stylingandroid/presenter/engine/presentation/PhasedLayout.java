@@ -84,7 +84,7 @@ final class PhasedLayout {
             View child = parent.getChildAt(i);
             if (child instanceof Phaseable) {
                 Phaseable phaseable = (Phaseable) child;
-                if (phaseable.getLastPhase() > 0) {
+                if (phaseable.hasMorePhases(0)) {
                     phaseables.add((Phaseable) child);
                 }
             }

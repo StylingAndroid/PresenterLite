@@ -77,7 +77,7 @@ public class PorterDuffImageView extends AppCompatImageView implements Phaseable
     }
 
     @Override
-    public int getLastPhase() {
-        return phaser.getLastPhase();
+    public boolean hasMorePhases(int phase) {
+        return phaser.getLastPhase() > phase;
     }
 }

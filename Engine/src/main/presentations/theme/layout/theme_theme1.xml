@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stylingandroid.presenter.engine.presentation.ConstraintSlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/slide"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:nextInAnimation="@anim/fadein"
+    app:nextOutAnimation="@anim/fadeout">
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+        android:id="@+id/title"
+        style="@style/Widget.TextView.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Theme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bullet1"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintHorizontal_bias="0.2"/>
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+        android:id="@+id/bullet1"
+        style="@style/Widget.TextView.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Defined as a Style"
+        app:layout_constraintStart_toStartOf="@id/title"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintBottom_toTopOf="@id/bullet2"
+        app:bulletDrawable="@drawable/bullet_animated"
+        app:showPhase="1"
+        app:showAnimation="@anim/fadein" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+        android:id="@+id/bullet2"
+        style="@style/Widget.TextView.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Can apply styles to specific Widget types"
+        app:layout_constraintStart_toStartOf="@id/title"
+        app:layout_constraintTop_toBottomOf="@id/bullet1"
+        app:layout_constraintBottom_toTopOf="@id/bullet3"
+        app:bulletDrawable="@drawable/bullet_animated"
+        app:showPhase="2"
+        app:showAnimation="@anim/fadein" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+        android:id="@+id/bullet3"
+        style="@style/Widget.TextView.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Can define theme colours"
+        app:layout_constraintStart_toStartOf="@id/title"
+        app:layout_constraintTop_toBottomOf="@id/bullet2"
+        app:layout_constraintBottom_toTopOf="@id/bullet4"
+        app:bulletDrawable="@drawable/bullet_animated"
+        app:showPhase="3"
+        app:showAnimation="@anim/fadein" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+        android:id="@+id/bullet4"
+        style="@style/Widget.TextView.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Can affect window appearance"
+        app:layout_constraintStart_toStartOf="@id/title"
+        app:layout_constraintTop_toBottomOf="@id/bullet3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:bulletDrawable="@drawable/bullet_animated"
+        app:showPhase="4"
+        app:showAnimation="@anim/fadein" />
+
+</com.stylingandroid.presenter.engine.presentation.ConstraintSlideLayout>

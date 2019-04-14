@@ -136,11 +136,11 @@ public class HighlightedTextView extends AppCompatTextView implements Phaseable,
     }
 
     @Override
-    public int getLastPhase() {
+    public boolean hasMorePhases(int phase) {
         if (!isInEditMode()) {
-            return phaser.getLastPhase();
+            return phaser.getLastPhase() > phase;
         }
-        return 0;
+        return false;
     }
 
     @Override

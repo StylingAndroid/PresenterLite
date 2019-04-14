@@ -314,8 +314,11 @@ public class GraphicalLayout extends RelativeLayout implements Phaseable {
     }
 
     @Override
-    public int getLastPhase() {
-        return phaser.getLastPhase();
+    public boolean hasMorePhases(int phase) {
+        if (!isInEditMode()) {
+            return phaser.getLastPhase() > phase;
+        }
+        return false;
     }
 
 }

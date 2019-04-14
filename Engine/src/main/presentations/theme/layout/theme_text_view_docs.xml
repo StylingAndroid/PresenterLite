@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stylingandroid.presenter.engine.presentation.ConstraintSlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:nextInAnimation="@anim/fadein"
+    app:nextOutAnimation="@anim/fadeout">
+
+    <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+        android:id="@id/image1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        android:src="@drawable/textview_docs"
+        app:hideAnimation="@anim/fadeout"
+        app:hidePhase="1"
+        app:layout_constraintBottom_toTopOf="@id/link"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.stylingandroid.presenter.engine.presentation.AnimatedImageView
+        android:id="@+id/image2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        android:src="@drawable/textview_docs_focus"
+        app:showAnimation="@anim/fadein"
+        app:showPhase="1"
+        app:layout_constraintBottom_toTopOf="@id/link"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+        android:id="@+id/link"
+        style="@style/Widget.TextView.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/image1"
+        app:layout_constraintTop_toBottomOf="@id/image1"
+        android:text="https://d.android.com/reference/android/widget/TextView"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</com.stylingandroid.presenter.engine.presentation.ConstraintSlideLayout>

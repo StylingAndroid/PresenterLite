@@ -40,6 +40,10 @@
     <item name="android:typeface">monospace</item>
   </style>
 
+  <style name="Widget.TextView.Large.Code.Highlight">
+    <item name="android:textColor">@color/highlight</item>
+  </style>
+
   <style name="Widget.TextView.Medium">
     <item name="android:textSize">@dimen/textSizeMedium</item>
   </style>

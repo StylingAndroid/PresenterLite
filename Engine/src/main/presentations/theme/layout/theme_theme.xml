@@ -9,8 +9,8 @@
     <com.stylingandroid.presenter.engine.presentation.TransitionLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:scenes="theme_types_style1, theme_style1, theme_style2, theme_style_example1, theme_style_example2, theme_style_example3, theme_style_example4, theme_style_example5, theme_style_example6, theme_style_example7, theme_style_example8"
+        app:scenes="theme_theme1, theme_theme2"
         app:transitionManager="@transition/move"
-        app:transitionPhases="1,2,3,4,5,6,7,8,9,10" />
+        app:transitionPhases="1" />
 
 </com.stylingandroid.presenter.engine.presentation.SlideLayout>

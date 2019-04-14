@@ -66,7 +66,7 @@ public class AnimatedImageView extends AppCompatImageView implements Phaseable {
                 pause = ta.getInteger(R.styleable.AnimatedImageView_pause, 0);
             }
 
-            if (reverseId > 0) {
+            if (reverseId != 0) {
                 otherDrawable = context.getDrawable(reverseId);
                 Handler handler = new Handler(context.getMainLooper());
                 callback = new Callback(new WeakReference<>(this), handler, pause);
@@ -103,8 +103,8 @@ public class AnimatedImageView extends AppCompatImageView implements Phaseable {
         return done;
     }
 
-    public int getLastPhase() {
-        return isInEditMode() ? 0 : phaser.getLastPhase();
+    public boolean hasMorePhases(int phase) {
+        return isInEditMode() ? false : phaser.getLastPhase() > phase;
     }
 
     private void beginAnimation() {

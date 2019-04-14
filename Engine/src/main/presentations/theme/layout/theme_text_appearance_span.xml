@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stylingandroid.presenter.engine.presentation.ConstraintSlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:nextInAnimation="@anim/fadein"
+    app:nextOutAnimation="@anim/fadeout">
+
+    <!--com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+        android:id="@+id/style1"
+        style="@style/Widget.TextView.Medium.Code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="<TextView\n\t\tandroid:id=&quot;@+id/text_view&quot;\n\t\tstyle=&quot;@style/WidgetStyle&quot;\n\t\tandroid:layout_width=&quot;wrap_content&quot;\n\t\tandroid:layout_height=&quot;wrap_content&quot;\n\t\tandroid:textAppearance=&quot;@style/TextStyle&quot;\n\t\tandroid:text=&quot;@string/hello_world&quot; /&gt;"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:highlightTextAppearance="@style/Widget.TextView.Medium.Code.Highlight"
+        app:pattern="((android:textAppearance=\\&quot;.*?\\&quot;))"
+        app:hideAnimation="@anim/fadeout"
+        app:hidePhase="1"
+        android:scaleX="1.0"
+        android:scaleY="1.0" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+        android:id="@+id/style2"
+        style="@style/Widget.TextView.Medium.Code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="<TextView\n\t\tandroid:id=&quot;@+id/text_view&quot;\n\t\tstyle=&quot;@style/WidgetStyle&quot;\n\t\tandroid:layout_width=&quot;wrap_content&quot;\n\t\tandroid:layout_height=&quot;wrap_content&quot;\n\t\tandroid:textAppearance=&quot;@style/TextStyle&quot;\n\t\tandroid:text=&quot;@string/hello_world&quot; /&gt;"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:highlightTextAppearance="@style/Widget.TextView.Medium.Code.Highlight"
+        app:pattern="((android:textAppearance=\\&quot;.*?\\&quot;))"
+        app:hideAnimation="@anim/fadeout"
+        app:hidePhase="1"
+        android:scaleX="1.0"
+        android:scaleY="1.0" /-->
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+        android:id="@+id/text_appearance_span1"
+        style="@style/Widget.TextView.Large.Code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextAppearanceSpan(\n\t\t\t\t\t\tcontext, \n\t\t\t\t\t\tR.style.TextStyle\n)"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:hideAnimation="@anim/fadeout"
+        app:hidePhase="1" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+        android:id="@+id/text_appearance_span2"
+        style="@style/Widget.TextView.Large.Code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextAppearanceSpan(\n\t\t\t\t\t\tcontext, \n\t\t\t\t\t\tR.style.TextStyle\n)"
+        app:highlightTextAppearance="@style/Widget.TextView.Large.Code.Highlight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:pattern="R.style.TextStyle"
+        app:showAnimation="@anim/fadein"
+        app:showPhase="1" />
+
+</com.stylingandroid.presenter.engine.presentation.ConstraintSlideLayout>
