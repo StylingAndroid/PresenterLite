@@ -113,8 +113,7 @@
     android:layout_weight="1"
     android:layout_height="match_parent"
     sap:scenes="gm_desaturate2a,gm_desaturate2b,gm_desaturate2c,gm_desaturate2d,gm_desaturate2e"
-    sap:transitionManager="@transition/flatten"
-    sap:transitionPhases="1,2,3,4" />
+    sap:transitionManager="@transition/flatten" />
 
 
 </com.stylingandroid.presenter.engine.presentation.SlideLayout>

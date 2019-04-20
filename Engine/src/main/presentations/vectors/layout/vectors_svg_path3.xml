@@ -19,7 +19,6 @@
     android:layout_height="0dp"
     android:layout_weight="1"
     sap:scenes="vectors_svg_path3a,vectors_svg_path3b,vectors_svg_path3c,vectors_svg_path3d,vectors_svg_path3e,vectors_svg_path3f,vectors_svg_path3g,vectors_svg_path3h,vectors_svg_path3i,vectors_svg_path3j,vectors_svg_path3k,vectors_svg_path3l"
-    sap:transitionManager="@transition/flatten"
-    sap:transitionPhases="1,2,3,4,5,6,7,8,9,10,11" />
+    sap:transitionManager="@transition/flatten" />
 
 </com.stylingandroid.presenter.engine.presentation.SlideLayout>

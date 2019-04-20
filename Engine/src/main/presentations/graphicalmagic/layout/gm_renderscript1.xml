@@ -19,8 +19,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     sap:scenes="gm_renderscript1a,gm_renderscript1b,gm_renderscript1c"
-    sap:transitionManager="@transition/flatten"
-    sap:transitionPhases="1,2" />
+    sap:transitionManager="@transition/flatten" />
 
 
 </com.stylingandroid.presenter.engine.presentation.SlideLayout>

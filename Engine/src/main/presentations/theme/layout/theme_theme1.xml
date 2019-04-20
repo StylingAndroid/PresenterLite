@@ -38,7 +38,7 @@
         style="@style/Widget.TextView.Medium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Can apply styles to specific Widget types"
+        android:text="Affects all widgets in view hierarchy"
         app:layout_constraintStart_toStartOf="@id/title"
         app:layout_constraintTop_toBottomOf="@id/bullet1"
         app:layout_constraintBottom_toTopOf="@id/bullet3"
@@ -51,7 +51,7 @@
         style="@style/Widget.TextView.Medium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Can define theme colours"
+        android:text="Can apply styles to specific Widget types"
         app:layout_constraintStart_toStartOf="@id/title"
         app:layout_constraintTop_toBottomOf="@id/bullet2"
         app:layout_constraintBottom_toTopOf="@id/bullet4"
@@ -67,9 +67,22 @@
         android:text="Can affect window appearance"
         app:layout_constraintStart_toStartOf="@id/title"
         app:layout_constraintTop_toBottomOf="@id/bullet3"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bullet5"
         app:bulletDrawable="@drawable/bullet_animated"
         app:showPhase="4"
+        app:showAnimation="@anim/fadein" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+        android:id="@+id/bullet5"
+        style="@style/Widget.TextView.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Can define theme colours"
+        app:layout_constraintStart_toStartOf="@id/title"
+        app:layout_constraintTop_toBottomOf="@id/bullet4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:bulletDrawable="@drawable/bullet_animated"
+        app:showPhase="5"
         app:showAnimation="@anim/fadein" />
 
 </com.stylingandroid.presenter.engine.presentation.ConstraintSlideLayout>

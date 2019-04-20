@@ -72,7 +72,6 @@
 
   <declare-styleable name="TransitionLayout">
     <attr name="scenes" format="string" />
-    <attr name="transitionPhases" format="string" />
     <attr name="transitionManager" format="reference" />
   </declare-styleable>
 

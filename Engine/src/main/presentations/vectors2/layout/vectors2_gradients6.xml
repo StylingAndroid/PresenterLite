@@ -19,7 +19,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     sap:scenes="vectors2_gradients6a, vectors2_gradients6b, vectors2_gradients6c, vectors2_gradients6d, vectors2_gradients6b, vectors2_gradients6e, vectors2_gradients6f"
-    sap:transitionManager="@transition/move"
-    sap:transitionPhases="1,2,3,4,5,6"/>
+    sap:transitionManager="@transition/move" />
 
 </com.stylingandroid.presenter.engine.presentation.SlideLayout>

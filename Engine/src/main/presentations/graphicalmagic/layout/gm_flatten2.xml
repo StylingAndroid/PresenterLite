@@ -197,8 +197,7 @@
       android:layout_width="match_parent"
       android:layout_height="match_parent"
       sap:scenes="gm_flatten2a,gm_flatten2b,gm_flatten2c,gm_flatten2d,gm_flatten2e,gm_flatten2f,gm_flatten2g,gm_flatten2h,gm_flatten2i,gm_flatten2j"
-      sap:transitionManager="@transition/flatten"
-      sap:transitionPhases="3,5,6,8,10,11,13,14,15" />
+      sap:transitionManager="@transition/flatten" />
   </FrameLayout>
 
 

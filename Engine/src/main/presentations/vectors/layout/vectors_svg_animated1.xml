@@ -19,7 +19,6 @@
     android:layout_height="0dp"
     android:layout_weight="1"
     sap:scenes="vectors_svg_animated1a,vectors_svg_animated1b,vectors_svg_animated1c"
-    sap:transitionPhases="1,2"
     sap:transitionManager="@transition/flatten" />
 
 
