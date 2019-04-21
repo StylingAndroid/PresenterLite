@@ -12,12 +12,12 @@
         style="@style/Widget.TextView.Large"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Theme Attribute"
+        android:text="Applying Styles &amp; Themes"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.2" />
+        app:layout_constraintVertical_bias="0.20"/>
 
     <android.support.constraint.Guideline
         android:id="@+id/code_start"
@@ -31,75 +31,57 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
-        android:id="@+id/attribute"
-        style="@style/Widget.TextView.Medium.Code.Highlight"
+        android:id="@+id/manifest_start"
+        style="@style/Widget.TextView.Medium.Code"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:text="&lt;public type=&quot;attr&quot; name=&quot;colorPrimary&quot; id=&quot;0x01010433&quot; /&gt;"
+        android:text="&lt;manifest xmlns:android=&quot;\u2026&quot;\n\t\t\t\tpackage=&quot;\u2026&quot;\n\t\t\t\tandroid:versionCode=&quot;\u2026&quot;\n\t\t\t\tandroid:versionName=&quot;\u2026&quot;&gt;"
+        app:layout_constraintBottom_toTopOf="@id/text_view_start"
+        app:layout_constraintStart_toStartOf="@id/code_start"
         app:layout_constraintTop_toBottomOf="@id/title"
-        app:layout_constraintStart_toStartOf="@id/code_start" />
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintVertical_bias="0.3"/>
 
     <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
-        android:id="@+id/attribute_location"
-        style="@style/Widget.TextView.Small"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="platform/android-28/data/res/values/public.xml"
-        app:layout_constraintTop_toBottomOf="@id/attribute"
-        app:layout_constraintEnd_toEndOf="@id/attribute" />
-
-    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
-        android:id="@+id/theme_start_tag"
+        android:id="@+id/text_view_start"
         style="@style/Widget.TextView.Medium.Code"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="&lt;resources xmlns:android=&quot;\u2026&quot;&gt;\n\n\t\t\t\t&lt;style name=&quot;MyTheme&quot;&gt;"
-        app:layout_constraintBottom_toTopOf="@id/theme_widget_style"
+        android:text="\n\t\t\t\t&lt;application\n\t\t\t\t\t\t\t\tandroid:theme=&quot;\@style/ThemeTwo&quot;\n\t\t\t\t\t\t\t\t\u2026&gt;"
+        app:layout_constraintBottom_toTopOf="@id/activity"
         app:layout_constraintStart_toStartOf="@id/code_start"
-        app:layout_constraintTop_toBottomOf="@id/attribute"
-        app:layout_constraintVertical_chainStyle="packed" />
+        app:layout_constraintTop_toBottomOf="@id/manifest_start"/>
 
     <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
-        android:id="@+id/theme_widget_style"
+        android:id="@+id/activity"
         style="@style/Widget.TextView.Medium.Code"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="\t\t\t\t\t\t\t\t&lt;item name=&quot;android:textViewStyle&quot;&gt;@style/WidgetStyle&lt;/item&gt;"
-        app:layout_constraintBottom_toTopOf="@id/theme_window_style"
+        android:text="\n\t\t\t\t\t\t\t\t&lt;activity\n\t\t\t\t\t\t\t\t\t\t\t\tandroid:theme=&quot;\@style/ThemeOne&quot;\n\t\t\t\t\t\t\t\t\t\t\t\t\u2026&gt;"
+        app:layout_constraintBottom_toTopOf="@id/text_view_end"
         app:layout_constraintStart_toStartOf="@id/code_start"
-        app:layout_constraintTop_toBottomOf="@id/theme_start_tag" />
-
-    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
-        android:id="@+id/theme_window_style"
-        style="@style/Widget.TextView.Medium.Code"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="\t\t\t\t\t\t\t\t&lt;item name=&quot;android:navigationBarColor&quot;&gt;@color/colorPrimary&lt;/item&gt;"
-        app:layout_constraintBottom_toTopOf="@id/theme_colour_style"
-        app:layout_constraintStart_toStartOf="@id/code_start"
-        app:layout_constraintTop_toBottomOf="@id/theme_widget_style" />
-
-    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
-        android:id="@+id/theme_colour_style"
-        style="@style/Widget.TextView.Medium.Code"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="\t\t\t\t\t\t\t\t&lt;item name=&quot;colorPrimary&quot;&gt;@color/colorPrimary&lt;/item&gt;"
-        app:layout_constraintBottom_toTopOf="@id/theme_end_tag"
-        app:layout_constraintStart_toStartOf="@id/code_start"
-        app:layout_constraintTop_toBottomOf="@id/theme_window_style"
+        app:layout_constraintTop_toBottomOf="@id/text_view_start"
         app:highlightTextAppearance="@style/Widget.TextView.Medium.Code.Highlight"
-        app:pattern="(colorPrimary)&quot;"/>
+        app:pattern="(android:theme=&quot;\@style/ThemeOne&quot;)"/>
 
     <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
-        android:id="@+id/theme_end_tag"
+        android:id="@+id/text_view_end"
         style="@style/Widget.TextView.Medium.Code"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="\t\t\t\t&lt;/style&gt;\n\n&lt;/resources&gt;"
+        android:text="\n\t\t\t\t&lt;/application"
+        app:layout_constraintBottom_toTopOf="@id/manifest_end"
+        app:layout_constraintStart_toStartOf="@id/code_start"
+        app:layout_constraintTop_toBottomOf="@id/activity" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+        android:id="@+id/manifest_end"
+        style="@style/Widget.TextView.Medium.Code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\n&lt;/manifest&gt;"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@id/code_start"
-        app:layout_constraintTop_toBottomOf="@id/theme_colour_style" />
+        app:layout_constraintTop_toBottomOf="@id/text_view_end" />
 
 </com.stylingandroid.presenter.engine.presentation.ConstraintSlideLayout>

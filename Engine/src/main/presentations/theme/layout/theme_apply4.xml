@@ -12,12 +12,12 @@
         style="@style/Widget.TextView.Large"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Theme"
+        android:text="Applying Styles &amp; Themes"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.2" />
+        app:layout_constraintVertical_bias="0.3"/>
 
     <android.support.constraint.Guideline
         android:id="@+id/code_start"
@@ -31,24 +31,37 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
-        android:id="@+id/theme_start_tag"
+        android:id="@+id/layout_start"
         style="@style/Widget.TextView.Medium.Code"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="&lt;resources xmlns:android=&quot;\u2026&quot;&gt;\n\n\t\t\t\t&lt;style name=&quot;MyTheme&quot;&gt;"
-        app:layout_constraintBottom_toTopOf="@id/theme_end_tag"
+        android:text="&lt;androidx.constraintlayout.widget.ConstraintLayout xmlns:android=&quot;\u2026&quot;\n\t\t\t\t\u2026\n\t\t\t\tandroid:theme=&quot;@style/ThemeTwo&quot; &gt;"
+        app:layout_constraintBottom_toTopOf="@id/text_view"
         app:layout_constraintStart_toStartOf="@id/code_start"
         app:layout_constraintTop_toBottomOf="@id/title"
-        app:layout_constraintVertical_chainStyle="packed" />
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintVertical_bias="0.3"
+        app:highlightTextAppearance="@style/Widget.TextView.Medium.Code.Highlight"
+        app:pattern="(android:theme=&quot;@style/ThemeTwo&quot;)" />
 
     <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
-        android:id="@+id/theme_end_tag"
+        android:id="@+id/text_view"
         style="@style/Widget.TextView.Medium.Code"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="\t\t\t\t&lt;/style&gt;\n\n&lt;/resources&gt;"
+        android:text="\n\t\t\t\t&lt;TextView\n\t\t\t\t\t\t\t\t\u2026/&gt;"
+        app:layout_constraintBottom_toTopOf="@id/layout_end"
+        app:layout_constraintStart_toStartOf="@id/code_start"
+        app:layout_constraintTop_toBottomOf="@id/layout_start"/>
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+        android:id="@+id/layout_end"
+        style="@style/Widget.TextView.Medium.Code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\n\n&lt;/androidx.constraintlayout.widget.ConstraintLayout&gt;"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@id/code_start"
-        app:layout_constraintTop_toBottomOf="@id/theme_start_tag" />
+        app:layout_constraintTop_toBottomOf="@id/text_view" />
 
 </com.stylingandroid.presenter.engine.presentation.ConstraintSlideLayout>

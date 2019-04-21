@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="theme">
-        <!--item>theme_title</item>
+        <item>theme_title</item>
+        <item>theme_intro</item>
         <item>theme_types</item>
         <item>theme_style</item>
         <item>theme_text_view_docs</item>
-        <item>theme_text_appearance_span</item-->
+        <item>theme_text_appearance_span</item>
         <item>theme_theme</item>
+        <item>theme_apply</item>
+        <item>theme_overlay</item>
+        <item>theme_custom_view</item>
+        <item>theme_case_study</item>
+        <item>theme_end</item>
+        <item>theme_questions</item>
+        <item>theme_end_title</item>
     </array>
-    
+
+    <attr name="customViewStyle" format="reference" />
 </resources>

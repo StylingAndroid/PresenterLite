@@ -12,12 +12,15 @@
         style="@style/Widget.TextView.Large"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Theme"
+        android:text="Case Study: DOM \u25BA CharSequence "
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.20"
+        app:layout_constraintVertical_bias="0.2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.2" />
+        app:highlightTextAppearance="@style/Widget.TextView.Large.Dark"
+        app:pattern="(DOM.*CharSequence)" />
 
     <android.support.constraint.Guideline
         android:id="@+id/code_start"
@@ -31,24 +34,27 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
-        android:id="@+id/theme_start_tag"
+        android:id="@+id/module1"
         style="@style/Widget.TextView.Medium.Code"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="&lt;resources xmlns:android=&quot;\u2026&quot;&gt;\n\n\t\t\t\t&lt;style name=&quot;MyTheme&quot;&gt;"
-        app:layout_constraintBottom_toTopOf="@id/theme_end_tag"
+        android:text="\@Module\nobject Activity1Module {\n\n\t\t\t\t\@Provides\n\t\t\t\t\funProvidesTheme1Mapper(context: Context): Dom2CharSequenceMapper = \n\t\t\t\t\t\t\t\tDom2CharSequenceMapper(ContextThemeWrapper(context, R.style.Theme1))\n\n}"
+        app:layout_constraintBottom_toTopOf="@id/module2"
         app:layout_constraintStart_toStartOf="@id/code_start"
         app:layout_constraintTop_toBottomOf="@id/title"
-        app:layout_constraintVertical_chainStyle="packed" />
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintVertical_bias="0.3" />
 
     <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
-        android:id="@+id/theme_end_tag"
+        android:id="@+id/module2"
         style="@style/Widget.TextView.Medium.Code"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="\t\t\t\t&lt;/style&gt;\n\n&lt;/resources&gt;"
+        android:text="\n\n\@Module\nobject Activity2Module {\n\n\t\t\t\t\@Provides\n\t\t\t\t\funProvidesTheme1Mapper(context: Context): Dom2CharSequenceMapper = \n\t\t\t\t\t\t\t\tDom2CharSequenceMapper(ContextThemeWrapper(context, R.style.Theme2))\n\n}"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@id/code_start"
-        app:layout_constraintTop_toBottomOf="@id/theme_start_tag" />
+        app:layout_constraintTop_toBottomOf="@id/module1"
+        app:highlightTextAppearance="@style/Widget.TextView.Medium.Code.Highlight"
+        app:pattern="(ContextThemeWrapper\\(context, R\\.style\\.Theme2\\))" />
 
 </com.stylingandroid.presenter.engine.presentation.ConstraintSlideLayout>

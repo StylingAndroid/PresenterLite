@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stylingandroid.presenter.engine.presentation.ConstraintSlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/slide"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:nextInAnimation="@anim/fadein"
+    app:nextOutAnimation="@anim/fadeout">
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+        android:id="@+id/title"
+        style="@style/Widget.TextView.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Case Study: DOM \u25BA CharSequence "
+        app:layout_constraintBottom_toTopOf="@id/bullet1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:highlightTextAppearance="@style/Widget.TextView.Large.Dark"
+        app:pattern="(DOM.*CharSequence)"/>
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+        android:id="@+id/bullet1"
+        style="@style/Widget.TextView.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rich Text DOM structure"
+        app:bulletDrawable="@drawable/bullet_animated"
+        app:layout_constraintBottom_toTopOf="@id/bullet2"
+        app:layout_constraintStart_toStartOf="@id/title"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:showAnimation="@anim/fadein"
+        app:showPhase="1" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+        android:id="@+id/bullet2"
+        style="@style/Widget.TextView.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Some nodes represented named styles"
+        app:bulletDrawable="@drawable/bullet_animated"
+        app:layout_constraintBottom_toTopOf="@id/bullet3"
+        app:layout_constraintStart_toStartOf="@id/title"
+        app:layout_constraintTop_toBottomOf="@id/bullet1"
+        app:showAnimation="@anim/fadein"
+        app:showPhase="2"/>
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+        android:id="@+id/bullet3"
+        style="@style/Widget.TextView.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mapper converted DOM to CharSequence with embedded spans"
+        app:bulletDrawable="@drawable/bullet_animated"
+        app:layout_constraintBottom_toTopOf="@id/bullet4"
+        app:layout_constraintStart_toStartOf="@id/title"
+        app:layout_constraintTop_toBottomOf="@id/bullet2"
+        app:showAnimation="@anim/fadein"
+        app:showPhase="3" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+        android:id="@+id/bullet4"
+        style="@style/Widget.TextView.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Named style mappings could change"
+        app:bulletDrawable="@drawable/bullet_animated"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/title"
+        app:layout_constraintTop_toBottomOf="@id/bullet3"
+        app:hideAnimation="@anim/fadeout"
+        app:hidePhase="5"
+        app:showAnimation="@anim/fadein"
+        app:showPhase="4"/>
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+        style="@style/Widget.TextView.Medium.Highlight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Named style mappings could change"
+        app:bulletDrawable="@drawable/bullet_static"
+        app:layout_constraintBaseline_toBaselineOf="@id/bullet4"
+        app:layout_constraintStart_toStartOf="@id/bullet4"
+        app:showAnimation="@anim/fadein"
+        app:showPhase="5" />
+
+</com.stylingandroid.presenter.engine.presentation.ConstraintSlideLayout>

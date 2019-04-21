@@ -35,7 +35,7 @@
         style="@style/Widget.TextView.Medium.Code"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="&lt;resources xmlns=&quot;\u2026&quot;&gt;\n\n\t\t\t\t&lt;style name=&quot;MyTheme&quot;&gt;"
+        android:text="&lt;resources xmlns:android=&quot;\u2026&quot;&gt;\n\n\t\t\t\t&lt;style name=&quot;MyTheme&quot;&gt;"
         app:layout_constraintBottom_toTopOf="@id/theme_widget_style"
         app:layout_constraintStart_toStartOf="@id/code_start"
         app:layout_constraintTop_toBottomOf="@id/title"

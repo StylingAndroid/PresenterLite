@@ -9,7 +9,7 @@
     <com.stylingandroid.presenter.engine.presentation.TransitionLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:scenes="theme_theme1, theme_theme2, theme_theme3, theme_theme4, theme_theme5, theme_theme6, theme_theme7, theme_theme8, theme_theme9, theme_theme10, theme_theme11, theme_theme12"
+        app:scenes="theme_case_study1,theme_case_study2,theme_case_study3,theme_case_study4,theme_case_study5,theme_case_study6,theme_case_study7,theme_case_study8"
         app:transitionManager="@transition/theme" />
 
 </com.stylingandroid.presenter.engine.presentation.SlideLayout>

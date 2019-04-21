@@ -20,4 +20,8 @@
     <item name="android:backgroundTintMode">src_in</item>
   </style>
 
+  <style name="Widget.TextView.Medium.Code.Inline">
+    <item name="android:textSize">@dimen/textSizeMedium</item>
+  </style>
+
 </resources>

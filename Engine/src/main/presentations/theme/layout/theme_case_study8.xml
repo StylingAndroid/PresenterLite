@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stylingandroid.presenter.engine.presentation.ConstraintSlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/slide"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:nextInAnimation="@anim/fadein"
+    app:nextOutAnimation="@anim/fadeout">
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+        android:id="@+id/title"
+        style="@style/Widget.TextView.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Case Study: DOM \u25BA CharSequence "
+        app:highlightTextAppearance="@style/Widget.TextView.Large.Dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2"
+        app:pattern="(DOM.*CharSequence)" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/code_start"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_percent="@dimen/theme_offset"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+        android:id="@+id/lookup"
+        style="@style/Widget.TextView.Medium.Code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="class Dom2CharSequenceMapper(private val context: Context) {\n\t\t\t\t\u2026\n\t\t\t\t@StyleRes private fun getTextAppearanceId(name: String) : Int {\n\t\t\t\t\t\t\t\t@AttrRes val attributeId: Int =\n\t\t\t\t\t\t\t\t\t\t\t\tcontext.resources.getIdentifier(name, &quot;attr&quot;, context.packageName)\n\n\t\t\t\t\t\t\t\tval typedValue = TypedValue()\n\n\t\t\t\t\t\t\t\tcontext.theme.resolveAttribute(attributeId, typedValue, true)\n\n\t\t\t\t\t\t\t\treturn typedValue.resourceId\n\t\t\t\t}\n\t\t\t\t\u2026\n}"
+        app:hideAnimation="@anim/fadeout"
+        app:hidePhase="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/code_start"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+        style="@style/Widget.TextView.Medium.Code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="class Dom2CharSequenceMapper(private val context: Context) {\n\t\t\t\t\u2026\n\t\t\t\t@StyleRes private fun getTextAppearanceId(name: String) : Int {\n\t\t\t\t\t\t\t\t@AttrRes val attributeId: Int =\n\t\t\t\t\t\t\t\t\t\t\t\tcontext.resources.getIdentifier(name, &quot;attr&quot;, context.packageName)\n\n\t\t\t\t\t\t\t\tval typedValue = TypedValue()\n\n\t\t\t\t\t\t\t\tcontext.theme.resolveAttribute(attributeId, typedValue, true)\n\n\t\t\t\t\t\t\t\treturn typedValue.resourceId\n\t\t\t\t}\n\t\t\t\t\u2026\n}"
+        app:highlightTextAppearance="@style/Widget.TextView.Medium.Code.Highlight"
+        app:hideAnimation="@anim/fadeout"
+        app:hidePhase="2"
+        app:layout_constraintBaseline_toBaselineOf="@id/lookup"
+        app:layout_constraintStart_toStartOf="@id/lookup"
+        app:pattern="(\@Attr.*?packageName\\))"
+        app:showAnimation="@anim/fadein"
+        app:showPhase="1" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+        style="@style/Widget.TextView.Medium.Code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="class Dom2CharSequenceMapper(private val context: Context) {\n\t\t\t\t\u2026\n\t\t\t\t@StyleRes private fun getTextAppearanceId(name: String) : Int {\n\t\t\t\t\t\t\t\t@AttrRes val attributeId: Int =\n\t\t\t\t\t\t\t\t\t\t\t\tcontext.resources.getIdentifier(name, &quot;attr&quot;, context.packageName)\n\n\t\t\t\t\t\t\t\tval typedValue = TypedValue()\n\n\t\t\t\t\t\t\t\tcontext.theme.resolveAttribute(attributeId, typedValue, true)\n\n\t\t\t\t\t\t\t\treturn typedValue.resourceId\n\t\t\t\t}\n\t\t\t\t\u2026\n}"
+        app:highlightTextAppearance="@style/Widget.TextView.Medium.Code.Highlight"
+        app:hideAnimation="@anim/fadeout"
+        app:hidePhase="3"
+        app:layout_constraintBaseline_toBaselineOf="@id/lookup"
+        app:layout_constraintStart_toStartOf="@id/lookup"
+        app:pattern="(\val typed.*?\\))"
+        app:showAnimation="@anim/fadein"
+        app:showPhase="2" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+        style="@style/Widget.TextView.Medium.Code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="class Dom2CharSequenceMapper(private val context: Context) {\n\t\t\t\t\u2026\n\t\t\t\t@StyleRes private fun getTextAppearanceId(name: String) : Int {\n\t\t\t\t\t\t\t\t@AttrRes val attributeId: Int =\n\t\t\t\t\t\t\t\t\t\t\t\tcontext.resources.getIdentifier(name, &quot;attr&quot;, context.packageName)\n\n\t\t\t\t\t\t\t\tval typedValue = TypedValue()\n\n\t\t\t\t\t\t\t\tcontext.theme.resolveAttribute(attributeId, typedValue, true)\n\n\t\t\t\t\t\t\t\treturn typedValue.resourceId\n\t\t\t\t}\n\t\t\t\t\u2026\n}"
+        app:highlightTextAppearance="@style/Widget.TextView.Medium.Code.Highlight"
+        app:hideAnimation="@anim/fadeout"
+        app:hidePhase="4"
+        app:layout_constraintBaseline_toBaselineOf="@id/lookup"
+        app:layout_constraintStart_toStartOf="@id/lookup"
+        app:pattern="(\context\\.theme.*?true\\))"
+        app:showAnimation="@anim/fadein"
+        app:showPhase="3" />
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+        style="@style/Widget.TextView.Medium.Code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="class Dom2CharSequenceMapper(private val context: Context) {\n\t\t\t\t\u2026\n\t\t\t\t@StyleRes private fun getTextAppearanceId(name: String) : Int {\n\t\t\t\t\t\t\t\t@AttrRes val attributeId: Int =\n\t\t\t\t\t\t\t\t\t\t\t\tcontext.resources.getIdentifier(name, &quot;attr&quot;, context.packageName)\n\n\t\t\t\t\t\t\t\tval typedValue = TypedValue()\n\n\t\t\t\t\t\t\t\tcontext.theme.resolveAttribute(attributeId, typedValue, true)\n\n\t\t\t\t\t\t\t\treturn typedValue.resourceId\n\t\t\t\t}\n\t\t\t\t\u2026\n}"
+        app:highlightTextAppearance="@style/Widget.TextView.Medium.Code.Highlight"
+        app:layout_constraintBaseline_toBaselineOf="@id/lookup"
+        app:layout_constraintStart_toStartOf="@id/lookup"
+        app:pattern="(return typedValue\\.resourceId)"
+        app:showAnimation="@anim/fadein"
+        app:showPhase="4" />
+
+</com.stylingandroid.presenter.engine.presentation.ConstraintSlideLayout>
