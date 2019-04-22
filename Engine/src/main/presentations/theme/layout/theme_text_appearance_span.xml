@@ -4,41 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:nextInAnimation="@anim/fadein"
-    app:nextOutAnimation="@anim/fadeout">
-
-    <!--com.stylingandroid.presenter.engine.presentation.HighlightedTextView
-        android:id="@+id/style1"
-        style="@style/Widget.TextView.Medium.Code"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="<TextView\n\t\tandroid:id=&quot;@+id/text_view&quot;\n\t\tstyle=&quot;@style/WidgetStyle&quot;\n\t\tandroid:layout_width=&quot;wrap_content&quot;\n\t\tandroid:layout_height=&quot;wrap_content&quot;\n\t\tandroid:textAppearance=&quot;@style/TextStyle&quot;\n\t\tandroid:text=&quot;@string/hello_world&quot; /&gt;"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:highlightTextAppearance="@style/Widget.TextView.Medium.Code.Highlight"
-        app:pattern="((android:textAppearance=\\&quot;.*?\\&quot;))"
-        app:hideAnimation="@anim/fadeout"
-        app:hidePhase="1"
-        android:scaleX="1.0"
-        android:scaleY="1.0" />
-
-    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
-        android:id="@+id/style2"
-        style="@style/Widget.TextView.Medium.Code"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="<TextView\n\t\tandroid:id=&quot;@+id/text_view&quot;\n\t\tstyle=&quot;@style/WidgetStyle&quot;\n\t\tandroid:layout_width=&quot;wrap_content&quot;\n\t\tandroid:layout_height=&quot;wrap_content&quot;\n\t\tandroid:textAppearance=&quot;@style/TextStyle&quot;\n\t\tandroid:text=&quot;@string/hello_world&quot; /&gt;"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:highlightTextAppearance="@style/Widget.TextView.Medium.Code.Highlight"
-        app:pattern="((android:textAppearance=\\&quot;.*?\\&quot;))"
-        app:hideAnimation="@anim/fadeout"
-        app:hidePhase="1"
-        android:scaleX="1.0"
-        android:scaleY="1.0" /-->
+    app:nextOutAnimation="@anim/fadeout"
+    app:tweet="@string/theme_tweet_text_appearance_span">
 
     <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
         android:id="@+id/text_appearance_span1"

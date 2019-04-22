@@ -8,7 +8,7 @@
   android:orientation="vertical"
   sap:nextInAnimation="@anim/zoomin"
   sap:notes="@string/notes_presenter"
-  sap:tweet="@string/vectors2_tweet_presenter">
+  sap:tweet="@string/theme_tweet_presenter">
 
   <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
     style="@style/Widget.TextView.Large"

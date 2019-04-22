@@ -16,6 +16,4 @@
         <item>theme_questions</item>
         <item>theme_end_title</item>
     </array>
-
-    <attr name="customViewStyle" format="reference" />
 </resources>

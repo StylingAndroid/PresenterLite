@@ -20,7 +20,6 @@
         app:layout_constraintVertical_chainStyle="packed"
         app:layout_constraintVertical_bias="0.3"/>
 
-
     <android.support.constraint.Guideline
         android:id="@+id/code_start"
         android:layout_width="0dp"
@@ -33,69 +32,18 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
-        android:id="@+id/context_theme_wrapper"
+        android:id="@+id/context"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        style="@style/Widget.TextView.Medium.Code.Highlight"
-        android:text="val themedContext = ContextThemeWrapper(context, R.style.ThemeTwo)"
+        style="@style/Widget.TextView.Medium.Code"
+        android:text="class MyActivity : AppCompatActivity() {\n\n\t\t\t\toverride fun onCreate() {\n\t\t\t\t\t\t\t\tsetTheme(R.style.ThemeTwo)\n\t\t\t\t\t\t\t\tsetContentView(R.layout.activity_main)\n\t\t\t\t}\n\t\t\t\t\u2026\n}"
         app:layout_constraintStart_toStartOf="@id/code_start"
         app:layout_constraintTop_toBottomOf="@id/title"
-        app:layout_constraintBottom_toTopOf="@id/layout_inflater"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintVertical_chainStyle="packed"
         app:layout_constraintVertical_bias="0.3"
-        app:hidePhase="1"
-        app:hideAnimation="@anim/fadeout"/>
-
-    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
-        android:id="@+id/context_theme_wrapper_normal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        style="@style/Widget.TextView.Medium.Code"
-        android:text="val themedContext = ContextThemeWrapper(context, R.style.ThemeTwo)"
-        app:layout_constraintStart_toStartOf="@id/context_theme_wrapper"
-        app:layout_constraintBaseline_toBaselineOf="@id/context_theme_wrapper"
-        app:layout_constraintBottom_toTopOf="@id/layout_inflater"
-        app:showPhase="1"
-        app:showAnimation="@anim/fadein"/>
-
-    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
-        android:id="@+id/layout_inflater"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        style="@style/Widget.TextView.Medium.Code"
-        android:text="\nval themedInflator = LayoutInflator.from(themedContext)"
-        app:layout_constraintStart_toStartOf="@id/code_start"
-        app:layout_constraintTop_toBottomOf="@id/context_theme_wrapper"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:hidePhase="1"
-        app:hideAnimation="@anim/fadeout"/>
-
-    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
-        android:id="@+id/layout_inflater_highlighted"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        style="@style/Widget.TextView.Medium.Code"
-        android:text="\nval themedInflator = LayoutInflator.from(themedContext)"
-        app:layout_constraintBaseline_toBaselineOf="@id/layout_inflater"
-        app:layout_constraintStart_toStartOf="@id/layout_inflater"
-        app:hidePhase="2"
-        app:hideAnimation="@anim/fadeout"
-        app:showPhase="1"
-        app:showAnimation="@anim/fadein"
         app:highlightTextAppearance="@style/Widget.TextView.Medium.Code.Highlight"
-        app:pattern="(themedContext)" />
+        app:pattern="(setTheme\\(R\\.style\\.ThemeTwo\\))"/>
 
-    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
-        android:id="@+id/layout_inflater_clone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        style="@style/Widget.TextView.Medium.Code"
-        android:text="\nval themedInflator = inflator.cloneInContext(themedContext)"
-        app:layout_constraintBaseline_toBaselineOf="@id/layout_inflater"
-        app:layout_constraintStart_toStartOf="@id/layout_inflater"
-        app:showPhase="2"
-        app:showAnimation="@anim/fadein"
-        app:highlightTextAppearance="@style/Widget.TextView.Medium.Code.Highlight"
-        app:pattern="(inflator\\.cloneInContext\\(themedContext\\))" />
 
 </com.stylingandroid.presenter.engine.presentation.ConstraintSlideLayout>

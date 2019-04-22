@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="theme_tweet_title">I am currently speaking about Themes at %2$s %3$s</string>
+    <string name="theme_tweet_text_view_docs">Lots of Views subclass TextView https://mark.al/TextView %3$s</string>
+    <string name="theme_tweet_text_appearance_span">Easily apply a TextAppearance to part of a string using TextAppearanceSpan https://mark.al/TextAppearanceSpan %3$s</string>
+    <string name="theme_tweet_context_theme_wrapper">Overlay the current theme using ContextThemeWrapper https://mark.al/ContextThemeWrapper %3$s</string>
+    <string name="theme_tweet_presenter">The presentation source is at https://mark.al/ThemeOnSource and the articles are at https://mark.al/1turq1F %3$s</string>
 </resources>
