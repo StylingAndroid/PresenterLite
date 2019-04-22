@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:nextInAnimation="@anim/fadein"
-    app:nextOutAnimation="@anim/fadeout">
+    app:nextOutAnimation="@anim/fadeout"
+    app:tweet="@string/theme_tweet_title">
 
     <TextView
         android:id="@+id/styles"
