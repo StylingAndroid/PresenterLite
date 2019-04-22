@@ -119,7 +119,7 @@
         style="@style/Widget.TextView.Small.Code"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="&lt;TextView&gt;\n\t\tandroid:id=&quot;@+id/text_view&quot;"
+        android:text="&lt;TextView\n\t\tandroid:id=&quot;@+id/text_view&quot;"
         app:layout_constraintBottom_toTopOf="@id/layout_style"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@id/centre"
