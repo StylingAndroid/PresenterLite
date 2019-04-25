@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stylingandroid.presenter.engine.presentation.ConstraintSlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/slide"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:nextInAnimation="@anim/fadein"
+    app:nextOutAnimation="@anim/fadeout">
+
+    <TextView
+        android:id="@+id/title1"
+        style="@style/Widget.TextView.XLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Naming"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/title2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"/>
+
+    <TextView
+        android:id="@+id/title2"
+        style="@style/Widget.TextView.XLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" is &amp;*?%ing hard"
+        app:layout_constraintStart_toEndOf="@id/title1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/title1" />
+
+</com.stylingandroid.presenter.engine.presentation.ConstraintSlideLayout>

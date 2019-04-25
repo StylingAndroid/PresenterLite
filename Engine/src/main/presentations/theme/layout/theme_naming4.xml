@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stylingandroid.presenter.engine.presentation.ConstraintSlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/slide"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:nextInAnimation="@anim/fadein"
+    app:nextOutAnimation="@anim/fadeout">
+
+    <TextView
+        android:id="@+id/title1"
+        style="@style/Widget.TextView.XLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Naming"
+        app:layout_constraintBottom_toTopOf="@id/style_start_element"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/code_start"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_percent="@dimen/theme_offset"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/style_start_element"
+        style="@style/Widget.TextView.Medium.Code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="&lt;resources android:xmlns=&quot;\u2026&quot;&gt;"
+        app:layout_constraintBottom_toTopOf="@id/primary_color_element"
+        app:layout_constraintStart_toStartOf="@id/code_start"
+        app:layout_constraintTop_toBottomOf="@id/title1"/>
+
+    <com.stylingandroid.presenter.engine.presentation.HighlightedTextView
+        android:id="@+id/primary_color_element"
+        style="@style/Widget.TextView.Medium.Code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\n\t\t\t\t&lt;color name=&quot;colorPrimary&quot;&gt;#156912&lt;/color&gt;"
+        app:layout_constraintBottom_toTopOf="@id/style_end_element"
+        app:layout_constraintStart_toStartOf="@id/code_start"
+        app:layout_constraintTop_toBottomOf="@id/style_start_element"
+        app:highlightTextAppearance="@style/Widget.TextView.Medium.Code.Highlight"
+        app:pattern="(colorPrimary)"/>
+
+    <TextView
+        android:id="@+id/style_end_element"
+        style="@style/Widget.TextView.Medium.Code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\n&lt;/resources&gt;"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/code_start"
+        app:layout_constraintTop_toBottomOf="@id/primary_color_element"/>
+
+</com.stylingandroid.presenter.engine.presentation.ConstraintSlideLayout>
